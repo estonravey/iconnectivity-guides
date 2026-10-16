@@ -3,6 +3,7 @@
 ## Introduction
 ![PlayAUDIO2D](images/000-product/pa2d-front-trans-small.png)
 
+
 Congratulations on the purchase of your new PlayAUDIO2D USB Audio, MIDI & Dante interface!
 
 ### Feature List
