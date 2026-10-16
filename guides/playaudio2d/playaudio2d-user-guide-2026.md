@@ -129,22 +129,14 @@ Download the latest version of the Auracle X software installer at: https://www.
 
 ### Mac Users
 ## First time Installation
-<<<<<<< HEAD
-![Auracle X .dmg](/guides/playaudio2d/images/ax-install/ax-dmg.png)
-=======
 ![Auracle X .dmg](images/ax-install/ax-dmg.png)
->>>>>>> 5065b0ec78ae0c71d87478d2d7064ad16a22b5f2
 
 When the Auracle X application has finished downloading open the .dmg file
 
 Drag the Auracle X application to the Applications folder.
 
 ### Mac Users: Auracle X update
-<<<<<<< HEAD
-![Auracle X firmware update](/guides/playaudio2d/images/ax-install/ax-check-updates.png)
-=======
 ![Auracle X firmware update](images/ax-install/ax-check-updates.png)
->>>>>>> 5065b0ec78ae0c71d87478d2d7064ad16a22b5f2
 
 If you already have the Auracle X application installed, use the Auracle X main menu to check for updates and follow the prompts that follow if a newer version of Auracle X is available.
 
