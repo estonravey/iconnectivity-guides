@@ -3,10 +3,6 @@
 ## Introduction
 ![PlayAUDIO2D](images/000-product/pa2d-front-trans-small.png)
 
-<<<<<<< HEAD
-=======
-
->>>>>>> 5065b0ec78ae0c71d87478d2d7064ad16a22b5f2
 Congratulations on the purchase of your new PlayAUDIO2D USB Audio, MIDI & Dante interface!
 
 ### Feature List
@@ -94,11 +90,8 @@ Read on in the Auracle X section below for more information.
 
 ## Recommended Software Installation
 ### Windows - Install iConnectivity RTP MIDI Driver for Network MIDI
-<<<<<<< HEAD
-![rtpMIDI network driver](/guides/playaudio2d/images/third-party-apps/rtp-midi.png)
-=======
+
 ![rtpMIDI network driver](images/third-party-apps/rtp-midi.png)
->>>>>>> 5065b0ec78ae0c71d87478d2d7064ad16a22b5f2
 
 The RTP-MIDI driver for Network MIDI can be found at https://www.iconnectivity.com/windows-drivers
 
@@ -108,11 +101,8 @@ https://support.apple.com/en-us/106380
 Launch the rtpMIDISetup Application and follow all prompts to install.
 
 ### Dante Controller & Dante Updater
-<<<<<<< HEAD
-![Dante Controller](images/dante-controller/dc-routing-pa2u-tx.png)
-=======
+
 ![Dante Controller](images/dante-controller/dc-routing-pa2u%20tx.png)
->>>>>>> 5065b0ec78ae0c71d87478d2d7064ad16a22b5f2
 
 Routing digital audio to and/or from your PlayAUDIO2D is achieved by using Audinate’s Dante Controller application located at
 https://www.getDante.com/products/software-essentials/Dante-controller/
