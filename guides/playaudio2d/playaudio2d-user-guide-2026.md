@@ -90,14 +90,18 @@ Read on in the Auracle X section below for more information.
 
 ## Recommended Software Installation
 ### Windows - Install iConnectivity RTP MIDI Driver for Network MIDI
-The RTP-MIDI driver for Network MIDI can be found at https://www.iconnectivity.com/windows-drivers.
+![rtpMIDI network driver](/guides/playaudio2d/images/third-party-apps/rtp-midi.png)
+
+The RTP-MIDI driver for Network MIDI can be found at https://www.iconnectivity.com/windows-drivers
 
 Apple Bonjour Print Services for Windows is also required for RTP session discovery over network via bonjour and is available at:
-(https://support.apple.com/en-us/106380)
+https://support.apple.com/en-us/106380
 
 Launch the rtpMIDISetup Application and follow all prompts to install.
 
 ### Dante Controller & Dante Updater
+![Dante Controller](/guides/playaudio2d/images/dante-controller/dc-routing-pa2u%20tx.png)
+
 Routing digital audio to and/or from your PlayAUDIO2D is achieved by using Audinate’s Dante Controller application located at
 https://www.getDante.com/products/software-essentials/Dante-controller/
 
@@ -116,28 +120,36 @@ MacOS: [Snoize MIDI monitor and Sysex Librarian](http://www.midiox.com/)
 
 > **Note:** After installing the RTP-MIDI driver and Apple Bonjour Print Services be sure to restart your computer in order for the RTP-MIDI driver to default to using Apple Bonjour instead of lightweight mDNS for RTP session discovery
 
-## Install Auracle X and Update your PlayAUDIO2D Firmware
+## Installing Auracle X
 Before you begin using your PlayAUDIO2D we recommend that you upgrade your unit's firmware to the latest version using iConnectivity's Auracle X application.
 
 Download the latest version of the Auracle X software installer at: https://www.iconnectivity.com/software/control-software
 
-### Mac Users: First time Installation
+### Mac Users
+## First time Installation
+![Auracle X .dmg](/guides/playaudio2d/images/ax-install/ax-dmg.png)
+
 When the Auracle X application has finished downloading open the .dmg file
 
 Drag the Auracle X application to the Applications folder.
 
 ### Mac Users: Auracle X update
+![Auracle X firmware update](/guides/playaudio2d/images/ax-install/ax-check-updates.png)
+
 If you already have the Auracle X application installed, use the Auracle X main menu to check for updates and follow the prompts that follow if a newer version of Auracle X is available.
 
 ### Windows Users
-
 **First time installation**
 
 When the package installer download is complete, run the Auracle X installer.
 
-Click Yes to allow Auracle X Setup:
+![Windows installation](/guides/playaudio2d/images/ax-install/win-ax-install.png)
 
-Install for all users:
+Click Yes to allow Auracle X Setup
+
+![Windows install for all users](/guides/playaudio2d/images/ax-install/win-ax-install-2.png)
+
+Install for all users
 
 ## Updating PlayAUDIO2D Firmware
 ### Load Latest From Web
@@ -156,8 +168,6 @@ To use Auracle X to update your device’s firmware:
 ### Firmware Update: Load from file
 
 The latest firmware for your device is  also available for manual download at: https://www.iconnectivity.com/firmware
-
-[Comment]: # (image here)
 
 1. Connect the PlayAUDIO2D to your computer via the USB DAW A port on your PlayAUDIO2D.
 
@@ -342,9 +352,9 @@ Rotate the encoder to move between the pages listed below, and short press to se
     - Short press to call the edit output channel window, where all or one of 24 analog output channels may be selected to edit.
     - Press Exit to climb out of the menu hierarchy.
 
-    ![Analog output monitoring](images/00-scene/audio%2001%20analog%20outputs.png)
+    ![Analog output monitoring](images/00-scene/01-analog-outputs.png)
 
-    ![Analog output channel selection](images/00-scene/audio%2001.1%20analog%20outs%20enc%20enter.png)
+    ![Analog output channel selection](images/00-scene/01.1-analog-outs-enc-enter.png)
 
 2. Dante digital transmit monitoring: 32 channels
     - Short press to call the edit output channel window, where all or one of 32 Dante digital output channels may be selected to edit.
@@ -528,7 +538,7 @@ Each active Scene on the PlayAUDIO2D has four headphone mix options.
 
 To select between headphone mixer options:
 
-1. Tap the headphone encoder to call the headphone mix menu for the currently active Scene. Tap again to exit.
+1. Press the headphone encoder to call the headphone mix menu for the currently active Scene. Press again to exit.
 
 2. Turn the headphone encoder slowly to raise or lower the selected headphone mix volume in 0.5 dB increments.
 
