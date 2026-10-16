@@ -1,0 +1,477 @@
+<!--
+  iConnectivity User Guide viewer — paste this ENTIRE file into a Squarespace Code Block.
+  Only the CONFIG section below normally needs editing.
+-->
+<script>
+window.ICX_GUIDE_CONFIG = {
+  // Folder that holds guides.json and your .md files (must end with a slash).
+  // GitHub via jsDelivr: https://cdn.jsdelivr.net/gh/<github-user>/<repo>@main/guides/
+  baseUrl: "https://cdn.jsdelivr.net/gh/estonravey/iconnectivity-guides@main/guides/",
+  manifest: "guides.json",
+  // "auto" measures your site header (including the fixed mobile bar). Or a number of pixels.
+  topOffset: "auto",
+  // Color for links and the highlighted contents entry. #00aeef = your site's cyan.
+  accent: "#00aeef",
+  // Which heading levels appear in the left table of contents.
+  tocLevels: [2, 3]
+};
+</script>
+
+<style>
+/* Styled to match iconnectivity.com (Squarespace Brine template, Futura PT). */
+/* Your template makes single blocks 50% wide; let the guide's Code Block use the full content width. */
+.sqs-block:has(#icx-guide) { width: 100% !important; max-width: 1240px; margin-left: auto !important; margin-right: auto !important; }
+#icx-guide {
+  --icx-font: futura-pt, "Futura PT", Futura, "Helvetica Neue", Arial, sans-serif;
+  --icx-text: #464444;          /* site paragraph color */
+  --icx-heading: #111;          /* site heading color */
+  --icx-accent: #00aeef;        /* site cyan */
+  --icx-button: #272727;        /* site button color */
+  --icx-nav: rgba(0,0,0,.7);    /* site navigation link color */
+  --icx-muted: #6e6e6e;
+  --icx-line: #ddd;             /* site divider / quote border color */
+  --icx-soft: #f6f6f6;
+  --icx-top: 0px;
+  --icx-sidebar-w: 260px;
+  display: grid;
+  grid-template-columns: var(--icx-sidebar-w) minmax(0, 1fr);
+  gap: 64px;
+  align-items: start;
+  font-family: var(--icx-font);
+  font-size: 18px; line-height: 1.8em; letter-spacing: .02em; font-weight: 400;
+  color: var(--icx-text);
+  text-align: left;
+}
+#icx-guide *, #icx-guide *::before, #icx-guide *::after { box-sizing: border-box; }
+
+/* ---------- Left table-of-contents window ---------- */
+#icx-guide .icx-sidebar {
+  position: sticky;
+  top: calc(var(--icx-top) + 30px);
+  max-height: calc(100vh - var(--icx-top) - 60px);
+  overflow-y: auto;
+  overscroll-behavior: contain;
+  padding: 0 24px 0 0;
+  border-right: 1px solid var(--icx-line);
+  scrollbar-width: thin;
+}
+#icx-guide .icx-label {
+  display: block; margin: 0 0 12px;
+  font-family: var(--icx-font); font-size: 13px; line-height: 1.4; font-weight: 500;
+  letter-spacing: .1em; text-transform: uppercase; color: var(--icx-heading);
+}
+#icx-guide .icx-select {
+  width: 100%; margin: 0 0 36px; padding: 10px 36px 10px 12px;
+  font-family: var(--icx-font); font-size: 16px; line-height: 1.4; letter-spacing: .02em; color: var(--icx-heading);
+  background-color: #fff; border: 1px solid #ccc; border-radius: 0;
+  -webkit-appearance: none; appearance: none; cursor: pointer;
+  background-image: linear-gradient(45deg, transparent 50%, #464444 50%), linear-gradient(135deg, #464444 50%, transparent 50%);
+  background-position: calc(100% - 18px) 50%, calc(100% - 13px) 50%;
+  background-size: 5px 5px; background-repeat: no-repeat;
+}
+#icx-guide .icx-select:focus-visible { outline: 2px solid var(--icx-accent); outline-offset: 2px; }
+#icx-guide .icx-toc ul { list-style: none; margin: 0; padding: 0; }
+#icx-guide .icx-toc ul ul { margin: 0 0 8px; padding-left: 14px; }
+#icx-guide .icx-toc li { margin: 0; padding: 0; }
+#icx-guide .icx-toc a {
+  display: block; padding: 6px 0 6px 14px; margin-left: -1px;
+  border-left: 2px solid transparent; border-bottom: 0;
+  font-family: var(--icx-font); font-size: 16px; line-height: 1.35; letter-spacing: .02em;
+  color: var(--icx-nav); text-decoration: none; transition: color .15s ease-out;
+}
+#icx-guide .icx-toc .lvl-3 a { font-size: 15px; padding-top: 4px; padding-bottom: 4px; color: var(--icx-muted); }
+#icx-guide .icx-toc a:hover { color: var(--icx-heading); }
+#icx-guide .icx-toc a.is-active { color: var(--icx-accent); border-left-color: var(--icx-accent); }
+#icx-guide .icx-toggle { display: none; }
+
+/* ---------- Guide body ---------- */
+#icx-guide .icx-body { max-width: 860px; min-width: 0; overflow-wrap: break-word; }
+#icx-guide .icx-body a { overflow-wrap: anywhere; }
+#icx-guide .icx-body h1, #icx-guide .icx-body h2, #icx-guide .icx-body h3, #icx-guide .icx-body h4 {
+  font-family: var(--icx-font); font-weight: 400; font-style: normal; letter-spacing: 0; text-transform: none;
+  color: var(--icx-heading); scroll-margin-top: calc(var(--icx-top) + 24px);
+}
+#icx-guide .icx-body h1 { font-size: 56px; line-height: 1.05em; margin: 0 0 .6em; }
+#icx-guide .icx-body h2 { font-size: 32px; line-height: 1.2em; margin: 2.2em 0 .6em; padding-top: 1.1em; border-top: 1px solid var(--icx-line); }
+#icx-guide .icx-body h3 { font-size: 24px; line-height: 1.2em; margin: 1.8em 0 .5em; }
+#icx-guide .icx-body h4 { font-size: 21px; line-height: 1.3em; font-weight: 500; margin: 1.8em 0 .4em; }
+#icx-guide .icx-body h5 { font-family: var(--icx-font); font-size: 17px; line-height: 1.3em; font-weight: 600; letter-spacing: .02em;
+  color: var(--icx-heading); margin: 1.6em 0 .4em; scroll-margin-top: calc(var(--icx-top) + 24px); }
+#icx-guide .icx-body h1 + h2 { border-top: 0; padding-top: 0; }
+#icx-guide .icx-body p, #icx-guide .icx-body ul, #icx-guide .icx-body ol { margin: 0 0 1em; }
+#icx-guide .icx-body ul, #icx-guide .icx-body ol { padding-left: 1.4em; }
+#icx-guide .icx-body li { margin: .2em 0; }
+#icx-guide .icx-body strong { font-weight: 600; color: var(--icx-heading); }
+#icx-guide .icx-body a {
+  color: var(--icx-accent); text-decoration: none;
+  padding-bottom: .05em; border-bottom: 1px solid color-mix(in srgb, var(--icx-accent) 30%, transparent);
+  transition: color .15s ease-out, border-color .15s ease-out;
+}
+#icx-guide .icx-body a:hover { color: color-mix(in srgb, var(--icx-accent) 60%, transparent); border-color: color-mix(in srgb, var(--icx-accent) 15%, transparent); }
+#icx-guide .icx-body img { max-width: 100%; height: auto; display: block; }
+#icx-guide .icx-body p > img, #icx-guide .icx-body li > img { margin: 1.6em 0; }
+#icx-guide .icx-figure { margin: 1.6em 0; }
+#icx-guide .icx-figure figcaption { margin-top: 8px; font-size: 14px; line-height: 1.4; color: var(--icx-muted); }
+#icx-guide .icx-figure.is-zoomable img { cursor: zoom-in; border: 1px solid var(--icx-line); }
+/* screenshots of the unit's 256x64 OLED display: shown at 2x, crisp, on a black panel */
+#icx-guide .icx-figure.is-oled img {
+  width: 512px; max-width: 100%; image-rendering: pixelated; image-rendering: crisp-edges;
+  background: #000; padding: 14px; box-sizing: content-box; max-width: calc(100% - 28px);
+}
+#icx-guide .icx-body code { font-family: Menlo, Consolas, monospace; font-size: .8em; letter-spacing: 0; background: var(--icx-soft); padding: .15em .4em; }
+#icx-guide .icx-body pre { background: var(--icx-soft); border: 1px solid var(--icx-line); padding: 16px 18px; overflow-x: auto; line-height: 1.5; }
+#icx-guide .icx-body pre code { background: none; padding: 0; }
+#icx-guide .icx-body blockquote {
+  margin: 1.6em 0; padding: 0 0 0 1.618em; border-left: 1px solid var(--icx-line); font-style: normal;
+}
+#icx-guide .icx-body blockquote > :last-child { margin-bottom: 0; }
+#icx-guide .icx-table-wrap { overflow-x: auto; margin: 1.6em 0; }
+#icx-guide .icx-body table { border-collapse: collapse; width: 100%; font-size: 16px; line-height: 1.5; }
+#icx-guide .icx-body th, #icx-guide .icx-body td { border-bottom: 1px solid var(--icx-line); padding: 12px 16px 12px 0; text-align: left; vertical-align: top; }
+#icx-guide .icx-body th {
+  font-size: 13px; font-weight: 500; letter-spacing: .1em; text-transform: uppercase;
+  color: var(--icx-heading); border-bottom: 2px solid var(--icx-heading);
+}
+#icx-guide .icx-body hr { border: 0; border-bottom: 1px solid #ccc; margin: 2.5em 0; }
+
+/* Previous / Next styled like the site's buttons */
+#icx-guide .icx-pager {
+  display: flex; justify-content: space-between; gap: 16px; flex-wrap: wrap;
+  margin-top: 4em; padding-top: 2em; border-top: 1px solid var(--icx-line);
+}
+#icx-guide .icx-pager a {
+  display: inline-block; padding: 1em 2.5em; border: 0;
+  background: var(--icx-button); color: #fff; text-decoration: none;
+  font-family: var(--icx-font); font-size: 13px; line-height: 1.3; font-weight: 600;
+  letter-spacing: 1px; text-transform: uppercase; transition: opacity .15s ease-out;
+}
+#icx-guide .icx-pager a:hover { opacity: .8; }
+#icx-guide .icx-pager small { display: block; margin-bottom: 4px; font-size: 11px; font-weight: 400; letter-spacing: .1em; opacity: .65; }
+#icx-guide .icx-pager .next { text-align: right; margin-left: auto; }
+#icx-guide .icx-status { color: var(--icx-muted); padding: 2em 0; }
+
+/* ---------- Tablets ---------- */
+@media (max-width: 1024px) {
+  #icx-guide { gap: 40px; --icx-sidebar-w: 230px; }
+  #icx-guide .icx-body h1 { font-size: 44px; }
+}
+/* ---------- Phones & small tablets: contents become a collapsible panel ---------- */
+@media (max-width: 800px) {
+  #icx-guide { grid-template-columns: minmax(0, 1fr); gap: 28px; font-size: 17px; }
+  #icx-guide .icx-sidebar {
+    position: static; max-height: none; overflow: visible; padding: 0;
+    border-right: 0; border-top: 1px solid var(--icx-line); border-bottom: 1px solid var(--icx-line);
+  }
+  #icx-guide .icx-toggle {
+    display: flex; justify-content: space-between; align-items: center; width: 100%;
+    padding: 14px 0; font-family: var(--icx-font); font-size: 15px; font-weight: 400;
+    letter-spacing: .07em; text-transform: uppercase; color: var(--icx-heading);
+    background: transparent; border: 0; cursor: pointer;
+  }
+  #icx-guide .icx-toggle::after { content: "+"; font-size: 22px; line-height: 1; letter-spacing: 0; }
+  #icx-guide.toc-open .icx-toggle::after { content: "\2212"; }
+  #icx-guide .icx-panel { display: none; padding: 4px 0 20px; max-height: 60vh; overflow-y: auto; }
+  #icx-guide.toc-open .icx-panel { display: block; }
+  #icx-guide .icx-body h1 { font-size: 32px; }
+  #icx-guide .icx-body h2 { font-size: 28px; }
+  #icx-guide .icx-body h3 { font-size: 22px; }
+  #icx-guide .icx-pager a { padding: 1em 1.4em; }
+}
+</style>
+
+<div id="icx-guide">
+  <aside class="icx-sidebar" aria-label="User guide contents">
+    <button type="button" class="icx-toggle" aria-expanded="false">Contents</button>
+    <div class="icx-panel">
+      <label class="icx-label" for="icx-select">Guide</label>
+      <select id="icx-select" class="icx-select"></select>
+      <span class="icx-label">On this page</span>
+      <nav class="icx-toc"></nav>
+    </div>
+  </aside>
+  <article class="icx-body"><p class="icx-status">Loading user guide…</p></article>
+</div>
+
+<script>
+(function () {
+  var C = Object.assign({ manifest: "guides.json", topOffset: "auto", accent: "#00aeef", tocLevels: [2, 3], fixStickyParents: true },
+                        window.ICX_GUIDE_CONFIG || {});
+  if (C.baseUrl && !/\/$/.test(C.baseUrl)) C.baseUrl += "/";
+  var root = document.getElementById("icx-guide");
+  if (!root || root.dataset.ready) return;
+  root.dataset.ready = "1";
+
+  // ---- match the site: header height and brand color ----
+  var topPx = 0;
+  function measureHeader() {
+    if (C.topOffset !== "auto") { topPx = +C.topOffset || 0; }
+    else {
+      topPx = 0;
+      document.querySelectorAll("#header, header, .Header, .header, .Mobile-bar--top").forEach(function (h) {
+        if (root.contains(h)) return;
+        var pos = getComputedStyle(h).position, r = h.getBoundingClientRect();
+        if ((pos === "fixed" || pos === "sticky") && r.top <= 1 && r.bottom > 0 && r.height < window.innerHeight / 2)
+          topPx = Math.max(topPx, Math.round(r.bottom));
+      });
+    }
+    root.style.setProperty("--icx-top", topPx + "px");
+  }
+  function isSolid(c) { return c && !/^(transparent|rgba\(\s*0,\s*0,\s*0,\s*0\s*\))$/.test(c.trim()); }
+  function applyAccent() {
+    if (C.accent && C.accent !== "auto") { root.style.setProperty("--icx-accent", C.accent); return; }
+    // your site's primary button color is the clearest brand color on a Squarespace site
+    var btn = document.querySelector(
+      ".sqs-button-element--primary, .sqs-block-button-element--primary, .header-actions-action--cta .btn, .btn--primary, .sqs-editable-button");
+    if (btn && !root.contains(btn)) {
+      var bg = getComputedStyle(btn).backgroundColor;
+      if (isSolid(bg)) { root.style.setProperty("--icx-accent", bg); return; }
+    }
+  }
+  // widen the Code Block (fallback for browsers without CSS :has)
+  var block = root.closest(".sqs-block");
+  if (block) { block.style.setProperty("width", "100%", "important"); block.style.maxWidth = "1240px";
+               block.style.setProperty("margin-left", "auto", "important"); block.style.setProperty("margin-right", "auto", "important"); }
+  measureHeader();
+  applyAccent();
+  window.addEventListener("resize", measureHeader);
+
+  var body = root.querySelector(".icx-body"),
+      toc = root.querySelector(".icx-toc"),
+      select = root.querySelector(".icx-select"),
+      toggle = root.querySelector(".icx-toggle");
+  var guides = [], current = null, cache = {};
+
+  // ---- helpers ----
+  function loadScript(src) {
+    return new Promise(function (ok, fail) {
+      var s = document.createElement("script"); s.src = src; s.onload = ok; s.onerror = fail;
+      document.head.appendChild(s);
+    });
+  }
+  function fetchText(name) {
+    if (C.inline && name in C.inline) return Promise.resolve(C.inline[name]);
+    if (cache[name]) return Promise.resolve(cache[name]);
+    return fetch(C.baseUrl + name, { cache: "no-cache" }).then(function (r) {
+      if (!r.ok) throw new Error(r.status + " loading " + name);
+      return r.text();
+    }).then(function (t) { cache[name] = t; return t; });
+  }
+  function slugify(text, used) {
+    var base = text.toLowerCase().trim().replace(/[^\w\s-]/g, "").replace(/\s+/g, "-").replace(/-+/g, "-") || "section";
+    var slug = base, n = 2;
+    while (used[slug]) slug = base + "-" + n++;
+    used[slug] = true;
+    return slug;
+  }
+  function parseHash() {
+    var h = decodeURIComponent(location.hash.replace(/^#/, "")).split("/");
+    return { guide: h[0] || "", section: h.slice(1).join("/") };
+  }
+  function esc(s) { return String(s).replace(/[&<>"]/g, function (c) { return { "&": "&amp;", "<": "&lt;", ">": "&gt;", '"': "&quot;" }[c]; }); }
+
+  // Squarespace sometimes wraps blocks in overflow:hidden, which breaks "sticky". Undo that for our ancestors.
+  function fixStickyParents() {
+    if (!C.fixStickyParents) return;
+    for (var el = root.parentElement; el && el !== document.body; el = el.parentElement) {
+      var o = getComputedStyle(el).overflow;
+      if (/hidden|clip/.test(o)) el.style.overflow = "visible";
+    }
+  }
+
+  // ---- sidebar guide picker ----
+  function buildSelect() {
+    var groups = {}, order = [];
+    guides.forEach(function (g) {
+      var k = g.group || "";
+      if (!groups[k]) { groups[k] = []; order.push(k); }
+      groups[k].push(g);
+    });
+    select.innerHTML = order.map(function (k) {
+      var opts = groups[k].map(function (g) { return '<option value="' + esc(g.id) + '">' + esc(g.title) + "</option>"; }).join("");
+      return k ? '<optgroup label="' + esc(k) + '">' + opts + "</optgroup>" : opts;
+    }).join("");
+    select.addEventListener("change", function () { location.hash = select.value; });
+  }
+
+  // ---- render one guide ----
+  function render(guide, md) {
+    var html = DOMPurify.sanitize(marked.parse(md), { ADD_ATTR: ["target"] });
+    body.innerHTML = html;
+    var used = {}, docUrl = new URL(guide.file, C.baseUrl || location.href);
+
+    // ids for headings
+    body.querySelectorAll("h1,h2,h3,h4,h5,h6").forEach(function (h) { h.id = slugify(h.textContent, used); });
+
+    // images relative to the .md file
+    body.querySelectorAll("img").forEach(function (img) {
+      var src = img.getAttribute("src") || "";
+      if (C.baseUrl && !/^(https?:|data:|\/\/)/.test(src)) img.src = new URL(src, docUrl).href;
+      img.loading = "lazy";
+    });
+
+    // stand-alone images become figures; the alt text is the caption
+    body.querySelectorAll("img").forEach(function (img) {
+      var p = img.parentElement;
+      var alone = p && p.tagName === "P" && p.childNodes.length === 1;
+      var fig = document.createElement("figure"); fig.className = "icx-figure";
+      if (alone) p.replaceWith(fig); else img.replaceWith(fig);
+      fig.appendChild(img);
+      var alt = (img.getAttribute("alt") || "").trim();
+      if (alt) { var cap = document.createElement("figcaption"); cap.textContent = alt; fig.appendChild(cap); }
+      function sized() {
+        var w = img.naturalWidth, h = img.naturalHeight;
+        if (w && w <= 400 && w / h >= 3) fig.classList.add("is-oled");
+        else if (w > img.clientWidth * 1.25) fig.classList.add("is-zoomable");
+      }
+      if (img.complete) sized(); else img.addEventListener("load", sized);
+      img.addEventListener("click", function () { if (fig.classList.contains("is-zoomable")) window.open(img.src, "_blank", "noopener"); });
+    });
+
+    // links: other guides, in-page anchors, external
+    body.querySelectorAll("a[href]").forEach(function (a) {
+      var href = a.getAttribute("href");
+      var m = href.match(/^([^#?:]+\.md)(?:#(.*))?$/i);
+      if (m) {
+        var root0 = C.baseUrl || location.href, want = new URL(m[1], docUrl).href;
+        var target = guides.filter(function (g) { return new URL(g.file, root0).href === want; })[0];
+        if (target) a.setAttribute("href", "#" + target.id + (m[2] ? "/" + m[2] : ""));
+      } else if (href.charAt(0) === "#") {
+        a.setAttribute("href", "#" + guide.id + "/" + href.slice(1));
+      } else if (/^https?:/.test(href) && a.host !== location.host) {
+        a.target = "_blank"; a.rel = "noopener";
+      }
+    });
+
+    // wide tables scroll sideways on phones
+    body.querySelectorAll("table").forEach(function (t) {
+      var w = document.createElement("div"); w.className = "icx-table-wrap";
+      t.parentNode.insertBefore(w, t); w.appendChild(t);
+    });
+
+    buildToc();
+    buildPager(guide);
+    var h1 = body.querySelector("h1");
+    if (h1 && !root.dataset.keepTitle) document.title = h1.textContent + " — " + (root.dataset.siteTitle || document.title.split(" — ").pop());
+  }
+
+  function buildToc() {
+    var levels = C.tocLevels, top = Math.min.apply(null, levels);
+    var heads = Array.prototype.filter.call(body.querySelectorAll("h1,h2,h3,h4,h5,h6"), function (h) {
+      return levels.indexOf(+h.tagName[1]) > -1;
+    });
+    var html = "<ul>", openSub = false;
+    heads.forEach(function (h) {
+      var lvl = +h.tagName[1];
+      var item = '<li class="lvl-' + lvl + '"><a href="#' + esc(current.id + "/" + h.id) + '" data-target="' + esc(h.id) + '">' + esc(h.textContent) + "</a>";
+      if (lvl === top) {
+        if (openSub) { html += "</ul></li>"; openSub = false; } else if (html !== "<ul>") html += "</li>";
+        html += item;
+      } else {
+        if (!openSub) { html += "<ul>"; openSub = true; }
+        html += item + "</li>";
+      }
+    });
+    html += openSub ? "</ul></li></ul>" : (heads.length ? "</li></ul>" : "</ul>");
+    toc.innerHTML = heads.length ? html : '<p class="icx-status" style="padding:0">No sections</p>';
+
+    // highlight the section currently on screen
+    tocHeads = heads;
+    tocLinks = {};
+    toc.querySelectorAll("a").forEach(function (a) { tocLinks[a.dataset.target] = a; });
+    updateActive();
+  }
+
+  var tocHeads = [], tocLinks = {}, pinnedId = null, ticking = false;
+  function setActive(id) {
+    var link = tocLinks[id];
+    if (!link || link.classList.contains("is-active")) return;
+    toc.querySelectorAll("a.is-active").forEach(function (a) { a.classList.remove("is-active"); });
+    link.classList.add("is-active");
+    var sb = root.querySelector(".icx-sidebar");
+    if (sb.scrollHeight > sb.clientHeight) {
+      var lt = link.offsetTop, st = sb.scrollTop;
+      if (lt < st + 60 || lt > st + sb.clientHeight - 60) sb.scrollTop = lt - sb.clientHeight / 3;
+    }
+  }
+  function updateActive() {
+    if (!tocHeads.length) return;
+    if (pinnedId) { setActive(pinnedId); return; }
+    var line = topPx + 40, active = tocHeads[0];
+    var atBottom = window.innerHeight + window.pageYOffset >= document.documentElement.scrollHeight - 4;
+    for (var i = 0; i < tocHeads.length; i++) {
+      var top = tocHeads[i].getBoundingClientRect().top;
+      if (top <= line || (atBottom && top < window.innerHeight)) active = tocHeads[i];
+    }
+    setActive(active.id);
+  }
+  window.addEventListener("scroll", function () {
+    if (ticking) return; ticking = true;
+    requestAnimationFrame(function () { ticking = false; updateActive(); });
+  }, { passive: true });
+  // a click on a contents link highlights that entry, even if the page can't scroll it to the top
+  ["wheel", "touchstart", "keydown"].forEach(function (ev) {
+    window.addEventListener(ev, function () { pinnedId = null; }, { passive: true });
+  });
+
+  function buildPager(guide) {
+    var i = guides.indexOf(guide), prev = guides[i - 1], next = guides[i + 1];
+    if (!prev && !next) return;
+    var div = document.createElement("nav"); div.className = "icx-pager";
+    div.innerHTML =
+      (prev ? '<a class="prev" href="#' + esc(prev.id) + '"><small>Previous</small>‹ ' + esc(prev.title) + "</a>" : "") +
+      (next ? '<a class="next" href="#' + esc(next.id) + '"><small>Next</small>' + esc(next.title) + " ›</a>" : "");
+    body.appendChild(div);
+  }
+
+  function scrollToSection(id, smooth) {
+    var el = id && document.getElementById(id);
+    pinnedId = el && tocLinks[id] ? id : null;
+    if (el && body.contains(el)) el.scrollIntoView({ behavior: smooth ? "smooth" : "auto", block: "start" });
+    else if (!id) {
+      var y = root.getBoundingClientRect().top + window.pageYOffset - topPx - 24;
+      if (window.pageYOffset > y) window.scrollTo({ top: y, behavior: smooth ? "smooth" : "auto" });
+    }
+  }
+
+  // ---- routing (#guide-id/section-id) ----
+  function route(smooth) {
+    var h = parseHash();
+    var guide = guides.filter(function (g) { return g.id === h.guide; })[0] || guides[0];
+    if (!guide) return;
+    root.classList.remove("toc-open"); toggle.setAttribute("aria-expanded", "false");
+    if (current === guide) { scrollToSection(h.section, smooth); return; }
+    current = guide; select.value = guide.id;
+    body.innerHTML = '<p class="icx-status">Loading ' + esc(guide.title) + "…</p>";
+    fetchText(guide.file).then(function (md) {
+      if (current !== guide) return;
+      render(guide, md);
+      scrollToSection(h.section, false);
+    }).catch(function (e) {
+      body.innerHTML = '<p class="icx-status">Sorry — this guide could not be loaded (' + esc(e.message) + ").</p>";
+    });
+  }
+
+  toggle.addEventListener("click", function () {
+    var open = root.classList.toggle("toc-open");
+    toggle.setAttribute("aria-expanded", open ? "true" : "false");
+  });
+  window.addEventListener("hashchange", function () { route(true); });
+
+  // ---- start ----
+  fixStickyParents();
+  Promise.all([
+    window.marked ? 0 : loadScript("https://cdnjs.cloudflare.com/ajax/libs/marked/12.0.2/marked.min.js"),
+    window.DOMPurify ? 0 : loadScript("https://cdnjs.cloudflare.com/ajax/libs/dompurify/3.1.6/purify.min.js")
+  ]).then(function () {
+    marked.setOptions({ gfm: true });
+    return fetchText(C.manifest);
+  }).then(function (txt) {
+    var data = JSON.parse(txt);
+    guides = data.guides || data;
+    buildSelect();
+    route(false);
+  }).catch(function (e) {
+    body.innerHTML = '<p class="icx-status">Sorry — the user guides could not be loaded (' + esc(e.message) + ").</p>";
+  });
+})();
+</script>
