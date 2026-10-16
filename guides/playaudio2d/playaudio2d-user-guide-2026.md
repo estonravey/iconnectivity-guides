@@ -90,7 +90,7 @@ Read on in the Auracle X section below for more information.
 
 ## Recommended Software Installation
 ### Windows - Install iConnectivity RTP MIDI Driver for Network MIDI
-![rtpMIDI network driver](/guides/playaudio2d/images/third-party-apps/rtp-midi.png)
+![rtpMIDI network driver](images/third-party-apps/rtp-midi.png)
 
 The RTP-MIDI driver for Network MIDI can be found at https://www.iconnectivity.com/windows-drivers
 
@@ -100,7 +100,7 @@ https://support.apple.com/en-us/106380
 Launch the rtpMIDISetup Application and follow all prompts to install.
 
 ### Dante Controller & Dante Updater
-![Dante Controller](/guides/playaudio2d/images/dante-controller/dc-routing-pa2u%20tx.png)
+![Dante Controller](images/dante-controller/dc-routing-pa2u%20tx.png)
 
 Routing digital audio to and/or from your PlayAUDIO2D is achieved by using Audinate’s Dante Controller application located at
 https://www.getDante.com/products/software-essentials/Dante-controller/
@@ -127,14 +127,14 @@ Download the latest version of the Auracle X software installer at: https://www.
 
 ### Mac Users
 ## First time Installation
-![Auracle X .dmg](/guides/playaudio2d/images/ax-install/ax-dmg.png)
+![Auracle X .dmg](images/ax-install/ax-dmg.png)
 
 When the Auracle X application has finished downloading open the .dmg file
 
 Drag the Auracle X application to the Applications folder.
 
 ### Mac Users: Auracle X update
-![Auracle X firmware update](/guides/playaudio2d/images/ax-install/ax-check-updates.png)
+![Auracle X firmware update](images/ax-install/ax-check-updates.png)
 
 If you already have the Auracle X application installed, use the Auracle X main menu to check for updates and follow the prompts that follow if a newer version of Auracle X is available.
 
@@ -143,11 +143,11 @@ If you already have the Auracle X application installed, use the Auracle X main 
 
 When the package installer download is complete, run the Auracle X installer.
 
-![Windows installation](/guides/playaudio2d/images/ax-install/win-ax-install.png)
+![Windows installation](images/ax-install/win-ax-install.png)
 
 Click Yes to allow Auracle X Setup
 
-![Windows install for all users](/guides/playaudio2d/images/ax-install/win-ax-install-2.png)
+![Windows install for all users](images/ax-install/win-ax-install-2.png)
 
 Install for all users
 
