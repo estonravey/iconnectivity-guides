@@ -38,6 +38,28 @@ The contents window is built automatically, so don't add a table of contents, se
 
 The `id` appears in the web address (`/user-guide#mioxl`), so keep it short, lowercase and without spaces. `group` puts guides under a heading in the Guide menu. The order in `guides.json` is the order in the menu and of the Previous / Next buttons.
 
+## PDF downloads
+
+To offer a downloadable PDF of a guide, add `pdf` to the guide's line in `guides.json`. A "Download PDF" button then appears under the guide's title, and the guide is listed under **PDF downloads** in the contents window. Guides without `pdf` show neither.
+
+The PDF can be stored in the repository, next to the guide:
+
+```json
+{ "id": "playaudio2d", "title": "PlayAUDIO2D", "file": "playaudio2d/playaudio2d-user-guide-2026.md", "group": "Audio Interfaces",
+  "pdf": "playaudio2d/playaudio2d-user-guide-2026.pdf", "pdfSize": "6.8 MB" }
+```
+
+Or it can be a full web address, such as a PDF uploaded to Squarespace:
+
+```json
+  "pdf": "https://www.iconnectivity.com/s/playaudio2d-user-guide.pdf"
+```
+
+- `pdfSize` is optional and is shown next to the link.
+- A PDF stored in the repository must be under 20 MB. Use a web address for larger files.
+- Use a file name without spaces.
+- When you replace a PDF stored in the repository, purge it at jsDelivr like any other file, or people may get the old copy for up to 12 hours.
+
 ## Images
 
 Reference images relative to the guide file. The text in square brackets is shown as the caption under the picture:
