@@ -84,7 +84,7 @@ Quick and simple configuration of the PlayAUDIO2D is possible via onboard contro
 
 Read on in the Auracle X section below for more information.
 
-![Auracle X audio page for the PlayAUDIO2D](images/auracle-x/00%20audio.main.png)
+![Auracle X audio page for the PlayAUDIO2D](images/auracle-x/00-audio.main.png)
 
 > **Note:** All analog output volumes including the headphones output are muted by default and need to be raised for monitoring.
 
@@ -102,7 +102,7 @@ Launch the rtpMIDISetup Application and follow all prompts to install.
 
 ### Dante Controller & Dante Updater
 
-![Dante Controller](images/dante-controller/dc-routing-pa2u%20tx.png)
+![Dante Controller](images/dante-controller/dc-routing-pa2u-tx.png)
 
 Routing digital audio to and/or from your PlayAUDIO2D is achieved by using Audinate’s Dante Controller application located at
 https://www.getDante.com/products/software-essentials/Dante-controller/
@@ -281,22 +281,22 @@ For information on how to use a footswitch to initiate manual failover, please s
 ### Safe Mode
 The Safe Mode feature is integrated into your PlayAUDIO2D interface to safeguard performers and audience members from potentially harmful audio levels. Activation of Safe Mode is indicated by the display of a dedicated Safe Mode screen and alternating red LEDs within the Audio LED section on the front panel. Upon activation, all outputs, excluding the headphone output, will be automatically muted.
 
-![Safe Mode screen](images/05%20safemode/safemode%2001.png)
+![Safe Mode screen](images/05-safemode/safemode-01.png)
 
-![Warning icon on the Tone A meter](images/05%20safemode/03%20check%20exceed%20.png)
+![Warning icon on the Tone A meter](images/05-safemode/03-check-exceed.png)
 
-![Safe Mode options: Check, Disable, Unmute](images/05%20safemode/02.png)
+![Safe Mode options: Check, Disable, Unmute](images/05-safemode/02.png)
 
-![Safe Mode options: Check, Enable, Mute](images/05%20safemode/04%20check%20enable.png)
+![Safe Mode options: Check, Enable, Mute](images/05-safemode/04-check-enable.png)
 
 For more information about Safe Mode including Safe Mode triggers and how to disengage Safe Mode and return to normal operation, please see our Safe Mode Guide at https://www.iconnectivity.com/safemode
 
 ## Controls
 
 ### OLED Home Page Legend
-![Home page: Scene A armed for automatic failover (shield and sine wave icons)](images/00-scene/audio%2000%20dual%20master%20audio%20input.png)
+![Home page: Scene A armed for automatic failover (shield and sine wave icons)](images/00-scene/00-dual-master.png)
 
-![Home page: tone check enabled, no tone detected (checkmark and flat line icons)](images/00-scene/audio%2000%20start.png)
+![Home page: tone check enabled, no tone detected (checkmark and flat line icons)](images/00-scene/00-start.png)
 
 Scene Indicator Icon Legend (Top Left next to Scene A or Scene B Indicator):
 
@@ -329,7 +329,7 @@ Fine adjustments are recommended if there is a risk of signal overload. Rotary E
 | Enter Bootloader Mode | Long press the main rotary encoder for approximately 6 seconds until all Mode buttons illuminate red and release while buttons are still illuminated red. |
 | View Failover Tone information    | From the Home page, turn the encoder clockwise to access audio meter displays showing the current level of the failover tone in both numerical and live metering <br>No tone will produce a blank meter display above the “Tone A” and “Tone B” labels. <br>Note that a failover tone level above -3dBFS will cause the PlayAUDIO2D to enter into Safe Mode and all analog and Dante Transmit outputs to be automatically muted. <br>You will not be able to unmute analog outputs until the failover tone level is adjusted below the threshold displayed on the Tone Meter menu page. |
 
-![Failover tone meters for Tone A and Tone B](images/00-scene/audio%2005%20tone.png)
+![Failover tone meters for Tone A and Tone B](images/00-scene/05-tone.png)
 
 ### Mode Buttons
 
@@ -362,33 +362,33 @@ Rotate the encoder to move between the pages listed below, and short press to se
     - Short press to call the edit output channel window, where all or one of 32 Dante digital output channels may be selected to edit.
     - Press Exit to climb out of the menu hierarchy.
 
-    ![Dante transmit monitoring](images/00-scene/audio%2002%20digital%20outputs.png)
+    ![Dante transmit monitoring](images/00-scene/02-digital-outputs.png)
 
-    ![Dante transmit channel selection](images/00-scene/audio%2002.1%20digital%20outputs%20enc.png)
+    ![Dante transmit channel selection](images/00-scene/02.1-digital-outputs-enc.png)
 
 3. Analog input monitoring including phantom and HiZ indicators
     - Short press to call the edit analog input channel window, where all or one of four analog input channels may be selected to edit.
     - Press Exit to climb out of the menu hierarchy.
 
-    ![Analog input monitoring](images/00-scene/audio%2003%20analog%20inputs.png)
+    ![Analog input monitoring](images/00-scene/03-analog-inputs.png)
 
-    ![Analog input channel selection](images/00-scene/audio%2003.1%20analog%20inputs%20enc.png)
+    ![Analog input channel selection](images/00-scene/03.1-analog-inputs-enc.png)
 
 4. Dante digital receive monitoring: 8 channels
     - Press to call the edit Dante receive channel menu, where all or one of eight Dante digital receive channels may be selected to edit.
     - Press Exit to climb out of the menu hierarchy.
 
-    ![Dante receive monitoring](images/00-scene/audio%2004%20dante%20rx.png)
+    ![Dante receive monitoring](images/00-scene/04-dante-rx.png)
 
-    ![Dante receive channel selection](images/00-scene/audio%2004.1%20dante%20rx%20enc.png)
+    ![Dante receive channel selection](images/00-scene/04.1-dante-rx-enc.png)
 
 5. Failover Tone Meter Monitoring including threshold setting
     - Press to call the output plus Tone Meter Monitoring window where you can view all 32 output meters plus failover tone
     - Turn to select between monitoring DAW A or DAW B
 
-    ![DAW A outputs with Tone A meter](images/00-scene/audio%2005.1%20tone%20A%20enc.png)
+    ![DAW A outputs with Tone A meter](images/00-scene/05.1-tone-a-enc.png)
 
-    ![DAW B outputs with Tone B meter](images/00-scene/audio%2005.1%20tone%20B%20enc.png)
+    ![DAW B outputs with Tone B meter](images/00-scene/05.1-tone-b-enc.png)
 
 Each page will have varying selectable parameters. Short press the encoder to select editable parameters; rotate the encoder to change the value of the selected parameter.
 
@@ -403,17 +403,17 @@ Press the Input Mode button again to toggle between Analog inputs and Dante rece
 
 The Input page displays analog input gain level and active input metering, 48V and Hi-Z status on analog inputs and allows you to edit these parameters.
 
-![Analog inputs: gain, 48V and Hi-Z status with live meters](images/01-input/00%20analog%20inputs.png)
+![Analog inputs: gain, 48V and Hi-Z status with live meters](images/01-input/analog-inputs.png)
 
 ##### Dante Receive channel monitoring
 
 The Input page also displays the active input level of Dante receive channels 1-8 and allows you to mute or unmute all or individual Dante receive channels.
 
-![Dante receive channels 1-8 with live meters](images/01-input/dante%20rx%20live%20meters.png)
+![Dante receive channels 1-8 with live meters](images/01-input/dante-rx-live-meters.png)
 
-![Dante receive: all channels selected](images/01-input/dante%20rx%20all.png)
+![Dante receive: all channels selected](images/01-input/dante-rx-all.png)
 
-![Dante receive: channel 1 selected](images/01-input/dante%20rx%201%20ch.png)
+![Dante receive: channel 1 selected](images/01-input/dante-rx-1-ch.png)
 
 ##### Editing Analog Input Channels
 
@@ -423,11 +423,11 @@ Rotate the main encoder to toggle between editable audio input parameters and sh
 
 Turn the main encoder to change the value of the selected parameter. Press the main encoder again to select another editable parameter.
 
-![Editing analog input 1](images/01-input/analog%20input%20edit%20single.png)
+![Editing analog input 1](images/01-input/analog-input-edit-single.png)
 
-![Editing all analog inputs](images/01-input/00.1%20analog%20inputs%20some%20mute.png)
+![Editing all analog inputs](images/01-input/analog-inputs-some-mute.png)
 
-![Analog inputs after editing](images/01-input/00.1.2%20analog%20inputs%20all%20edits.png)
+![Analog inputs after editing](images/01-input/analog-inputs-all-edits.png)
 
 #### Output
 
@@ -443,13 +443,13 @@ Rotate the main encoder to select a single channel or all channels. Short press 
 
 The Output page displays active analog output metering and allows you to edit these parameters.
 
-![Analog outputs with live meters](images/02%20Output/analog%20outputs%20live.png)
+![Analog outputs with live meters](images/02-output/analog-outputs-live.png)
 
 ##### Dante Transmit Channel Monitoring
 
 The Output page also displays the active output level of Dante transmit channels 1-32 and allows you to mute or unmute all or individual Dante transmit channels.
 
-![Dante transmit channels 1-32 with live meters](images/02%20Output/dante%20tx%2032%20monitoring.png)
+![Dante transmit channels 1-32 with live meters](images/02-output/dante-tx-32-monitoring.png)
 
 ##### Editing Analog Output Channels
 
@@ -467,21 +467,21 @@ You can also press the Output Mode button to step through all outputs one at a t
 
 Continuing to short press the Output Mode Button will wrap around to the first audio output channel.
 
-![Editing all analog outputs](images/02%20Output/analog%20single%20edit.png)
+![Editing all analog outputs](images/02-output/analog-single-edit.png)
 
 ##### Editing Dante Transmit Channels
 
 Dante transmit channels can only be edited for mute/unmute.
 
-![Dante transmit: all channels selected](images/02%20Output/dante%20tx%20detail.png)
+![Dante transmit: all channels selected](images/02-output/dante-tx-detail.png)
 
-![Dante transmit: channel 19 selected](images/02%20Output/Dante%20Tx%20monitoring.png)
+![Dante transmit: channel 19 selected](images/02-output/dante-tx-monitoring.png)
 
 #### MIDI
 
 The MIDI menu page displays real-time monitoring of all PlayAUDIO2D MIDI inputs and outputs grouped by physical MIDI port.
 
-![MIDI monitor page](images/03%20midi/midi%20monitor.png)
+![MIDI monitor page](images/03-midi/midi-monitor.png)
 
 Press the MIDI Mode button to call the PlayAUDIO2D’s onboard MIDI monitor page.
 
@@ -506,7 +506,7 @@ If a MIDI message is detected on an actively monitored MIDI input/output group f
 
 Press the System Mode Button to display the PlayAUDIO2D info page
 
-![System info page](images/04%20system/system.png)
+![System info page](images/04-system/system.png)
 
 #### Exit
 
@@ -530,7 +530,7 @@ Double tap the headphone encoder rapidly to engage Global Mute, muting all analo
 
 Double tap again while Global Mute is active to unmute.
 
-![Global Mute on the display](images/auracle-x/mute%20global%20mute.png)
+![Global Mute on the display](images/auracle-x/mute-global-mute.png)
 
 ![Global Mute ON in Auracle X](images/auracle-x/global-mute-on.png)
 
@@ -544,7 +544,7 @@ To select between headphone mixer options:
 
 2. Turn the headphone encoder slowly to raise or lower the selected headphone mix volume in 0.5 dB increments.
 
-![Headphones Mixer in Auracle X](images/auracle-x/02%20audio.headphones.png)
+![Headphones Mixer in Auracle X](images/auracle-x/02-audio.headphones.png)
 
 #### Headphone Mix Options: Scene A
 
@@ -647,11 +647,11 @@ All Dante settings and configuration options are managed by Audinate’s suite o
 
 [Dante Controller User Guide](https://dev.audinate.com/GA/dante-controller/userguide/pdf/latest/AUD-MAN-DanteController-4.18.x-v1.0.pdf)
 
-![Dante Controller routing: PlayAUDIO2D receive channels](images/dante-controller/dc-routing-pa2d%20rx.png)
+![Dante Controller routing: PlayAUDIO2D receive channels](images/dante-controller/dc-routing-pa2d-rx.png)
 
-![Dante Controller routing: PlayAUDIO2D transmit channels](images/dante-controller/dc-routing-pa2u%20tx.png)
+![Dante Controller routing: PlayAUDIO2D transmit channels](images/dante-controller/dc-routing-pa2u-tx.png)
 
-![Dante channels in Auracle X](images/auracle-x/01%20audio.dante.png)
+![Dante channels in Auracle X](images/auracle-x/01-audio.dante.png)
 
 ## Dante Network Configuration using Dante Controller
 
