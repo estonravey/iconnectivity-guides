@@ -135,6 +135,29 @@ window.ICX_GUIDE_CONFIG = {
 #icx-guide .icx-body hr { border: 0; border-bottom: 1px solid #ccc; margin: 2.5em 0; }
 
 /* Previous / Next styled like the site's buttons */
+/* PDF downloads: list in the contents window + button under the guide title */
+#icx-guide .icx-downloads { margin: 0 0 36px; }
+#icx-guide .icx-downloads[hidden] { display: none; }
+#icx-guide .icx-downloads ul { list-style: none; margin: 0; padding: 0; }
+#icx-guide .icx-downloads li { margin: 0; padding: 0; }
+#icx-guide .icx-dl-link {
+  display: flex; align-items: baseline; gap: 10px; padding: 5px 0;
+  font-family: var(--icx-font); font-size: 16px; line-height: 1.35; letter-spacing: .02em;
+  color: var(--icx-nav); text-decoration: none; border: 0; transition: color .15s ease-out;
+}
+#icx-guide .icx-dl-link:hover { color: var(--icx-accent); }
+#icx-guide .icx-dl-link.is-current { color: var(--icx-heading); }
+#icx-guide .icx-dl-link small { margin-left: auto; font-size: 12px; letter-spacing: .06em; color: var(--icx-muted); white-space: nowrap; }
+#icx-guide .icx-dl-icon { flex: none; width: 14px; height: 14px; position: relative; top: 2px; }
+#icx-guide .icx-body .icx-pdf-button {
+  display: inline-flex; align-items: center; gap: 10px; margin: 0 0 1em; padding: .85em 1.6em;
+  border: 2px solid var(--icx-button); color: var(--icx-button); background: transparent; text-decoration: none;
+  font-family: var(--icx-font); font-size: 13px; line-height: 1.2; font-weight: 600;
+  letter-spacing: 1px; text-transform: uppercase; transition: background-color .15s ease-out, color .15s ease-out;
+}
+#icx-guide .icx-body .icx-pdf-button:hover { background: var(--icx-button); color: #fff; border-color: var(--icx-button); }
+#icx-guide .icx-body .icx-pdf-button small { font-size: 11px; font-weight: 400; letter-spacing: .06em; opacity: .7; text-transform: none; }
+
 #icx-guide .icx-pager {
   display: flex; justify-content: space-between; gap: 16px; flex-wrap: wrap;
   margin-top: 4em; padding-top: 2em; border-top: 1px solid var(--icx-line);
@@ -185,6 +208,10 @@ window.ICX_GUIDE_CONFIG = {
     <div class="icx-panel">
       <label class="icx-label" for="icx-select">Guide</label>
       <select id="icx-select" class="icx-select"></select>
+      <div class="icx-downloads" hidden>
+        <span class="icx-label">PDF downloads</span>
+        <ul></ul>
+      </div>
       <span class="icx-label">On this page</span>
       <nav class="icx-toc"></nav>
     </div>
@@ -279,6 +306,36 @@ window.ICX_GUIDE_CONFIG = {
   }
 
   // ---- sidebar guide picker ----
+  // ---- PDF downloads ----
+  // A guide gets PDF links when its entry in guides.json has "pdf": a path inside the repo
+  // (e.g. "playaudio2d/playaudio2d-user-guide.pdf") or a full https:// address. Optional "pdfSize": "4.2 MB".
+  var DL_ICON = '<svg class="icx-dl-icon" viewBox="0 0 16 16" aria-hidden="true" fill="none" stroke="currentColor" stroke-width="1.6">' +
+                '<path d="M8 1.5v9M4.5 7 8 10.5 11.5 7M2 12.5v2h12v-2"/></svg>';
+  function pdfUrl(g) {
+    if (!g.pdf) return "";
+    return /^https?:\/\//i.test(g.pdf) ? g.pdf : new URL(g.pdf, C.baseUrl || location.href).href;
+  }
+  function buildDownloads() {
+    var box = root.querySelector(".icx-downloads"), list = box.querySelector("ul");
+    var withPdf = guides.filter(function (g) { return g.pdf; });
+    list.innerHTML = withPdf.map(function (g) {
+      return '<li><a class="icx-dl-link" data-guide="' + esc(g.id) + '" href="' + esc(pdfUrl(g)) + '" target="_blank" rel="noopener">' +
+             DL_ICON + '<span>' + esc(g.title) + '</span><small>PDF' + (g.pdfSize ? " · " + esc(g.pdfSize) : "") + '</small></a></li>';
+    }).join("");
+    box.hidden = !withPdf.length;
+  }
+  function markCurrentDownload() {
+    root.querySelectorAll(".icx-dl-link").forEach(function (a) { a.classList.toggle("is-current", current && a.dataset.guide === current.id); });
+  }
+  function addPdfButton(guide) {
+    if (!guide.pdf) return;
+    var a = document.createElement("a");
+    a.className = "icx-pdf-button"; a.href = pdfUrl(guide); a.target = "_blank"; a.rel = "noopener";
+    a.innerHTML = DL_ICON + "Download PDF" + (guide.pdfSize ? " <small>" + esc(guide.pdfSize) + "</small>" : "");
+    var h1 = body.querySelector("h1");
+    if (h1) h1.insertAdjacentElement("afterend", a); else body.insertBefore(a, body.firstChild);
+  }
+
   function buildSelect() {
     var groups = {}, order = [];
     guides.forEach(function (g) {
@@ -350,6 +407,8 @@ window.ICX_GUIDE_CONFIG = {
 
     buildToc();
     buildPager(guide);
+    addPdfButton(guide);
+    markCurrentDownload();
     var h1 = body.querySelector("h1");
     if (h1 && !root.dataset.keepTitle) document.title = h1.textContent + " — " + (root.dataset.siteTitle || document.title.split(" — ").pop());
   }
@@ -469,6 +528,7 @@ window.ICX_GUIDE_CONFIG = {
     var data = JSON.parse(txt);
     guides = data.guides || data;
     buildSelect();
+    buildDownloads();
     route(false);
   }).catch(function (e) {
     body.innerHTML = '<p class="icx-status">Sorry — the user guides could not be loaded (' + esc(e.message) + ").</p>";
