@@ -45,7 +45,7 @@ Congratulations on the purchase of your new PlayAUDIO1U USB Audio, MIDI & Dante 
 
 ### Front Panel
 
-![Front panel]()
+![Front panel](images/playaudio1u-panel-front.png)
 
 - USB Host port. Directly plug in a class-compliant MIDI device, or plug in up to eight class-compliant MIDI devices via a powered USB hub (not included).
 - Control ports. Plug in up to two foot switches
@@ -59,7 +59,7 @@ Congratulations on the purchase of your new PlayAUDIO1U USB Audio, MIDI & Dante 
 
 ### Rear Panel
 
-![Rear panel]()
+![Rear panel](images/playaudio1u-panel-rear.png)
 
 - AC Power inlet. Fused Input jack for included IEC C13 power supply cable.
 - Power switch. Turn the PlayAUDIO1U on or off. The switch will illuminate when power is turned on. 
@@ -85,14 +85,14 @@ Quick and simple configuration of the PlayAUDIO1U is possible via onboard contro
 
 Read on in the Auracle X section below for more information.
 
-![Auracle X audio page for the PlayAUDIO1U]()
+![Auracle X audio page for the PlayAUDIO1U](images/playaudio1u-auracle-x-audio.png)
 
 > **Note:** All analog output volumes including the headphones output are muted by default and need to be raised for monitoring.
 
 ## Recommended Software Installation
 ### Windows - Install iConnectivity RTP MIDI Driver for Network MIDI
 
-![rtpMIDI network driver](images/third-party-apps/rtp-midi.png)
+![rtpMIDI network driver](../images/win-ax-install.png)
 
 The RTP-MIDI driver for Network MIDI can be found at https://www.iconnectivity.com/windows-drivers
 
@@ -270,7 +270,7 @@ Ensure that the PlayAUDIO1U is armed for automatic failover by checking for the 
 
 ### How to use PlayAUDIO1U Manual Failover
 
-Failover can be engaged manually by touching the Scene OLED button on the front panel of the PlayAUDIO1U. The current scene is indicated as follows:
+Failover can be engaged manually by touching the Scene OLED button on the front panel of the PlayAUDIO1U. The current scene is indicated as follows:merge  
 
 - Scene A: The Scene Touch OLED is illuminated in green, and the Touch panel display shows the letter “A”
 
@@ -278,17 +278,16 @@ Failover can be engaged manually by touching the Scene OLED button on the front 
 
 For information on how to use a footswitch to initiate manual failover, please see the updated Auracle X manual in the Control Ports section.
 
-<!--> Need Screenshots<!-->
 ### Safe Mode
 The Safe Mode feature is integrated into your PlayAUDIO1U interface to safeguard performers and audience members from potentially harmful audio levels. Activation of Safe Mode is indicated by the display of a dedicated Safe Mode screen and alternating red LEDs within the Audio LED section on the front panel. Upon activation, all outputs, excluding the headphone output, will be automatically muted.
 
-![Safe Mode screen]()
+![Safe Mode screen](../images/safemode-01.png)
 
 ![Warning icon on the Tone A meter]()
 
-![Safe Mode options: Check, Disable, Unmute]()
+![Safe Mode options: Check, Disable, Unmute](../images/safe-mode-check.png)
 
-![Safe Mode options: Check, Enable, Mute]()
+![Safe Mode options: Check, Enable, Mute](../images/safe-mode-enable.png)
 
 For more information about Safe Mode including Safe Mode triggers and how to disengage Safe Mode and return to normal operation, please see our Safe Mode Guide at https://www.iconnectivity.com/safemode
 
@@ -330,163 +329,68 @@ Fine adjustments are recommended if there is a risk of signal overload. Rotary E
 | Enter Bootloader Mode | Long press the main rotary encoder for approximately 6 seconds until all Mode buttons illuminate red and release while buttons are still illuminated red. |
 | View Failover Tone information    | From the Home page, turn the encoder clockwise to access audio meter displays showing the current level of the failover tone in both numerical and live metering <br>No tone will produce a blank meter display above the “Tone A” and “Tone B” labels. <br>Note that a failover tone level above -3dBFS will cause the PlayAUDIO1U to enter into Safe Mode and all analog and Dante Transmit outputs to be automatically muted. <br>You will not be able to unmute analog outputs until the failover tone level is adjusted below the threshold displayed on the Tone Meter menu page. |
 
-![Failover tone meters for Tone A and Tone B](images/00-scene/05-tone.png)
-
-### Mode Buttons
+### OLED Touch Panel
 
 The PlayAUDIO1U features Mode Buttons with fixed functionality for the most commonly used functions of the PlayAUDIO1U.
 
 | Button | Function |
 |---|---|
-| Input | Displays the audio input menu.<br>Press again to toggle between viewing the four front analog inputs and eight Dante receive channels.<br>When the Input menu is active, turn the encoder to cycle through editable parameters and press the encoder to edit the selected parameter |
-| Output | Displays the audio output menu.<br>Press again to toggle between viewing the 24 rear analog outputs and 32 Dante transmit channels.<br>When the Output menu is active, turn the encoder to cycle through editable parameters and press the encoder to edit the selected parameter |
+| Scene | Toggles the current scene between scene A and scene B |
+| Audio | Displays the audio output menu.<br>Press again to toggle between viewing the 24 rear analog outputs and 32 Dante transmit channels.<br>When the Output menu is active, turn the encoder to cycle through editable parameters and press the encoder to edit the selected parameter |
 | MIDI | Calls the MIDI monitoring page. <br>Turn the encoder to cycle between MIDI monitoring pages for all PlayAUDIO1U MIDI ports.<br>Double tap the encoder while the MIDI page is active to generate a MIDI Panic message to all MIDI ports |
-| System | Displays the PlayAUDIO1U info page |
 | Exit | Steps backward through the menu hierarchy per press |
 
 #### Scene
-The Scene page displays current output metering per channel on the currently active scene.
 
-Press the scene button to toggle the PlayAUDIO1U between Scene A and Scene B.
+Each single touch of either cap touch buttons above or below the Scene label toggles the current scene between A and B. 
 
-Rotate the encoder to move between the pages listed below, and short press to select one:
+The current scene selection is indicated by a large letter A or B on the OLED display or:
 
-1. Analog output monitoring including headphones, scene indicator, failover tone detection, and MIDI monitor
-    - Short press to call the edit output channel window, where all or one of 24 analog output channels may be selected to edit.
-    - Press Exit to climb out of the menu hierarchy.
+Green cap touch button above Scene label for Scene A.
 
-    ![Analog output monitoring](images/00-scene/01-analog-outputs.png)
+![PlayAUDIO1u Scene A active](images/playaudio1u-oled-scene-a.png)
 
-    ![Analog output channel selection](images/00-scene/01.1-analog-outs-enc-enter.png)
+Red cap touch button below Scene label for Scene B.
 
-2. Dante digital transmit monitoring: 32 channels
-    - Short press to call the edit output channel window, where all or one of 32 Dante digital output channels may be selected to edit.
-    - Press Exit to climb out of the menu hierarchy.
+![PlayAUDIO1u Scene A active](images/playaudio1u-oled-scene-b.png)
 
-    ![Dante transmit monitoring](images/00-scene/02-digital-outputs.png)
+#### Audio
 
-    ![Dante transmit channel selection](images/00-scene/02.1-digital-outputs-enc.png)
+![Playaudio1u OLED menu Audio selected](images//oled-audio.png)
 
-3. Analog input monitoring including phantom and HiZ indicators
-    - Short press to call the edit analog input channel window, where all or one of four analog input channels may be selected to edit.
-    - Press Exit to climb out of the menu hierarchy.
+Touch the top or bottom Audio cap touch button to access the Audio menu page displayed below. The main audio page monitors output level of all rear analog outputs and offers the ability to choose any or all outputs for level adjustment.
 
-    ![Analog input monitoring](images/00-scene/03-analog-inputs.png)
+![PlayAUDIO1U audio output meters](images/display-audio-outs.png)
 
-    ![Analog input channel selection](images/00-scene/03.1-analog-inputs-enc.png)
+Once the Audio page is active, use the rotary encoder to:
 
-4. Dante digital receive monitoring: 8 channels
-    - Press to call the edit Dante receive channel menu, where all or one of eight Dante digital receive channels may be selected to edit.
-    - Press Exit to climb out of the menu hierarchy.
+![PlayAUDIO1U single audio output monitor](images/display-audio-out-1.png)
 
-    ![Dante receive monitoring](images/00-scene/04-dante-rx.png)
+1. Scroll through audio outputs between all, and 1-12 singularly.
 
-    ![Dante receive channel selection](images/00-scene/04.1-dante-rx-enc.png)
+2. Short press to select the highlighted audio output or all-output group.
 
-5. Failover Tone Meter Monitoring including threshold setting
-    - Press to call the output plus Tone Meter Monitoring window where you can view all 32 output meters plus failover tone
-    - Turn to select between monitoring DAW A or DAW B
+3. Short press again to exit to the main Audio page.
 
-    ![DAW A outputs with Tone A meter](images/00-scene/05.1-tone-a-enc.png)
-
-    ![DAW B outputs with Tone B meter](images/00-scene/05.1-tone-b-enc.png)
-
-Each page will have varying selectable parameters. Short press the encoder to select editable parameters; rotate the encoder to change the value of the selected parameter.
-
-#### Input
-The Input page monitors and edits analog inputs and digital receive channels.
-
-Press the Input Mode button to call the Analog Input menu.
-
-Press the Input Mode button again to toggle between Analog inputs and Dante receive channel monitoring.
-
-##### Analog Input monitoring
-
-The Input page displays analog input gain level and active input metering, 48V and Hi-Z status on analog inputs and allows you to edit these parameters.
-
-![Analog inputs: gain, 48V and Hi-Z status with live meters](images/01-input/analog-inputs.png)
-
-##### Dante Receive channel monitoring
-
-The Input page also displays the active input level of Dante receive channels 1-8 and allows you to mute or unmute all or individual Dante receive channels.
-
-![Dante receive channels 1-8 with live meters](images/01-input/dante-rx-live-meters.png)
-
-![Dante receive: all channels selected](images/01-input/dante-rx-all.png)
-
-![Dante receive: channel 1 selected](images/01-input/dante-rx-1-ch.png)
-
-##### Editing Analog Input Channels
-
-Once a single audio input channel or all audio input channels are selected, a detailed menu of editable input parameters appears.
-
-Rotate the main encoder to toggle between editable audio input parameters and short press the main encoder to edit the selected parameter.
-
-Turn the main encoder to change the value of the selected parameter. Press the main encoder again to select another editable parameter.
-
-![Editing analog input 1](images/01-input/analog-input-edit-single.png)
-
-![Editing all analog inputs](images/01-input/analog-inputs-some-mute.png)
-
-![Analog inputs after editing](images/01-input/analog-inputs-all-edits.png)
-
-#### Output
-
-The Output page monitors and edits all 24 rear analog outputs and all 32 Dante transmit channels.
-
-Press the Output Mode button to call the Output menu.
-
-Press the Output Mode button again to toggle between Analog outputs and Dante Transmit channel monitoring.
-
-Rotate the main encoder to select a single channel or all channels. Short press the main encoder to edit the selected output channel(s).
-
-##### Analog Output Monitoring
-
-The Output page displays active analog output metering and allows you to edit these parameters.
-
-![Analog outputs with live meters](images/02-output/analog-outputs-live.png)
-
-##### Dante Transmit Channel Monitoring
-
-The Output page also displays the active output level of Dante transmit channels 1-32 and allows you to mute or unmute all or individual Dante transmit channels.
-
-![Dante transmit channels 1-32 with live meters](images/02-output/dante-tx-32-monitoring.png)
-
-##### Editing Analog Output Channels
-
-Select a single or all analog output channels by turning the encoder to the channel(s) you wish to edit and pressing the encoder.
-
-A detailed menu of editable audio output parameters appears.
-
-Rotate the main encoder to toggle between editable audio output parameters and short press the main encoder to edit the selected parameter.
-
-Turn the main encoder to change the value of the selected parameter.
-
-Short press the main encoder again to unselect the edited parameter.
-
-You can also press the Output Mode button to step through all outputs one at a time, then all twenty-four outputs.
-
-Continuing to short press the Output Mode Button will wrap around to the first audio output channel.
-
-![Editing all analog outputs](images/02-output/analog-single-edit.png)
-
-##### Editing Dante Transmit Channels
-
-Dante transmit channels can only be edited for mute/unmute.
-
-![Dante transmit: all channels selected](images/02-output/dante-tx-detail.png)
-
-![Dante transmit: channel 19 selected](images/02-output/dante-tx-monitoring.png)
+---
 
 #### MIDI
 
 The MIDI menu page displays real-time monitoring of all PlayAUDIO1U MIDI inputs and outputs grouped by physical MIDI port.
 
-![MIDI monitor page](images/03-midi/midi-monitor.png)
+![MIDI monitor page](images/playaudio1u-oled-midi.png)
 
-Press the MIDI Mode button to call the PlayAUDIO1U’s onboard MIDI monitor page.
+Touch the top or bottom MIDI cap touch button to access the MIDI menu page, displayed below. 
 
-Double-tapping the MIDI Mode button will send a MIDI Panic message to all MIDI outputs.
+The main MIDI page monitors MIDI traffic at the input or output channels of the selected port.
+
+![PlayAUDIO1U input MIDI monitor](images/playaudio1u-midi-monitor.png)
+
+![PlayAUDIO1U input MIDI monitor](images/playaudio1u-midi-monitor-2.png)
+
+1. Turn to cycle between MIDI port monitor pages: DAW A, DAW B, RTP, USB, DIN.
+
+2. Tap has no function.
 
 ---
 
@@ -503,15 +407,13 @@ If a MIDI message is detected on an actively monitored MIDI input/output group f
 | Bold Circle | Clock |
 | SX | SysEx message |
 
-#### System
-
-Press the System Mode Button to display the PlayAUDIO1U info page
-
-![System info page](images/04-system/system.png)
+---
 
 #### Exit
 
-Press the Exit Mode button to step out of the currently active menu hierarchy.
+Press the Exit cap touch button to exit to the main page.
+
+---
 
 ### Using the Headphone Rotary Encoder
 
@@ -525,317 +427,36 @@ Turn the headphone encoder to adjust the volume of the currently selected headph
 
 #### Global Mute
 
-Global Mute mutes all rear analog and Dante Transmit outputs and preserves the headphone output.
+Global Mute mutes all rear analog outputs and preserves the headphone output.
 
 Double tap the headphone encoder rapidly to engage Global Mute, muting all analog outputs and Dante transmit channels of the PlayAUDIO1U.
 
 Double tap again while Global Mute is active to unmute.
 
-![Global Mute on the display](images/auracle-x/mute-global-mute.png)
+Turn the encoder slowly to raise or lower the selected headphone mix volume in 0.5 dB increments.
 
-![Global Mute ON in Auracle X](images/auracle-x/global-mute-on.png)
+![Global Mute on the PlayAUDIO1U display](images/)
 
-#### Headphone Mixes
+![Global Mute ON in Auracle X](../images/)
 
-Each active Scene on the PlayAUDIO1U has four headphone mix options.
+### Using the Control Ports
 
-To select between headphone mixer options:
-
-1. Press the headphone encoder to call the headphone mix menu for the currently active Scene. Press again to exit.
-
-2. Turn the headphone encoder slowly to raise or lower the selected headphone mix volume in 0.5 dB increments.
-
-![Headphones Mixer in Auracle X](images/auracle-x/02-audio.headphones.png)
-
-#### Headphone Mix Options: Scene A
-
-##### Mix A1
-
-![Headphone Mix A1 on the display](images/hp/A1.png)
-
-- All 32 outputs from USB DAW A
-- All four analog inputs
-- All eight Dante receive channels
-
-##### Mix A2
-
-![Headphone Mix A2 on the display](images/hp/A2.png)
-
-- All 32 outputs from USB DAW A
-- All four analog inputs
-- All eight Dante receive channels
-
-##### Mix A3
-
-![Headphone Mix A3 on the display](images/hp/A3.png)
-
-- All 32 outputs from USB DAW B
-- All four analog inputs
-- All eight Dante receive channels
-
-##### Mix A4
-
-![Headphone Mix A4 on the display](images/hp/A4.png)
-
-- USB DAW A outputs 1-16; USB DAW B outputs 1-16
-- All four analog inputs
-- All eight Dante receive channels
-
-#### Headphone Mix Options: Scene B
-
-##### Mix B1
-
-![Headphone Mix B1 on the display](images/hp/B1.png)
-
-- All 32 outputs from USB DAW B
-- All four analog inputs
-- All eight Dante receive channels
-
-##### Mix B2
-
-![Headphone Mix B2 on the display](images/hp/B2.png)
-
-- All 32 outputs from USB DAW A
-- All four analog inputs
-- All eight Dante receive channels
-
-##### Mix B3
-
-![Headphone Mix B3 on the display](images/hp/b3.png)
-
-- All 32 outputs from USB DAW B
-- All four analog inputs
-- All eight Dante receive channels
-
-##### Mix B4
-
-![Headphone Mix B4 on the display](images/hp/B4.png)
-
-- USB DAW A outputs 1-16; USB DAW B outputs 1-16
-- All four analog inputs
-- All eight Dante receive channels
-
-### Control Buttons
-
-By default, each control button is mapped to a different MIDI note and transmits on MIDI channel 16 on the control port. Pressing a control button sends a Note On message (velocity 99),  and releasing a control button sends a Note Off message (velocity 0).
-
-From left to right, the default MIDI note programming is:
-
-| Button | Note |
-| --- | --- |
-| Button 1:	| Note 36 |
-| Button 2:	| Note 39 |
-| Button 3:	| Note 41 |
-| Button 4:	| Note 38 |
-
-Each Control button can also be custom mapped to a MIDI note, CC parameter and single value.
-
-### Using the Control Ports and Control Buttons
+![PlayAUDIO1U Contorl Ports](images/playaudio1u-control-ports.png)
 
 Use the PlayAUDIO1U Control ports with compatible footswitch(es) to Arm/Disarm/Toggle Failover Arm state, load Presets, toggle active scenes, send a spacebar key message, and/or send CC/PC or Note On/Off messages.
 
-The PlayAUDIO1U Control Buttons have the same programmable functionality as the user mappable Control ports described above.
-
 Complete instructions on configuring Control port footswitch actions can be found in our [Auracle documentation](https://www.iconnectivity.com/s/auracle-x-user-guide-260-20261013.pdf).
-
-## Dante Digital Audio
-
-The PlayAUDIO1U introduces Dante digital audio to the iConnectivity redundant playback ecosystem featuring 8 input/receive and 32 output/transmit channels available for routing to and from your PlayAUDIO1U.
-
-All Dante settings and configuration options are managed by Audinate’s suite of Dante applications including Dante Controller and Dante Updater:
-
-[Dante Software Applications Download](https://www.getdante.com/resources/software-downloads/)
-
-[Dante Controller User Guide](https://dev.audinate.com/GA/dante-controller/userguide/pdf/latest/AUD-MAN-DanteController-4.18.x-v1.0.pdf)
-
-![Dante Controller routing: PlayAUDIO1U receive channels](images/dante-controller/dc-routing-pa2d-rx.png)
-
-![Dante Controller routing: PlayAUDIO1U transmit channels](images/dante-controller/dc-routing-pa2u-tx.png)
-
-![Dante channels in Auracle X](images/auracle-x/01-audio.dante.png)
-
-## Dante Network Configuration using Dante Controller
-
-The PlayAUDIO1U's two rear-panel Ethernet ports, labeled RTP-MIDI Dante 1 and RTP-MIDI Dante 2, carry two independent classes of network traffic:
-
-- Dante audio — multichannel, low-latency digital audio distributed via Audinate's Dante protocol, including its clocking (PTP) and control traffic.
-- RTP-MIDI — MIDI data encapsulated for transport over standard Ethernet/IP networks (AppleMIDI / rtpMIDI session protocol), used for control, program change, and show-control data.
-
-Both ports can be configured in one of four ways, described on the following pages. Choose the configuration that matches the size of your network,
-the number of connected devices, and whether Dante redundancy is required for the performance.
-
-To change the network switch configuration including Dante Static/Dynamic IP addressing, subnet and router, use the Dante Controller application available here: https://www.getdante.com/resources/software-downloads/
-
-![Dante Controller Network Config tab: Switch Configuration options](images/dante-controller/dc-network-config.png)
-
-To change the RTP MIDI settings of the PlayAUDIO1U including RTP-MIDI IP addressing scheme, IP address, subnet, or gateway, please use our Auracle X application available here: https://www.iconnectivity.com/software/control-software
-
-> **Note:** Changing the PlayAUDIO1U Dante / MIDI switch configuration via Dante Controller requires the unit to be power cycled while the network interface resets.
-> **Note:** Do not connect both RJ45 jacks to the same Ethernet switch (or other device) because this will result in an Ethernet feedback loop.
-### Dante and MIDI Combined on Port 1 & Port 2
-
-| Port | Description |
-| --- | --- |
-| Port 1 | Dante audio + RTP-MIDI (switched network) |
-| Port 2 | Dante audio + RTP-MIDI (switched network) |
-| Redundancy | Not available in this mode |
-
-**Function**
-
-Port 1 and Port 2 function as an internal two-port switch rather than two separate networks.
-
-Dante audio and RTP-MIDI may be sent or received on either port, and additional devices may be daisy-chained from Port 2 to extend the network without an external switch.
-
-This is the unit's default, single-network mode, and is not the same as Dante redundant mode — there is only one audio network here, not a mirrored primary/secondary pair.
-
-**Recommendations**
-
-- Use for small to mid-sized systems, single-room installs, or touring rigs where minimizing cabling and switch count matters most.
-- Limit daisy-chained devices to roughly 4–6 before terminating into a managed switch; long chains add latency and reduce per-device bandwidth.
-- Enable QoS / DSCP prioritization on any downstream switch, with Dante audio given the highest priority above MIDI and general traffic.
-- Keep this network dedicated to AV traffic — do not bridge it to office IT, guest Wi-Fi, or internet-facing equipment.
-- Use Cat5e or better cabling and Gigabit-capable switches; a 100 Mbps link will constrain the number of simultaneous Dante channels available.
-- Enable IGMP snooping on managed switches in the chain to prevent multicast Dante traffic from flooding all ports.
-
-### Dante on Port 1, MIDI on Port 2
-
-| Port | Description |
-| --- | --- |
-| Port 1 | Dante audio only (dedicated) |
-| Port 2 | RTP-MIDI only (dedicated)    |
-| Redundancy | Not available in this mode |
-
-**Function**
-This configuration splits the two ports into independent logical networks. Port 1 carries Dante audio exclusively, including its clocking and control traffic.
-
-Port 2 carries RTP-MIDI exclusively, typically on its own IP subnet.
-
-Because the two networks are isolated at the unit, MIDI traffic cannot interfere with Dante clocking or audio delivery, and Dante traffic load has no effect on MIDI timing.
-
-**Recommendations**
-- Use for larger installations, high Dante channel counts, permanent installs, or systems where MIDI show control (timecode, program changes, tempo/clock data) must remain deterministic.
-- Where possible, terminate Port 1 and Port 2 into separate physical switches (or, at minimum, separate VLANs) to preserve isolation across the whole network, not just at the unit.
-- Assign each network its own IP subnet (for example 192.168.1.x for Dante and 192.168.2.x for MIDI) to avoid addressing conflicts and simplify troubleshooting.
-- Removing MIDI traffic from the Dante network keeps Dante Controller's device list and bandwidth reporting focused on audio traffic only.
-- Confirm that Bonjour/multicast discovery for RTP-MIDI session directories is not blocked if the MIDI subnet crosses a VLAN boundary.
-- Both ports still require properly rated cabling (Cat5e/Cat6) even though MIDI bandwidth needs are minimal — this configuration is about isolation, not throughput.
-
-### Redundant Dante, MIDI on Port 1 (Primary)
-
-| Port | Description |
-| --- | --- |
-| Port 1 | Dante audio — Primary network + RTP-MIDI |
-| Port 2 | Dante audio — Secondary network (mirrored) |
-| Redundancy | Dante redundant mode — audio only |
-
-**Function**
-Port 1 and Port 2 operate as Dante's Primary and Secondary redundant networks, each carrying an identical, mirrored copy of every Dante audio stream so that audio continues uninterrupted if one network path fails.
-
-In this variant, RTP-MIDI is added to Port 1, sharing the Primary network alongside Dante audio and clocking traffic.
-
-**Recommendations**
-- Understand that redundancy applies to audio only: if the Primary link fails, audio continues on Secondary, but MIDI control is lost because it has no failover path of its own.
-- Enable QoS / DSCP prioritization on the Primary switch, with Dante clocking and audio given priority over MIDI, since Primary carries the network Dante uses as its timing reference.
-- Best suited to systems where MIDI show control is a secondary, non-time-critical function rather than the Primary network's main purpose.
-- Keep the Primary switch fully dedicated to Dante Primary and MIDI traffic and do not extend it to house or general IT networks.
-- Label Port 1 / Primary clearly as a combined audio + MIDI path in patch schedules and rack documentation.
-
-### Redundant Dante, MIDI on Port 2 (Secondary)
-
-| Port | Description |
-| --- | --- |
-| Port 1 | Dante audio — Primary network
-| Port 2 | Dante audio — Secondary network + RTP-MIDI
-| Redundancy | Dante redundant mode — audio only
-**Function**
-
-Port 1 and Port 2 operate as Dante's Primary and Secondary redundant networks, each carrying an identical, mirrored copy of every Dante audio stream so that audio continues uninterrupted if one network path fails.
-
-In this variant, RTP-MIDI is added to Port 2, sharing the Secondary network alongside Dante audio and clocking traffic.
-
-**Recommendations**
-
-- Prefer this configuration whenever a choice is available. It is the recommended pairing when Dante redundancy and RTP-MIDI must share the unit's two ports.
-- Remember that MIDI still has no redundancy of its own: if the Secondary link fails, MIDI is lost even though audio continues via Primary.
-- Prioritize Secondary Dante audio and clocking above MIDI on this switch; during a Primary failure, Secondary becomes the live audio network and must perform at full audio priority.
-- Keep the Secondary switch on a dedicated AV network segment, isolated from office, IT, and guest traffic, exactly as with the Primary switch.
-- Suitable for broadcast, touring front-of-house, or any permanent install using Dante redundancy where MIDI is present but not mission-critical.
-
-### Configuration Summary
-
-Use the table below to compare all four supported configurations at a glance.
-
-| | Combined (Port 1 & 2) | Split (Dante / MIDI) | Redundant + MIDI on Primary | Redundant + MIDI on Secondary |
-| --- | --- | --- | --- | --- |
-| Ports Required | 1 logical internal switch | 2 independent networks | 2 (Primary/Secondary) | 2 (Primary/Secondary) |
-| Audio redundancy| none | none | yes | yes |
-| MIDI redundancy | N/A | N/A | None | None |
-| Network isolation | None | Full | Partial (Primary) | Partial (Secondary) |
-| Clock stability impact | Low-moderate | None | Moderate | Low |
-| Setup complexity | Low | Moderate | High | High |
-| Recommended for | Small/touring rigs | Large / latency-critical installs | Redundant systems | Redundant systems; best practice default |
-
-> **Note:** When Dante redundancy and RTP-MIDI must share the unit's two ports, the Redundant + MIDI on Secondary configuration is the recommended default as it keeps the Primary Dante network free of non-audio traffic.
-
-## Updating Dante Firmware via Dante Updater
-
-The PlayAUDIO1U is equipped with a Brooklyn 3 Dante networking module from Audinate.
-
-As with any Dante-enabled hardware device, you must use the Dante Updater application bundled with Dante Controller to update firmware on your onboard Dante networking module.
-
-Checking for available firmware updates and updating your Dante networking module firmware is quick and easy and requires the following:
-
-1. An internet-connected computer
-
-2. The Dante Updater Application (bundled with Dante Controller available for your macOS or Windows operating system here)
-
-3. A network connection between your PlayAUDIO1U and a computer running Dante Updater.
-
-![Dante Controller Status tab showing the Dante module and firmware versions](images/dante-controller/dc-device-view-status.png)
-
-### Configuring the Dante Interface
-
-To configure the Dante interface (the interface on your computer that is connected to your Dante network), click the burger menu at the top right and select 'Configure Dante Interface'.
-
-Use the drop-down selector to choose your Dante interface.
-
-Typically this will be the same as the interface used by Dante Controller (the selection will default to that interface when Dante Updater is launched from Dante Controller).
-
-### Updating Devices
-
-Use the ‘Home’ tab to update your Dante devices.
-
-Click the arrow icons to expand and collapse the sections.
-
-#### Updates Available
-
-The Updates Available section of the Home tab lists devices that have been discovered on your Dante network which are eligible for a firmware update (devices for which there is new or imported firmware available in the Dante Updater Library).
-
-#### To update all eligible devices:
-1. Click the top checkbox to select all the eligible devices.
-2. Click Update Selected Devices.
-3. When the update is complete, reboot the updated devices.
-
-#### To update a subset of the eligible devices:
-1. Click the individual checkboxes for the devices that you want to update.
-2. Click Update Selected Devices.
-3. When the update is complete, reboot the updated devices.
 
 ## Specifications
 
 ### Audio
+
 **Digital Performance**
 - 24-bit resolution
 - Supported sample rates: 44.1 kHz, 48 kHz, 88.2 kHz, and 96 kHz
-- Audio IO:	Dante: 8 inputs; 32 outputs at up to 96kHz
-
-**Audio Inputs**
-- Available Gain: 0 to +60 dB
-- Maximum Input Level: +16 dBu (13.83 Vp-p) balanced at 0 gain
-- XLR Inputs:	Mic Inputs with software and front panel controlled Gain, Mute and +48V Phantom Power
-- TRS Inputs:	Line Inputs with software and front panel controlled Gain, Mute and High-Z Instrument Impedance
 
 **Line Outputs**
+
 - Maximum Output Level: +16 dBu, 13.83 Vp-p Balanced
 - D-A Dynamic Range: 115 dB (-60dBFS, A-weighted)
 - D-A S/N: 115 dB (A-weighted)
@@ -843,6 +464,7 @@ The Updates Available section of the Home tab lists devices that have been disco
 - D-A Interchannel Isolation: 110 dB (1 kHz, Typical)
 
 **Headphones**
+
 - Maximum Output Level: 100 mW per channel, 5.1 Vp-p into 32-ohm load
 - D-A Dynamic Range: 108 dB (-60dBFS, A-weighted)
 - D-A S/N: 108 dB (A-weighted)
@@ -850,25 +472,29 @@ The Updates Available section of the Home tab lists devices that have been disco
 
 ### MIDI
 
-- Two pairs 5-pin MIDI DIN I/O
+- 5-pin MIDI DIN I/O
 - Up to 16 MIDI ports (256 total MIDI channels) per computer device
+- USB Host Port supports up to eight USB MIDI devices (via powered USB hub, not included) 
+
 
 ### USB Host Ports
-- Four USB Host ports supporting a total of up to eight USB MIDI devices via powered USB hubs (not included).
-- Power: 	+5V DC, 500mA maximum per port
+- Power: +5V DC, 500mA maximum
 
 ### USB-C Ports
 Connect to Windows or macOS computer(s), Android or iPadOS devices (USB only, Apple Lightning not supported)
 
 ### Power
-- Input:  		100V - 240V AC, 50 - 60 Hz, 48W
-- Fuse: 		1A Slow-Blow
+- Input:    100V - 240V AC, 50 - 60 Hz 24W
+- Fuse:     1A Slow-Blow
+
 
 ### Dimensions and Weights
-- Width:	  	19” (482 mm)
-- Height:		3.43” (87 mm)
-- Depth:  	7.87” (200 mm)
-- Weight:  	8.38 lbs (3.8 kg)
+
+- Width:    19” (483 mm)
+- Height:  	1.48” (37.5 mm)
+- Depth:  	7.81” (200 mm)
+- Weight:  	8.73 lbs (3.96 kg) 
+
 
 ## APPENDIX A: MORE RESOURCES
 
