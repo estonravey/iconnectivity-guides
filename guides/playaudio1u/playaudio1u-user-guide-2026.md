@@ -283,8 +283,6 @@ The Safe Mode feature is integrated into your PlayAUDIO1U interface to safeguard
 
 ![Safe Mode screen](../images/safemode-01.png)
 
-![Warning icon on the Tone A meter]()
-
 ![Safe Mode options: Check, Disable, Unmute](../images/safe-mode-check.png)
 
 ![Safe Mode options: Check, Enable, Mute](../images/safe-mode-enable.png)
@@ -292,7 +290,7 @@ The Safe Mode feature is integrated into your PlayAUDIO1U interface to safeguard
 For more information about Safe Mode including Safe Mode triggers and how to disengage Safe Mode and return to normal operation, please see our Safe Mode Guide at https://www.iconnectivity.com/safemode
 
 ## Controls
-<!--> Need Screenshots<!-->
+
 ### OLED Home Page Legend
 ![Home page: Scene A armed for automatic failover (shield and sine wave icons)]()
 
