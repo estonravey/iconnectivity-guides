@@ -1,16 +1,16 @@
 # PlayAUDIO2U User Guide
 
 ## Introduction
-![PlayAUDIO2U](
-000-product/pa2d-front-trans.png)
+![PlayAUDIO2U](images/000-product/2u-main.png)
 
-Congratulations on the purchase of your new PlayAUDIO2U USB Audio, MIDI & Dante interface!
+Congratulations on the purchase of your new PlayAUDIO2D USB Audio, MIDI & Dante interface!
 
 ### Feature List
 
 - Two USB Type C DAW ports – use up to 2 computer devices macOS/Windows simultaneously
 - Four XLR/TRS analog Mic, Line, Instrument inputs
 - Twenty-four XLR analog audio line outputs
+- Eight input and 32 output channels over Dante
 - Stereo ¼” Headphone output with two independent mixes
 - DIN-MIDI ports built-in (front:1-in, 1-out; rear:1-in, 1-out)
 - Four USB Host ports (connect up to 8 USB MIDI class-compliant devices with a USB hub)
@@ -24,7 +24,7 @@ Congratulations on the purchase of your new PlayAUDIO2U USB Audio, MIDI & Dante 
 
 ### What's in the Box
 
-- 1 PlayAUDIO2U Audio + MIDI interface
+- 1 PlayAUDIO2D Audio + MIDI interface
 - 2 USB-C to USB-C cables
 - 1 Each - US, UK, EU type IEC C14 power cables. (Type I is included in Australia)
 
@@ -48,7 +48,7 @@ Congratulations on the purchase of your new PlayAUDIO2U USB Audio, MIDI & Dante 
 - CONTROL Ports. Plug in up to two foot switches or chain multiple PlayAUDIO interfaces.
 - MIDI DIN Ports. 5 pin DIN connections for MIDI Controllers.
 - High Resolution OLED display. Inspect real time MIDI and audio information.
-- Mode Buttons. Select PlayAUDIO2U menu functions such as scene, audio inputs and outputs, and MIDI.
+- Mode Buttons. Select PlayAUDIO2D menu functions such as scene, audio inputs and outputs, and MIDI.
 - Rotary Encoder. Multi-function encoder. Double press to save current settings or turn encoder to change page, change selection, or change value. Long press to force into manual bootloader mode.
 - USB DAW Ports. USB Type C ports for connecting host computers or tablets.
 - Control Buttons. User programmable control buttons.
@@ -60,42 +60,58 @@ Congratulations on the purchase of your new PlayAUDIO2U USB Audio, MIDI & Dante 
 ![Rear panel](images/000-product/pa2d-hwd-rear.png)
 
 - AC Power Inlet. Fused Input jack for included IEC C13 power supply cable.
-- Power switch. Turn the PlayAUDIO2U on or off. The switch will illuminate when power is turned on.
-- XLR Balanced Audio Outputs. The PlayAUDIO2U's 24 analog outputs provide low noise, phantom power-resistant connections with up to 24-bit/96kHz DA conversion.
+- Power switch. Turn the PlayAUDIO2D on or off. The switch will illuminate when power is turned on.
+- XLR Balanced Audio Outputs. The PlayAUDIO2D's 24 analog outputs provide low noise, phantom power-resistant connections with up to 24-bit/96kHz DA conversion.
 - MIDI DIN Ports. 5 pin DIN connections for MIDI Controllers.
 - USB HOST Ports. Directly plug in a class-compliant MIDI device, or plug in up to eight class-compliant MIDI devices via a powered USB hub (not included).
-- RTP MIDI Ports. Make long distance MIDI connections over ethernet.
+- RTP MIDI / Dante Ports. Make long distance MIDI connections over ethernet and/or connect to a Dante network.
 
 ## Getting Started
 ### Mac Users
-There are no software drivers to download or install; the PlayAUDIO2U interface uses the USB MIDI class-compliant drivers built into macOS.
+There are no software drivers to download or install; the PlayAUDIO2D interface uses the USB MIDI class-compliant drivers built into macOS.
 
 ### Windows - Install iConnectivity Audio Drivers
-Before connecting the PlayAUDIO2U to a Windows computer please download and install the latest version of our Unified Windows Driver at https://www.iconnectivity.com/windows-drivers.
+Before connecting the PlayAUDIO2D to a Windows computer please download and install the latest version of our Unified Windows Driver at https://www.iconnectivity.com/windows-drivers.
 
 You may also download the unified USB driver separate from Auracle X at https://www.iconnectivity.com/windows-drivers.
 
-Connect your computer to your PlayAUDIO2U USB DAW Port A using a USB 2.0 or better data cable.
+Connect your computer to your PlayAUDIO2D USB DAW Port A using a USB 2.0 or better data cable.
 
 The interface should appear as a standard audio output device in Windows. You can route audio from music or video apps directly to the interface to test.
 
 ### Auracle X configuration software from iConnectivity
-Quick and simple configuration of the PlayAUDIO2U is possible via onboard controls but deep customization is available via our Auracle X application.
+Quick and simple configuration of the PlayAUDIO2D is possible via onboard controls but deep customization is available via our Auracle X application.
 
 Read on in the Auracle X section below for more information.
 
-![Auracle X audio page for the PlayAUDIO2U](images/auracle-x/00%20audio.main.png)
+![Auracle X audio page for the PlayAUDIO2D](images/auracle-x/00-audio.main.png)
 
 > **Note:** All analog output volumes including the headphones output are muted by default and need to be raised for monitoring.
 
 ## Recommended Software Installation
 ### Windows - Install iConnectivity RTP MIDI Driver for Network MIDI
-The RTP-MIDI driver for Network MIDI can be found at https://www.iconnectivity.com/windows-drivers.
+
+![rtpMIDI network driver](images/third-party-apps/rtp-midi.png)
+
+The RTP-MIDI driver for Network MIDI can be found at https://www.iconnectivity.com/windows-drivers
 
 Apple Bonjour Print Services for Windows is also required for RTP session discovery over network via bonjour and is available at:
-(https://support.apple.com/en-us/106380)
+https://support.apple.com/en-us/106380
 
 Launch the rtpMIDISetup Application and follow all prompts to install.
+
+### Dante Controller & Dante Updater
+
+![Dante Controller](images/dante-controller/dc-routing-pa2u-tx.png)
+
+Routing digital audio to and/or from your PlayAUDIO2D is achieved by using Audinate’s Dante Controller application located at
+https://www.getDante.com/products/software-essentials/Dante-controller/
+
+Audinate will require you to create a free profile to access software and educational tools and to complete the Dante Controller download.
+
+While the Dante Controller application is required for configuring the Dante portion of the PlayAUDIO2D, Dante controller can run from any computer connected to the same Dante network as your PlayAUDIO2D.
+
+Dante Updater is necessary to update the Dante Brooklyn 3 networking module on the PlayAUDIO2D, and is bundled with Dante Controller.
 
 ### MIDI Monitoring tools
 MIDI monitoring applications are very useful for routing debugging and troubleshooting. We recommend these free tools for your operating system:
@@ -106,40 +122,48 @@ MacOS: [Snoize MIDI monitor and Sysex Librarian](http://www.midiox.com/)
 
 > **Note:** After installing the RTP-MIDI driver and Apple Bonjour Print Services be sure to restart your computer in order for the RTP-MIDI driver to default to using Apple Bonjour instead of lightweight mDNS for RTP session discovery
 
-## Install Auracle X and Update your PlayAUDIO2U Firmware
-Before you begin using your PlayAUDIO2U we recommend that you upgrade your unit's firmware to the latest version using iConnectivity's Auracle X application.
+## Installing Auracle X
+Before you begin using your PlayAUDIO2D we recommend that you upgrade your unit's firmware to the latest version using iConnectivity's Auracle X application.
 
 Download the latest version of the Auracle X software installer at: https://www.iconnectivity.com/software/control-software
 
-### Mac Users: First time Installation
+### Mac Users
+## First time Installation
+![Auracle X .dmg](images/ax-install/ax-dmg.png)
+
 When the Auracle X application has finished downloading open the .dmg file
 
 Drag the Auracle X application to the Applications folder.
 
 ### Mac Users: Auracle X update
+![Auracle X firmware update](images/ax-install/ax-check-updates.png)
+
 If you already have the Auracle X application installed, use the Auracle X main menu to check for updates and follow the prompts that follow if a newer version of Auracle X is available.
 
 ### Windows Users
-
 **First time installation**
 
 When the package installer download is complete, run the Auracle X installer.
 
-Click Yes to allow Auracle X Setup:
+![Windows installation](images/ax-install/win-ax-install.png)
 
-Install for all users:
+Click Yes to allow Auracle X Setup
 
-## Updating PlayAUDIO2U Firmware
+![Windows install for all users](images/ax-install/win-ax-install-2.png)
+
+Install for all users
+
+## Updating PlayAUDIO2D Firmware
 ### Load Latest From Web
 To use Auracle X to update your device’s firmware:
 
 1. Ensure your computer is connected to the internet.
 
-2. Connect the PlayAUDIO2U to your computer via the USB DAW A port on your PlayAUDIO2U.
+2. Connect the PlayAUDIO2D to your computer via the USB DAW A port on your PlayAUDIO2D.
 
 3. Open the Auracle X application.
 
-4. On the PlayAUDIO2U main menu tab click the Firmware menu option
+4. On the PlayAUDIO2D main menu tab click the Firmware menu option
 
 5. If a newer firmware for your device is available a menu option to update firmware will appear in the Load Latest From Web section. Click Install to update from web
 
@@ -147,13 +171,11 @@ To use Auracle X to update your device’s firmware:
 
 The latest firmware for your device is  also available for manual download at: https://www.iconnectivity.com/firmware
 
-[Comment]: # (image here)
-
-1. Connect the PlayAUDIO2U to your computer via the USB DAW A port on your PlayAUDIO2U.
+1. Connect the PlayAUDIO2D to your computer via the USB DAW A port on your PlayAUDIO2D.
 
 2. Open the Auracle X application.
 
-3. Click Firmware on the PlayAUDIO2U main menu tab.
+3. Click Firmware on the PlayAUDIO2D main menu tab.
 
 4. In the Load From File section click Choose File to call your system file browser and select a firmware file for update.
 
@@ -167,11 +189,11 @@ In rare situations, you may prefer to manually update your firmware using the bo
 
 1. Download the firmware from the iConnectivity website Firmware Page
 
-2. Manually set your PlayAUDIO2U interface to Bootloader Mode by following the instructions here
+2. Manually set your PlayAUDIO2D interface to Bootloader Mode by following the instructions here
 
-3. Transmit the firmware file to the PlayAUDIO2U and allow the update to complete
+3. Transmit the firmware file to the PlayAUDIO2D and allow the update to complete
 
-4. Manually restart your PlayAUDIO2U by first powering off the device and then powering on again.
+4. Manually restart your PlayAUDIO2D by first powering off the device and then powering on again.
 
 ### Firmware File Format
 
@@ -192,29 +214,29 @@ The interface is powered off and not operational.
 This is the normal operational mode that you will use nearly all of the time. In this mode, the device is powered on and operates as a fully functional interface.
 
 ### Bootloader Mode
-Bootloader Mode is a special service mode used to perform firmware updates. Normally you will use Auracle X software to update your firmware and Auracle X will automatically switch your interface between Normal and Bootloader modes as necessary. In rare situations users may prefer to manually update their firmware via the bootloader. This manual process is described in detail in the [Updating Firmware](#updating-PlayAUDIO2U-firmware) section of this guide.
+Bootloader Mode is a special service mode used to perform firmware updates. Normally you will use Auracle X software to update your firmware and Auracle X will automatically switch your interface between Normal and Bootloader modes as necessary. In rare situations users may prefer to manually update their firmware via the bootloader. This manual process is described in detail in the [Updating Firmware](#updating-playaudio2d-firmware) section of this guide.
 
-To manually force your PlayAUDIO2U into Bootloader mode:
+To manually force your PlayAUDIO2D into Bootloader mode:
 
-1. Power on your PlayAUDIO2U and wait until the bootup process is complete.
+1. Power on your PlayAUDIO2D and wait until the bootup process is complete.
 
 2. Long press the main rotary encoder for approximately 6 seconds until all mode buttons illuminate red, then release the encoder
 
-The PlayAUDIO2U will reboot and enter Bootloader mode ready to accept a manual firmware file send.
+The PlayAUDIO2D will reboot and enter Bootloader mode ready to accept a manual firmware file send.
 
-> **Note:** The PlayAUDIO2U is in Bootloader mode when the OLED display is blank and both the System and Exit Mode buttons alternately flash.
+> **Note:** The PlayAUDIO2D is in Bootloader mode when the OLED display is blank and both the System and Exit Mode buttons alternately flash.
 
-## PlayAUDIO2U Failover Redundancy
-### How the PlayAUDIO2U's Failover System Works
-Your PlayAUDIO2U unit comes equipped with two independent failover mechanisms: Automatic Failover and Manual Failover. This failover redundancy is designed to ensure that your backup system can always be engaged instantly and seamlessly, whether via auto-detection or through manual switching. Taking advantage of both of these failover mechanisms is recommended for all live performance scenarios.
+## PlayAUDIO2D Failover Redundancy
+### How the PlayAUDIO2D's Failover System Works
+Your PlayAUDIO2D unit comes equipped with two independent failover mechanisms: Automatic Failover and Manual Failover. This failover redundancy is designed to ensure that your backup system can always be engaged instantly and seamlessly, whether via auto-detection or through manual switching. Taking advantage of both of these failover mechanisms is recommended for all live performance scenarios.
 
 ### Automatic Failover
-Automatic Failover uses an audio test tone or MIDI stream sent from your DAW to establish an audio- or MIDI- recognition sync lock between your primary playback device and your PlayAUDIO2U interface on a dedicated internal audio or MIDI channel. Once armed, the PlayAUDIO2U instantly switches to your secondary device if any break in the test tone signal or MIDI stream is detected, providing a seamless failover to your backup system without audio or MIDI interruption. We recommend using the audio tone based failover to prevent needless scene switching when playback is stopped.
+Automatic Failover uses an audio test tone or MIDI stream sent from your DAW to establish an audio- or MIDI- recognition sync lock between your primary playback device and your PlayAUDIO2D interface on a dedicated internal audio or MIDI channel. Once armed, the PlayAUDIO2D instantly switches to your secondary device if any break in the test tone signal or MIDI stream is detected, providing a seamless failover to your backup system without audio or MIDI interruption. We recommend using the audio tone based failover to prevent needless scene switching when playback is stopped.
 
 ### Manual Failover
-Manual Failover allows you to control scene switching at the touch of a button or press of a connected and assigned footswitch. Note that if automatic failover is not armed, the PlayAUDIO2U will NOT switch to your backup playback device in the event of a primary device failure.
+Manual Failover allows you to control scene switching at the touch of a button or press of a connected and assigned footswitch. Note that if automatic failover is not armed, the PlayAUDIO2D will NOT switch to your backup playback device in the event of a primary device failure.
 
-### How to Arm the PlayAUDIO2U for Automatic Failover
+### How to Arm the PlayAUDIO2D for Automatic Failover
 #### LifeSine Installation
 
 1. Download our LifeSine test tone plugin from https://www.iconnectivity.com/downloads/ and install it on both your primary and backup computers.
@@ -225,13 +247,13 @@ Manual Failover allows you to control scene switching at the touch of a button o
 
 1. Copy your original playback session from the steps above to your backup computer, ensuring that both sessions are identical.
 
-2. Connect your primary playback computer to USB DAW Port A and connect your backup playback computer to USB DAW Port B and select the PlayAUDIO2U as the output interface on both computers.
+2. Connect your primary playback computer to USB DAW Port A and connect your backup playback computer to USB DAW Port B and select the PlayAUDIO2D as the output interface on both computers.
 
 3. Route the LifeSine audio channel to output 35 on both computers.
 
-4. Verify that the PlayAUDIO2U is set to Scene A, or touch the Scene Mode Button to switch to Scene A from Scene B.
+4. Verify that the PlayAUDIO2D is set to Scene A, or touch the Scene Mode Button to switch to Scene A from Scene B.
 
-5. When your PlayAUDIO2U detects the test tone on the assigned failover detection channel, a blinking shield icon as well as a sine wave icon will appear on the main page of the OLED indicating that the PlayAUDIO2U is armed for automatic failover.
+5. When your PlayAUDIO2D detects the test tone on the assigned failover detection channel, a blinking shield icon as well as a sine wave icon will appear on the main page of the OLED indicating that the PlayAUDIO2D is armed for automatic failover.
 
 #### Transport Control Setup
 
@@ -243,11 +265,11 @@ Refer to Auracle X documentation for detailed instructions including adjusting f
 
 ### How to Test Automatic Failover
 
-Ensure that the PlayAUDIO2U is armed for automatic failover by checking for the blinking shield icon on the front panel OLED and that playback has been triggered on both computers. To force failover from Computer A to Computer B, remove the USB cable from USB DAW port A. The PlayAUDIO2U will instantly switch over to Computer B as audio and MIDI playback continues uninterrupted. The Scene Mode Button LED will change to illuminate in red and the OLED will display “B”, indicating that Scene B is now the active scene.
+Ensure that the PlayAUDIO2D is armed for automatic failover by checking for the blinking shield icon on the front panel OLED and that playback has been triggered on both computers. To force failover from Computer A to Computer B, remove the USB cable from USB DAW port A. The PlayAUDIO2D will instantly switch over to Computer B as audio and MIDI playback continues uninterrupted. The Scene Mode Button LED will change to illuminate in red and the OLED will display “B”, indicating that Scene B is now the active scene.
 
-### How to use PlayAUDIO2U Manual Failover
+### How to use PlayAUDIO2D Manual Failover
 
-Failover can be engaged manually by touching the Scene Mode Button on the front panel of the PlayAUDIO2U. The current scene is indicated as follows:
+Failover can be engaged manually by touching the Scene Mode Button on the front panel of the PlayAUDIO2D. The current scene is indicated as follows:
 
 - Scene A: The Scene Mode Button is illuminated in green, and the Touch panel display shows the letter “A”
 
@@ -257,24 +279,24 @@ Failover can be engaged manually by touching the Scene Mode Button on the front 
 For information on how to use a footswitch to initiate manual failover, please see the updated Auracle X manual in the Control Ports section.
 
 ### Safe Mode
-The Safe Mode feature is integrated into your PlayAUDIO2U interface to safeguard performers and audience members from potentially harmful audio levels. Activation of Safe Mode is indicated by the display of a dedicated Safe Mode screen and alternating red LEDs within the Audio LED section on the front panel. Upon activation, all outputs, excluding the headphone output, will be automatically muted.
+The Safe Mode feature is integrated into your PlayAUDIO2D interface to safeguard performers and audience members from potentially harmful audio levels. Activation of Safe Mode is indicated by the display of a dedicated Safe Mode screen and alternating red LEDs within the Audio LED section on the front panel. Upon activation, all outputs, excluding the headphone output, will be automatically muted.
 
-![Safe Mode screen](images/05%20safemode/safemode%2001.png)
+![Safe Mode screen](images/05-safemode/safemode-01.png)
 
-![Warning icon on the Tone A meter](images/05%20safemode/03%20check%20exceed%20.png)
+![Warning icon on the Tone A meter](images/05-safemode/03-check-exceed.png)
 
-![Safe Mode options: Check, Disable, Unmute](images/05%20safemode/02.png)
+![Safe Mode options: Check, Disable, Unmute](images/05-safemode/02.png)
 
-![Safe Mode options: Check, Enable, Mute](images/05%20safemode/04%20check%20enable.png)
+![Safe Mode options: Check, Enable, Mute](images/05-safemode/04-check-enable.png)
 
 For more information about Safe Mode including Safe Mode triggers and how to disengage Safe Mode and return to normal operation, please see our Safe Mode Guide at https://www.iconnectivity.com/safemode
 
 ## Controls
 
 ### OLED Home Page Legend
-![Home page: Scene A armed for automatic failover (shield and sine wave icons)](images/00-scene/audio%2000%20dual%20master%20audio%20input.png)
+![Home page: Scene A armed for automatic failover (shield and sine wave icons)](images/00-scene/00-dual-master.png)
 
-![Home page: tone check enabled, no tone detected (checkmark and flat line icons)](images/00-scene/audio%2000%20start.png)
+![Home page: tone check enabled, no tone detected (checkmark and flat line icons)](images/00-scene/00-start.png)
 
 Scene Indicator Icon Legend (Top Left next to Scene A or Scene B Indicator):
 
@@ -302,29 +324,29 @@ Fine adjustments are recommended if there is a risk of signal overload. Rotary E
 
 | Function  | Action    |
 | ---       | ---       |
-| Commit Settings to Memory | Short press the Main Rotary Encoder twice to save the current state of the PlayAUDIO2U to the current preset. A notification will appear on the OLED and all Mode buttons will flash green three times.   |
+| Commit Settings to Memory | Short press the Main Rotary Encoder twice to save the current state of the PlayAUDIO2D to the current preset. A notification will appear on the OLED and all Mode buttons will flash green three times.   |
 | Restart unit  | Long press the main rotary encoder for approximately 10 seconds until all Mode buttons have turned off after illuminating in red, then release. |
 | Enter Bootloader Mode | Long press the main rotary encoder for approximately 6 seconds until all Mode buttons illuminate red and release while buttons are still illuminated red. |
-| View Failover Tone information    | From the Home page, turn the encoder clockwise to access audio meter displays showing the current level of the failover tone in both numerical and live metering <br>No tone will produce a blank meter display above the “Tone A” and “Tone B” labels. <br>Note that a failover tone level above -3dBFS will cause the PlayAUDIO2U to enter into Safe Mode and all analog and Dante Transmit outputs to be automatically muted. <br>You will not be able to unmute analog outputs until the failover tone level is adjusted below the threshold displayed on the Tone Meter menu page. |
+| View Failover Tone information    | From the Home page, turn the encoder clockwise to access audio meter displays showing the current level of the failover tone in both numerical and live metering <br>No tone will produce a blank meter display above the “Tone A” and “Tone B” labels. <br>Note that a failover tone level above -3dBFS will cause the PlayAUDIO2D to enter into Safe Mode and all analog and Dante Transmit outputs to be automatically muted. <br>You will not be able to unmute analog outputs until the failover tone level is adjusted below the threshold displayed on the Tone Meter menu page. |
 
-![Failover tone meters for Tone A and Tone B](images/00-scene/audio%2005%20tone.png)
+![Failover tone meters for Tone A and Tone B](images/00-scene/05-tone.png)
 
 ### Mode Buttons
 
-The PlayAUDIO2U features Mode Buttons with fixed functionality for the most commonly used functions of the PlayAUDIO2U.
+The PlayAUDIO2D features Mode Buttons with fixed functionality for the most commonly used functions of the PlayAUDIO2D.
 
 | Button | Function |
 |---|---|
 | Input | Displays the audio input menu.<br>Press again to toggle between viewing the four front analog inputs and eight Dante receive channels.<br>When the Input menu is active, turn the encoder to cycle through editable parameters and press the encoder to edit the selected parameter |
 | Output | Displays the audio output menu.<br>Press again to toggle between viewing the 24 rear analog outputs and 32 Dante transmit channels.<br>When the Output menu is active, turn the encoder to cycle through editable parameters and press the encoder to edit the selected parameter |
-| MIDI | Calls the MIDI monitoring page. <br>Turn the encoder to cycle between MIDI monitoring pages for all PlayAUDIO2U MIDI ports.<br>Double tap the encoder while the MIDI page is active to generate a MIDI Panic message to all MIDI ports |
-| System | Displays the PlayAUDIO2U info page |
+| MIDI | Calls the MIDI monitoring page. <br>Turn the encoder to cycle between MIDI monitoring pages for all PlayAUDIO2D MIDI ports.<br>Double tap the encoder while the MIDI page is active to generate a MIDI Panic message to all MIDI ports |
+| System | Displays the PlayAUDIO2D info page |
 | Exit | Steps backward through the menu hierarchy per press |
 
 #### Scene
 The Scene page displays current output metering per channel on the currently active scene.
 
-Press the scene button to toggle the PlayAUDIO2U between Scene A and Scene B.
+Press the scene button to toggle the PlayAUDIO2D between Scene A and Scene B.
 
 Rotate the encoder to move between the pages listed below, and short press to select one:
 
@@ -340,33 +362,33 @@ Rotate the encoder to move between the pages listed below, and short press to se
     - Short press to call the edit output channel window, where all or one of 32 Dante digital output channels may be selected to edit.
     - Press Exit to climb out of the menu hierarchy.
 
-    ![Dante transmit monitoring](images/00-scene/audio%2002%20digital%20outputs.png)
+    ![Dante transmit monitoring](images/00-scene/02-digital-outputs.png)
 
-    ![Dante transmit channel selection](images/00-scene/audio%2002.1%20digital%20outputs%20enc.png)
+    ![Dante transmit channel selection](images/00-scene/02.1-digital-outputs-enc.png)
 
 3. Analog input monitoring including phantom and HiZ indicators
     - Short press to call the edit analog input channel window, where all or one of four analog input channels may be selected to edit.
     - Press Exit to climb out of the menu hierarchy.
 
-    ![Analog input monitoring](images/00-scene/audio%2003%20analog%20inputs.png)
+    ![Analog input monitoring](images/00-scene/03-analog-inputs.png)
 
-    ![Analog input channel selection](images/00-scene/audio%2003.1%20analog%20inputs%20enc.png)
+    ![Analog input channel selection](images/00-scene/03.1-analog-inputs-enc.png)
 
 4. Dante digital receive monitoring: 8 channels
     - Press to call the edit Dante receive channel menu, where all or one of eight Dante digital receive channels may be selected to edit.
     - Press Exit to climb out of the menu hierarchy.
 
-    ![Dante receive monitoring](images/00-scene/audio%2004%20dante%20rx.png)
+    ![Dante receive monitoring](images/00-scene/04-dante-rx.png)
 
-    ![Dante receive channel selection](images/00-scene/audio%2004.1%20dante%20rx%20enc.png)
+    ![Dante receive channel selection](images/00-scene/04.1-dante-rx-enc.png)
 
 5. Failover Tone Meter Monitoring including threshold setting
     - Press to call the output plus Tone Meter Monitoring window where you can view all 32 output meters plus failover tone
     - Turn to select between monitoring DAW A or DAW B
 
-    ![DAW A outputs with Tone A meter](images/00-scene/audio%2005.1%20tone%20A%20enc.png)
+    ![DAW A outputs with Tone A meter](images/00-scene/05.1-tone-a-enc.png)
 
-    ![DAW B outputs with Tone B meter](images/00-scene/audio%2005.1%20tone%20B%20enc.png)
+    ![DAW B outputs with Tone B meter](images/00-scene/05.1-tone-b-enc.png)
 
 Each page will have varying selectable parameters. Short press the encoder to select editable parameters; rotate the encoder to change the value of the selected parameter.
 
@@ -381,17 +403,17 @@ Press the Input Mode button again to toggle between Analog inputs and Dante rece
 
 The Input page displays analog input gain level and active input metering, 48V and Hi-Z status on analog inputs and allows you to edit these parameters.
 
-![Analog inputs: gain, 48V and Hi-Z status with live meters](images/01-input/00%20analog%20inputs.png)
+![Analog inputs: gain, 48V and Hi-Z status with live meters](images/01-input/analog-inputs.png)
 
 ##### Dante Receive channel monitoring
 
 The Input page also displays the active input level of Dante receive channels 1-8 and allows you to mute or unmute all or individual Dante receive channels.
 
-![Dante receive channels 1-8 with live meters](images/01-input/dante%20rx%20live%20meters.png)
+![Dante receive channels 1-8 with live meters](images/01-input/dante-rx-live-meters.png)
 
-![Dante receive: all channels selected](images/01-input/dante%20rx%20all.png)
+![Dante receive: all channels selected](images/01-input/dante-rx-all.png)
 
-![Dante receive: channel 1 selected](images/01-input/dante%20rx%201%20ch.png)
+![Dante receive: channel 1 selected](images/01-input/dante-rx-1-ch.png)
 
 ##### Editing Analog Input Channels
 
@@ -401,11 +423,11 @@ Rotate the main encoder to toggle between editable audio input parameters and sh
 
 Turn the main encoder to change the value of the selected parameter. Press the main encoder again to select another editable parameter.
 
-![Editing analog input 1](images/01-input/analog%20input%20edit%20single.png)
+![Editing analog input 1](images/01-input/analog-input-edit-single.png)
 
-![Editing all analog inputs](images/01-input/00.1%20analog%20inputs%20some%20mute.png)
+![Editing all analog inputs](images/01-input/analog-inputs-some-mute.png)
 
-![Analog inputs after editing](images/01-input/00.1.2%20analog%20inputs%20all%20edits.png)
+![Analog inputs after editing](images/01-input/analog-inputs-all-edits.png)
 
 #### Output
 
@@ -421,13 +443,13 @@ Rotate the main encoder to select a single channel or all channels. Short press 
 
 The Output page displays active analog output metering and allows you to edit these parameters.
 
-![Analog outputs with live meters](images/02%20Output/analog%20outputs%20live.png)
+![Analog outputs with live meters](images/02-output/analog-outputs-live.png)
 
 ##### Dante Transmit Channel Monitoring
 
 The Output page also displays the active output level of Dante transmit channels 1-32 and allows you to mute or unmute all or individual Dante transmit channels.
 
-![Dante transmit channels 1-32 with live meters](images/02%20Output/dante%20tx%2032%20monitoring.png)
+![Dante transmit channels 1-32 with live meters](images/02-output/dante-tx-32-monitoring.png)
 
 ##### Editing Analog Output Channels
 
@@ -445,23 +467,23 @@ You can also press the Output Mode button to step through all outputs one at a t
 
 Continuing to short press the Output Mode Button will wrap around to the first audio output channel.
 
-![Editing all analog outputs](images/02%20Output/analog%20single%20edit.png)
+![Editing all analog outputs](images/02-output/analog-single-edit.png)
 
 ##### Editing Dante Transmit Channels
 
 Dante transmit channels can only be edited for mute/unmute.
 
-![Dante transmit: all channels selected](images/02%20Output/dante%20tx%20detail.png)
+![Dante transmit: all channels selected](images/02-output/dante-tx-detail.png)
 
-![Dante transmit: channel 19 selected](images/02%20Output/Dante%20Tx%20monitoring.png)
+![Dante transmit: channel 19 selected](images/02-output/dante-tx-monitoring.png)
 
 #### MIDI
 
-The MIDI menu page displays real-time monitoring of all PlayAUDIO2U MIDI inputs and outputs grouped by physical MIDI port.
+The MIDI menu page displays real-time monitoring of all PlayAUDIO2D MIDI inputs and outputs grouped by physical MIDI port.
 
-![MIDI monitor page](images/03%20midi/midi%20monitor.png)
+![MIDI monitor page](images/03-midi/midi-monitor.png)
 
-Press the MIDI Mode button to call the PlayAUDIO2U’s onboard MIDI monitor page.
+Press the MIDI Mode button to call the PlayAUDIO2D’s onboard MIDI monitor page.
 
 Double-tapping the MIDI Mode button will send a MIDI Panic message to all MIDI outputs.
 
@@ -482,9 +504,9 @@ If a MIDI message is detected on an actively monitored MIDI input/output group f
 
 #### System
 
-Press the System Mode Button to display the PlayAUDIO2U info page
+Press the System Mode Button to display the PlayAUDIO2D info page
 
-![System info page](images/04%20system/system.png)
+![System info page](images/04-system/system.png)
 
 #### Exit
 
@@ -504,17 +526,17 @@ Turn the headphone encoder to adjust the volume of the currently selected headph
 
 Global Mute mutes all rear analog and Dante Transmit outputs and preserves the headphone output.
 
-Double tap the headphone encoder rapidly to engage Global Mute, muting all analog outputs and Dante transmit channels of the PlayAUDIO2U.
+Double tap the headphone encoder rapidly to engage Global Mute, muting all analog outputs and Dante transmit channels of the PlayAUDIO2D.
 
 Double tap again while Global Mute is active to unmute.
 
-![Global Mute on the display](images/auracle-x/mute%20global%20mute.png)
+![Global Mute on the display](images/auracle-x/mute-global-mute.png)
 
 ![Global Mute ON in Auracle X](images/auracle-x/global-mute-on.png)
 
 #### Headphone Mixes
 
-Each active Scene on the PlayAUDIO2U has four headphone mix options.
+Each active Scene on the PlayAUDIO2D has four headphone mix options.
 
 To select between headphone mixer options:
 
@@ -522,7 +544,7 @@ To select between headphone mixer options:
 
 2. Turn the headphone encoder slowly to raise or lower the selected headphone mix volume in 0.5 dB increments.
 
-![Headphones Mixer in Auracle X](images/auracle-x/02%20audio.headphones.png)
+![Headphones Mixer in Auracle X](images/auracle-x/02-audio.headphones.png)
 
 #### Headphone Mix Options: Scene A
 
@@ -609,15 +631,15 @@ Each Control button can also be custom mapped to a MIDI note, CC parameter and s
 
 ### Using the Control Ports and Control Buttons
 
-Use the PlayAUDIO2U Control ports with compatible footswitch(es) to Arm/Disarm/Toggle Failover Arm state, load Presets, toggle active scenes, send a spacebar key message, and/or send CC/PC or Note On/Off messages.
+Use the PlayAUDIO2D Control ports with compatible footswitch(es) to Arm/Disarm/Toggle Failover Arm state, load Presets, toggle active scenes, send a spacebar key message, and/or send CC/PC or Note On/Off messages.
 
-The PlayAUDIO2U Control Buttons have the same programmable functionality as the user mappable Control ports described above.
+The PlayAUDIO2D Control Buttons have the same programmable functionality as the user mappable Control ports described above.
 
 Complete instructions on configuring Control port footswitch actions can be found in our [Auracle documentation](https://www.iconnectivity.com/s/auracle-x-user-guide-260-20261013.pdf).
 
 ## Dante Digital Audio
 
-The PlayAUDIO2U introduces Dante digital audio to the iConnectivity redundant playback ecosystem featuring 8 input/receive and 32 output/transmit channels available for routing to and from your PlayAUDIO2U.
+The PlayAUDIO2D introduces Dante digital audio to the iConnectivity redundant playback ecosystem featuring 8 input/receive and 32 output/transmit channels available for routing to and from your PlayAUDIO2D.
 
 All Dante settings and configuration options are managed by Audinate’s suite of Dante applications including Dante Controller and Dante Updater:
 
@@ -625,15 +647,15 @@ All Dante settings and configuration options are managed by Audinate’s suite o
 
 [Dante Controller User Guide](https://dev.audinate.com/GA/dante-controller/userguide/pdf/latest/AUD-MAN-DanteController-4.18.x-v1.0.pdf)
 
-![Dante Controller routing: PlayAUDIO2U receive channels](images/dante-controller/dc-routing-pa2d%20rx.png)
+![Dante Controller routing: PlayAUDIO2D receive channels](images/dante-controller/dc-routing-pa2d-rx.png)
 
-![Dante Controller routing: PlayAUDIO2U transmit channels](images/dante-controller/dc-routing-pa2u%20tx.png)
+![Dante Controller routing: PlayAUDIO2D transmit channels](images/dante-controller/dc-routing-pa2u-tx.png)
 
-![Dante channels in Auracle X](images/auracle-x/01%20audio.dante.png)
+![Dante channels in Auracle X](images/auracle-x/01-audio.dante.png)
 
 ## Dante Network Configuration using Dante Controller
 
-The PlayAUDIO2U's two rear-panel Ethernet ports, labeled RTP-MIDI Dante 1 and RTP-MIDI Dante 2, carry two independent classes of network traffic:
+The PlayAUDIO2D's two rear-panel Ethernet ports, labeled RTP-MIDI Dante 1 and RTP-MIDI Dante 2, carry two independent classes of network traffic:
 
 - Dante audio — multichannel, low-latency digital audio distributed via Audinate's Dante protocol, including its clocking (PTP) and control traffic.
 - RTP-MIDI — MIDI data encapsulated for transport over standard Ethernet/IP networks (AppleMIDI / rtpMIDI session protocol), used for control, program change, and show-control data.
@@ -645,9 +667,9 @@ To change the network switch configuration including Dante Static/Dynamic IP add
 
 ![Dante Controller Network Config tab: Switch Configuration options](images/dante-controller/dc-network-config.png)
 
-To change the RTP MIDI settings of the PlayAUDIO2U including RTP-MIDI IP addressing scheme, IP address, subnet, or gateway, please use our Auracle X application available here: https://www.iconnectivity.com/software/control-software
+To change the RTP MIDI settings of the PlayAUDIO2D including RTP-MIDI IP addressing scheme, IP address, subnet, or gateway, please use our Auracle X application available here: https://www.iconnectivity.com/software/control-software
 
-> **Note:** Changing the PlayAUDIO2U Dante / MIDI switch configuration via Dante Controller requires the unit to be power cycled while the network interface resets.
+> **Note:** Changing the PlayAUDIO2D Dante / MIDI switch configuration via Dante Controller requires the unit to be power cycled while the network interface resets.
 > **Note:** Do not connect both RJ45 jacks to the same Ethernet switch (or other device) because this will result in an Ethernet feedback loop.
 ### Dante and MIDI Combined on Port 1 & Port 2
 
@@ -756,7 +778,7 @@ Use the table below to compare all four supported configurations at a glance.
 
 ## Updating Dante Firmware via Dante Updater
 
-The PlayAUDIO2U is equipped with a Brooklyn 3 Dante networking module from Audinate.
+The PlayAUDIO2D is equipped with a Brooklyn 3 Dante networking module from Audinate.
 
 As with any Dante-enabled hardware device, you must use the Dante Updater application bundled with Dante Controller to update firmware on your onboard Dante networking module.
 
@@ -766,7 +788,7 @@ Checking for available firmware updates and updating your Dante networking modul
 
 2. The Dante Updater Application (bundled with Dante Controller available for your macOS or Windows operating system here)
 
-3. A network connection between your PlayAUDIO2U and a computer running Dante Updater.
+3. A network connection between your PlayAUDIO2D and a computer running Dante Updater.
 
 ![Dante Controller Status tab showing the Dante module and firmware versions](images/dante-controller/dc-device-view-status.png)
 
@@ -863,7 +885,7 @@ Download the latest firmware from the website [Firmware](https://www.iconnectivi
 
 ### Compliance Statement
 
-The PlayAUDIO2U meets the requirements of the following standards and directives:
+The PlayAUDIO2D meets the requirements of the following standards and directives:
 - FCC Part 15 Class B
 - CAN ICES-003 (B) / NMB-003 (B)
 - CISPR 32 Class B
@@ -880,7 +902,7 @@ The PlayAUDIO2U meets the requirements of the following standards and directives
 
 ### Declaration of Conformity
 
-We, iConnectivity, declare that the PlayAUDIO2U complies with Part 15 of the FCC Rules. Operation is subject to the following two conditions: (1) this device may not cause harmful interference, and (2) this device must accept any interference received, including interference that may cause undesired operation.
+We, iConnectivity, declare that the PlayAUDIO2D complies with Part 15 of the FCC Rules. Operation is subject to the following two conditions: (1) this device may not cause harmful interference, and (2) this device must accept any interference received, including interference that may cause undesired operation.
 
 ### Communication Statement
 This equipment has been tested and found to comply with the limits for a Class B digital device, pursuant to Part 15 of the FCC Rules.
