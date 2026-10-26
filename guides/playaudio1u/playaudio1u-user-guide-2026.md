@@ -50,7 +50,7 @@ Congratulations on the purchase of your new PlayAUDIO1U USB Audio, MIDI & Dante 
 - USB Host port. Directly plug in a class-compliant MIDI device, or plug in up to eight class-compliant MIDI devices via a powered USB hub (not included).
 - Control ports. Plug in up to two foot switches
 - MIDI DIN ports. 5 pin DIN connections for MIDI Controllers
-- Capacitive(cap) touch buttons & OLED. Manually switch scenes or inspect real time MIDI and audio information
+- Capacitive (cap) touch buttons & OLED. Manually switch scenes or inspect real time MIDI and audio information
 - Rotary Encoder. Multi-function encoder. Double press to save current settings or spin to cycle through pages in the currently selected page 
 - USB DAW ports. USB C ports for connecting computers or tablets.**
 - 3.5mm Headphone port. Stereo mix
@@ -100,19 +100,6 @@ Apple Bonjour Print Services for Windows is also required for RTP session discov
 https://support.apple.com/en-us/106380
 
 Launch the rtpMIDISetup Application and follow all prompts to install.
-
-### Dante Controller & Dante Updater
-
-![Dante Controller](images/dante-controller/dc-routing-pa2u-tx.png)
-
-Routing digital audio to and/or from your PlayAUDIO1U is achieved by using Audinate’s Dante Controller application located at
-https://www.getDante.com/products/software-essentials/Dante-controller/
-
-Audinate will require you to create a free profile to access software and educational tools and to complete the Dante Controller download.
-
-While the Dante Controller application is required for configuring the Dante portion of the PlayAUDIO1U, Dante controller can run from any computer connected to the same Dante network as your PlayAUDIO1U.
-
-Dante Updater is necessary to update the Dante Brooklyn 3 networking module on the PlayAUDIO1U, and is bundled with Dante Controller.
 
 ### MIDI Monitoring tools
 MIDI monitoring applications are very useful for routing debugging and troubleshooting. We recommend these free tools for your operating system:
@@ -235,7 +222,7 @@ Your PlayAUDIO1U unit comes equipped with two independent failover mechanisms: A
 Automatic Failover uses an audio test tone or MIDI stream sent from your DAW to establish an audio- or MIDI- recognition sync lock between your primary playback device and your PlayAUDIO1U interface on a dedicated internal audio or MIDI channel. Once armed, the PlayAUDIO1U instantly switches to your secondary device if any break in the test tone signal or MIDI stream is detected, providing a seamless failover to your backup system without audio or MIDI interruption. We recommend using the audio tone based failover to prevent needless scene switching when playback is stopped.
 
 ### Manual Failover
-Manual Failover allows you to control scene switching at the touch of an OLED button or press of a connected and assigned footswitch. Note that if automatic failover is not armed, the PlayAUDIO1U will NOT switch to your backup playback device in the event of a primary device failure.
+Manual Failover allows you to control scene switching at the touch of an cap touch button or press of a connected and assigned footswitch. Note that if automatic failover is not armed, the PlayAUDIO1U will NOT switch to your backup playback device in the event of a primary device failure.
 
 ### How to Arm the PlayAUDIO1U for Automatic Failover
 #### LifeSine Installation
@@ -270,11 +257,11 @@ Ensure that the PlayAUDIO1U is armed for automatic failover by checking for the 
 
 ### How to use PlayAUDIO1U Manual Failover
 
-Failover can be engaged manually by touching the Scene OLED button on the front panel of the PlayAUDIO1U. The current scene is indicated as follows:merge  
+Failover can be engaged manually by touching eithe Scene cap touch buttons on the front panel of the PlayAUDIO1U. The current scene is indicated as follows:  
 
-- Scene A: The Scene Touch OLED is illuminated in green, and the Touch panel display shows the letter “A”
+- Scene A: The upper Scene cap touch OLED is illuminated in green, and the Touch panel display shows the letter “A”
 
-- Scene B: The Scene touch OLED is illuminated in red, and the Touch panel display shows the letter “B”
+- Scene B: The lower Scene cap touch OLED is illuminated in red, and the Touch panel display shows the letter “B”
 
 For information on how to use a footswitch to initiate manual failover, please see the updated Auracle X manual in the Control Ports section.
 
@@ -323,20 +310,22 @@ Fine adjustments are recommended if there is a risk of signal overload. Rotary E
 | Function  | Action    |
 | ---       | ---       |
 | Commit Settings to Memory | Short press the Main Rotary Encoder twice to save the current state of the PlayAUDIO1U to the current preset. A notification will appear on the OLED and all Mode buttons will flash green three times.   |
-| Restart unit  | Long press the main rotary encoder for approximately 10 seconds until all Mode buttons have turned off after illuminating in red, then release. |
+| Restart unit  | Long press the main rotary encoder for approximately 10 seconds until all cap touch buttons have turned off after illuminating in red, then release. |
 | Enter Bootloader Mode | Long press the main rotary encoder for approximately 6 seconds until all Mode buttons illuminate red and release while buttons are still illuminated red. |
 | View Failover Tone information    | From the Home page, turn the encoder clockwise to access audio meter displays showing the current level of the failover tone in both numerical and live metering <br>No tone will produce a blank meter display above the “Tone A” and “Tone B” labels. <br>Note that a failover tone level above -3dBFS will cause the PlayAUDIO1U to enter into Safe Mode and all analog and Dante Transmit outputs to be automatically muted. <br>You will not be able to unmute analog outputs until the failover tone level is adjusted below the threshold displayed on the Tone Meter menu page. |
 
-### OLED Touch Panel
+### OLED Cap Touch Panel
 
-The PlayAUDIO1U features Mode Buttons with fixed functionality for the most commonly used functions of the PlayAUDIO1U.
+![PlayAUDIO1U cap touch buttons](images/playaudio1u-oled-audio.png)
+
+The PlayAUDIO1U features Cap Touch Buttons with fixed functionality for the most commonly used functions of the PlayAUDIO1U.
 
 | Button | Function |
 |---|---|
 | Scene | Toggles the current scene between scene A and scene B |
-| Audio | Displays the audio output menu.<br>Press again to toggle between viewing the 24 rear analog outputs and 32 Dante transmit channels.<br>When the Output menu is active, turn the encoder to cycle through editable parameters and press the encoder to edit the selected parameter |
-| MIDI | Calls the MIDI monitoring page. <br>Turn the encoder to cycle between MIDI monitoring pages for all PlayAUDIO1U MIDI ports.<br>Double tap the encoder while the MIDI page is active to generate a MIDI Panic message to all MIDI ports |
-| Exit | Steps backward through the menu hierarchy per press |
+| Audio | Displays the audio output menu.<br>Press again to toggle between viewing the 12 rear analog outputs and the home page.<br>When the Output menu is active, turn the encoder to cycle through editable parameters and press the encoder to edit the selected parameter |
+| MIDI | Calls the MIDI monitoring page. <br>Turn the encoder to cycle between MIDI monitoring pages for all PlayAUDIO1U MIDI ports. |
+| Exit | Exits to the main page |
 
 #### Scene
 
@@ -414,7 +403,7 @@ Press the Exit cap touch button to exit to the main page.
 ---
 
 ### Using the Headphone Rotary Encoder
-
+![PlayAUDIO1U Headphone encoder](images/playaudio1u-hp-encoder.png)
 #### Normal Use
 
 The headphone encoder controls the main functions of the headphone port.
@@ -427,7 +416,7 @@ Turn the headphone encoder to adjust the volume of the currently selected headph
 
 Global Mute mutes all rear analog outputs and preserves the headphone output.
 
-Double tap the headphone encoder rapidly to engage Global Mute, muting all analog outputs and Dante transmit channels of the PlayAUDIO1U.
+Double tap the headphone encoder rapidly to engage Global Mute, muting all analog outputs of the PlayAUDIO1U.
 
 Double tap again while Global Mute is active to unmute.
 
@@ -435,7 +424,7 @@ Turn the encoder slowly to raise or lower the selected headphone mix volume in 0
 
 ![Global Mute on the PlayAUDIO1U display](images/)
 
-![Global Mute ON in Auracle X](../images/)
+![Global Mute ON in Auracle X](images/)
 
 ### Using the Control Ports
 
