@@ -270,18 +270,16 @@ The Safe Mode feature is integrated into your PlayAUDIO1U interface to safeguard
 
 ![Safe Mode screen](../images/safemode-01.png)
 
-![Safe Mode options: Check, Disable, Unmute](../images/safe-mode-check.png)
+![Safe Mode check screen](images/pa1u-safemode-check.png)
 
-![Safe Mode options: Check, Enable, Mute](../images/safe-mode-enable.png)
+![Safe Mode options: Check, Disable, Unmute](../images/safe-mode-check.png)
 
 For more information about Safe Mode including Safe Mode triggers and how to disengage Safe Mode and return to normal operation, please see our Safe Mode Guide at https://www.iconnectivity.com/safemode
 
 ## Controls
 
 ### OLED Home Page Legend
-![Home page: Scene A armed for automatic failover (shield and sine wave icons)]()
-
-![Home page: tone check enabled, no tone detected (checkmark and flat line icons)]()
+![Home page: Scene A armed for automatic failover (shield and sine wave icons)](images/pa1u-audio-tone.png)
 
 Scene Indicator Icon Legend (Top Left next to Scene A or Scene B Indicator):
 
@@ -293,6 +291,9 @@ Scene Indicator Icon Legend (Top Left next to Scene A or Scene B Indicator):
 | Safe Mode Screen              | Audio level on current scene exceeds tone check maximum volume (only used when tone check is enabled). Lower tone volume and double press headphone knob to unmute. For more detailed information about how Safe Mode activates and how to Disengage please visit https://www.iconnectivity.com/safemode  |
 
 Tone and MIDI traffic Indicator Icon Legend (top and bottom right):
+
+![PlayAUDIO1U main page](images/pa1u-audiopage-tone.png)
+
 
 | Icon  | Info  |
 | ---   | ---   |
@@ -341,6 +342,11 @@ Red cap touch button below Scene label for Scene B.
 
 ![PlayAUDIO1u Scene A active](images/playaudio1u-oled-scene-b.png)
 
+Turn the rotary encoder while on the main page to navigate to the tone check page which shows the current level of the audio failover tone if present.
+
+![PlayAUDIO1U main page](images/pa1u-audiopage-tone.png)
+
+
 #### Audio
 
 ![Playaudio1u OLED menu Audio selected](images//oled-audio.png)
@@ -359,6 +365,7 @@ Once the Audio page is active, use the rotary encoder to:
 
 3. Short press again to exit to the main Audio page.
 
+You can also tap the top Audio cap touch button to increment through output channels or tap the bottom cap touch button to decrement through output channels.
 ---
 
 #### MIDI
@@ -379,11 +386,7 @@ The main MIDI page monitors MIDI traffic at the input or output channels of the 
 
 2. Tap has no function.
 
----
-
 Once on the MIDI menu page, turn the main rotary encoder to cycle between MIDI port groups: USB (Host), DIN, DAW A, DAW B, and RTP.
-
----
 
 If a MIDI message is detected on an actively monitored MIDI input/output group from the MIDI menu page, a MIDI message-dependent icon will appear in the appropriate input or output row on screen.
 
