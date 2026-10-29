@@ -1,5 +1,7 @@
 {
   "guides": [
     {"id": "playaudio2d", "title": "PlayAUDIO2D", "file": "playaudio2d/playaudio2d-user-guide-2026.md", "group": "Audio Interfaces", "pdf": "https://www.iconnectivity.com/s/playaudio2d-user-guide-20261013.pdf"}
+    {"id": "playaudio2u", "title": "PlayAUDIO2U", "file": "playaudio2u/playaudio2u-user-guide-2026.md", "group": "Audio Interfaces", "pdf": "https://www.iconnectivity.com/s/playaudio2d-user-guide-20261013.pdf"}  
+    {"id": "playaudio1u", "title": "PlayAUDIO1U", "file": "playaudio1u/playaudio1u-user-guide-2026.md", "group": "Audio Interfaces", "pdf": "https://www.iconnectivity.com/s/playaudio2d-user-guide-20261013.pdf"} 
   ]
 }
