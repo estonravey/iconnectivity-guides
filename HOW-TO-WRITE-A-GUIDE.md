@@ -38,9 +38,9 @@ The contents window is built automatically, so don't add a table of contents, se
 
 The `id` appears in the web address (`/user-guide#mioxl`), so keep it short, lowercase and without spaces. `group` puts guides under a heading in the Guide menu. The order in `guides.json` is the order in the menu and of the Previous / Next buttons.
 
-## PDF downloads
+## PDF download
 
-To offer a downloadable PDF of a guide, add `pdf` to the guide's line in `guides.json`. A "Download PDF" button then appears under the guide's title, and the guide is listed under **PDF downloads** in the contents window. Guides without `pdf` show neither.
+To offer a downloadable PDF of a guide, add `pdf` to the guide's line in `guides.json`. A "Download PDF" button then appears under the guide's title, and the same PDF is shown under **PDF download** in the contents window while that guide is selected. Guides without `pdf` show neither.
 
 The PDF can be stored in the repository, next to the guide:
 
