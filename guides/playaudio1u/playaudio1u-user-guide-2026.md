@@ -8,7 +8,7 @@ Congratulations on the purchase of your new PlayAUDIO1U USB Audio, MIDI & Dante 
 ### Feature List
 
 - Two USB Type C DAW ports – use up to 2 computer devices Mac OS/Windows simultaneously
-- Twelve  XLR analog audio Line Outputs 
+- Twelve XLR analog audio Line Outputs 
 - Stereo ¼” headphone output with two independent mixes (summable to one mix)
 - DIN-MIDI ports built-in (1-in, 1-out)
 - USB Host port (connect up to 8 USB MIDI class-compliant devices with a USB hub)
