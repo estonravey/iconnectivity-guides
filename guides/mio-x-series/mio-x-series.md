@@ -1,7 +1,7 @@
 # mio X Series User Guide
 
 ## Introduction
-![mio X Series](images/mio X Series-main.jpeg)
+![mio X Seriesz](images/mioxl-wh-front.png)
 
 Congratulations on the purchase of your new mio X Series MIDI interface!
 
@@ -31,7 +31,6 @@ Congratulations on the purchase of your new mio X Series MIDI interface!
 - Capacitive touch control panel
 - Sixteen recallable custom preset slots
 - Auracle X software (Mac OS, Windows) configuration and setup
-
 
 ### What's in the Box
 
