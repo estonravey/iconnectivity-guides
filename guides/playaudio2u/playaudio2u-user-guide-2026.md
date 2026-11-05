@@ -1,7 +1,7 @@
 # PlayAUDIO2U User Guide
 
 ## Introduction
-![PlayAUDIO2U](images/000-product/2u-main.png)
+<img src="images/pa2u-main.png" width="800" alt="PlayAUDIO2U Audio MIDI interface">
 
 Congratulations on the purchase of your new PlayAUDIO2U USB Audio & MIDI interface!
 
