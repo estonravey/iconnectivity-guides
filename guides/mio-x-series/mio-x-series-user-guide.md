@@ -76,7 +76,7 @@ Congratulations on the purchase of your new mio X-Series MIDI interface!
 - **USB Host Ports.** Connect USB MIDI class-compliant devices.
 - **Device Port.** USB B port for connecting computers or tablets.
 
-### miOXL Rear Panel
+### mi0XL Rear Panel
 
 <img src="images/mioxl-panel-rear.png" width="800" alt="mioXL rear panel description">
 
