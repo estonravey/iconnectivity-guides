@@ -1,7 +1,7 @@
 # PlayAUDIO1U User Guide
 
 ## Introduction
-![PlayAUDIO1u](images/playaudio1u-main.jpeg)
+![PlayAUDIO1U](images/playaudio1u-main.jpeg)
 
 Congratulations on the purchase of your new PlayAUDIO1U USB Audio, MIDI & Dante interface!
 
