@@ -1,7 +1,7 @@
 # PlayAUDIO2U User Guide
 
 ## Introduction
-<img src="images/pa2u-main.png" width="800" alt="PlayAUDIO2U Audio MIDI interface">
+<img src="images/pa2u-main.png" width="887" alt="PlayAUDIO2U Audio MIDI interface">
 
 Congratulations on the purchase of your new PlayAUDIO2U USB Audio & MIDI interface!
 
@@ -118,14 +118,14 @@ Download the latest version of the Auracle X software installer at: https://www.
 
 ### Mac Users
 ## First time Installation
-![Auracle X .dmg](/guides/images/ax-dmg.png)
+![Auracle X .dmg](/iconnectivity-guides/guides/images/ax-dmg.png)
 
 When the Auracle X application has finished downloading open the .dmg file
 
 Drag the Auracle X application to the Applications folder.
 
 ### Mac Users: Auracle X update
-![Auracle X firmware update](/guides/images/ax-check-updates.png)
+![Auracle X firmware update](/iconnectivity-guides//guides/images/ax-check-updates.png)
 
 If you already have the Auracle X application installed, use the Auracle X main menu to check for updates and follow the prompts that follow if a newer version of Auracle X is available.
 
@@ -134,11 +134,11 @@ If you already have the Auracle X application installed, use the Auracle X main 
 
 When the package installer download is complete, run the Auracle X installer.
 
-![Windows installation](/guides/images/win-ax-install.png)
+![Windows installation](/iconnectivity-guides//guides/images/win-ax-install.png)
 
 Click Yes to allow Auracle X Setup
 
-![Windows install for all users](/guides/images/win-ax-install-2.png)
+![Windows install for all users](/iconnectivity-guides//guides/images/win-ax-install-2.png)
 
 Install for all users
 
@@ -270,11 +270,9 @@ For information on how to use a footswitch to initiate manual failover, please s
 ### Safe Mode
 The Safe Mode feature is integrated into your PlayAUDIO2U interface to safeguard performers and audience members from potentially harmful audio levels. Activation of Safe Mode is indicated by the display of a dedicated Safe Mode screen and alternating red LEDs within the Audio LED section on the front panel. Upon activation, all outputs, excluding the headphone output, will be automatically muted.
 
-![Safe Mode screen](/guides/images/safemode-01.png)
+![Safe Mode screen](/iconnectivity-guides//guides/images/safemode-01.png)
 
-![Warning icon on the Tone A meter](/guides/images)
-
-![Safe Mode options: Check, Disable, Unmute](/guides/images/safe-mode-check.png)
+![Safe Mode options: Check, Disable, Unmute](/iconnectivity-guides//guides/images/safe-mode-check.png)
 
 For more information about Safe Mode including Safe Mode triggers and how to disengage Safe Mode and return to normal operation, please see our Safe Mode Guide at https://www.iconnectivity.com/safemode
 
@@ -336,7 +334,7 @@ Press the scene button to toggle the PlayAUDIO2U between Scene A and Scene B.
 
 Rotate the encoder to move between the pages listed below, and short press to select one:
 
-![Analog output monitoring](/guides/playaudio2d/images/00-scene/00-dual-master.png)
+![Analog output monitoring](/iconnectivity-guides//guides/playaudio2d/images/00-scene/00-dual-master.png)
 
 1. Analog output monitoring including headphones, scene indicator, failover tone detection, and MIDI monitor
     - Short press to call the edit output channel window, where all or one of 24 analog output channels may be selected to edit.
@@ -361,13 +359,13 @@ Press the Input Mode button again to toggle between Analog inputs and Dante rece
 
 ##### Analog Input monitoring
 
-![Analog Input Monitoring](/guides/playaudio2d/images/01-input/analog-inputs-all-edits.png)
+![Analog Input Monitoring](/iconnectivity-guides//guides/playaudio2d/images/01-input/analog-inputs-all-edits.png)
 
 The Input page displays analog input gain level and active input metering, 48V and Hi-Z status on analog inputs and allows you to edit these parameters.
 
 ##### Editing Analog Input Channels
 
-![Input channel editing detail](/guides/playaudio2d/images/01-input/analog-input-edit-single.png)
+![Input channel editing detail](/iconnectivity-guides//guides/playaudio2d/images/01-input/analog-input-edit-single.png)
 
 Once a single audio input channel or all audio input channels are selected, a detailed menu of editable input parameters appears.
 
@@ -389,7 +387,7 @@ Rotate the main encoder to select a single channel or all channels. Short press 
 
 The Output page displays active analog output metering and allows you to edit these parameters.
 
-![Analog outputs with live meters](/guides/playaudio2d/images/02-output/analog-outputs-live.png)
+![Analog outputs with live meters](/iconnectivity-guides/guides/playaudio2d/images/02-output/analog-outputs-live.png)
 
 ##### Editing Analog Output Channels
 
@@ -407,13 +405,13 @@ You can also press the Output Mode button to step through all outputs one at a t
 
 Continuing to short press the Output Mode Button will wrap around to the first audio output channel.
 
-![Editing all analog outputs](/guides/playaudio2d/images/02-output/analog-single-edit.png)
+![Editing all analog outputs](/iconnectivity-guides/guides/playaudio2d/images/02-output/analog-single-edit.png)
 
 #### MIDI
 
 The MIDI menu page displays real-time monitoring of all PlayAUDIO2U MIDI inputs and outputs grouped by physical MIDI port.
 
-![MIDI monitor page](/guides/playaudio2d/images/03-midi/midi-monitor.png)
+![MIDI monitor page](/iconnectivity-guides/guides/playaudio2d/images/03-midi/midi-monitor.png)
 
 Press the MIDI Mode button to call the PlayAUDIO2U’s onboard MIDI monitor page.
 
@@ -438,7 +436,7 @@ If a MIDI message is detected on an actively monitored MIDI input/output group f
 
 Press the System Mode Button to display the PlayAUDIO2U info page
 
-![System info page](/guides/playaudio2d/images/04-system/system.png)
+![System info page](/iconnectivity-guides//guides/playaudio2d/images/04-system/system.png)
 
 #### Exit
 
@@ -462,9 +460,9 @@ Double tap the headphone encoder rapidly to engage Global Mute, muting all analo
 
 Double tap again while Global Mute is active to unmute.
 
-![Global Mute on the display](/guides/playaudio2d/images/)
+![Global Mute on the display](/iconnectivity-guides//guides/playaudio2d/images/)
 
-![Global Mute ON in Auracle X](/guides/playaudio2d/images/auracle-x/global-mute-on.png)
+![Global Mute ON in Auracle X](/iconnectivity-guides/guides/playaudio2d/images/auracle-x/global-mute-on.png)
 
 #### Headphone Mixes
 
@@ -476,34 +474,34 @@ To select between headphone mixer options:
 
 2. Turn the headphone encoder slowly to raise or lower the selected headphone mix volume in 0.5 dB increments.
 
-![Headphones Mixer in Auracle X](images/auracle-x/02-audio.headphones.png)
+![Headphones Mixer in Auracle X](../playaudio2d/images/auracle-x/02-audio.headphones.png)
 
 #### Headphone Mix Options: Scene A
 
 ##### Mix A1
 
-![Headphone Mix A1 on the display](/guides/playaudio2d/images/hp/A1.png)
+![Headphone Mix A1 on the display](/iconnectivity-guides//guides/playaudio2d/images/hp/A1.png)
 
 - All 24 outputs from USB DAW A
 - All four analog inputs
 
 ##### Mix A2
 
-![Headphone Mix A2 on the display](/guides/playaudio2d/images/hp/A2.png)
+![Headphone Mix A2 on the display](/iconnectivity-guides//guides/playaudio2d/images/hp/A2.png)
 
 - All 32 outputs from USB DAW A
 - All four analog inputs
 
 ##### Mix A3
 
-![Headphone Mix A3 on the display](/guides/playaudio2d/images/hp/A3.png)
+![Headphone Mix A3 on the display](/iconnectivity-guides//guides/playaudio2d/images/hp/A3.png)
 
 - All 32 outputs from USB DAW B
 - All four analog inputs
 
 ##### Mix A4
 
-![Headphone Mix A4 on the display](/guides/playaudio2d/images/hp/A4.png)
+![Headphone Mix A4 on the display](/iconnectivity-guides//guides/playaudio2d/images/hp/A4.png)
 
 - USB DAW A outputs 1-12; USB DAW B outputs 1-12
 - All four analog inputs
@@ -512,28 +510,28 @@ To select between headphone mixer options:
 
 ##### Mix B1
 
-![Headphone Mix B1 on the display](/guides/playaudio2d/images/hp/B1.png)
+![Headphone Mix B1 on the display](/iconnectivity-guides/guides/playaudio2d/images/hp/B1.png)
 
 - All 24 outputs from USB DAW B
 - All four analog inputs
 
 ##### Mix B2
 
-![Headphone Mix B2 on the display](/guides/playaudio2d/images/hp/B2.png)
+![Headphone Mix B2 on the display](/iconnectivity-guides/guides/playaudio2d/images/hp/B2.png)
 
 - All 24 outputs from USB DAW A
 - All four analog inputs
 
 ##### Mix B3
 
-![Headphone Mix B3 on the display](/guides/playaudio2d/images/hp/b3.png)
+![Headphone Mix B3 on the display](/iconnectivity-guides/guides/playaudio2d/images/hp/b3.png)
 
 - All 24 outputs from USB DAW B
 - All four analog inputs
 
 ##### Mix B4
 
-![Headphone Mix B4 on the display](/guides/playaudio2d/images/hp/B4.png)
+![Headphone Mix B4 on the display](/iconnectivity-guides/guides/playaudio2d/images/hp/B4.png)
 
 - USB DAW A outputs 1-12; USB DAW B outputs 1-12
 - All four analog inputs

@@ -3,7 +3,7 @@
 ## Introduction
 <img src="images/mioxm-front-flat.png" width="350" alt="mioXM MIDI interface">
 
-<img src="images/mioxl-front-flat.png" width="800" alt="mioXL MIDI interface">
+<img src="images/mioxl-front-flat.png" width="887" alt="mioXL MIDI interface">
 
 Congratulations on the purchase of your new mio X-Series MIDI interface!
 

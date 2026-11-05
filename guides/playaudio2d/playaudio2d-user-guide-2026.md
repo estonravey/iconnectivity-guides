@@ -1,7 +1,7 @@
 # PlayAUDIO2D User Guide
 
 ## Introduction
-![PlayAUDIO2D](images/000-product/pa2d-front-trans-small.png)
+<img src="images/000-product/pa2d-front-trans-small.png" width="887" alt="PlayAUDIO2D Audio MIDI and Dante Interface">
 
 Congratulations on the purchase of your new PlayAUDIO2D USB Audio, MIDI & Dante interface!
 
