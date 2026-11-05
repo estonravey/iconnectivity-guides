@@ -272,6 +272,8 @@ The Safe Mode feature is integrated into your PlayAUDIO2U interface to safeguard
 
 ![Safe Mode screen](/iconnectivity-guides//guides/images/safemode-01.png)
 
+![Warning icon on the Tone A meter](/iconnectivity-guides/guides/playaudio2d/images/05-safemode/03-check-exceed.png)
+
 ![Safe Mode options: Check, Disable, Unmute](/iconnectivity-guides//guides/images/safe-mode-check.png)
 
 For more information about Safe Mode including Safe Mode triggers and how to disengage Safe Mode and return to normal operation, please see our Safe Mode Guide at https://www.iconnectivity.com/safemode
@@ -355,8 +357,6 @@ The Input page monitors and edits analog input channels.
 
 Press the Input Mode button to call the Analog Input menu.
 
-Press the Input Mode button again to toggle between Analog inputs and Dante receive channel monitoring.
-
 ##### Analog Input monitoring
 
 ![Analog Input Monitoring](/iconnectivity-guides//guides/playaudio2d/images/01-input/analog-inputs-all-edits.png)
@@ -378,8 +378,6 @@ Turn the main encoder to change the value of the selected parameter. Press the m
 The Output page monitors and edits all 24 rear analog output channels.
 
 Press the Output Mode button to call the Output menu.
-
-Press the Output Mode button again to toggle between Analog outputs and Dante Transmit channel monitoring.
 
 Rotate the main encoder to select a single channel or all channels. Short press the main encoder to edit the selected output channel(s).
 
@@ -454,9 +452,9 @@ Turn the headphone encoder to adjust the volume of the currently selected headph
 
 #### Global Mute
 
-Global Mute mutes all rear analog and Dante Transmit outputs and preserves the headphone output.
+Global Mute mutes all rear analog outputs and preserves the headphone output.
 
-Double tap the headphone encoder rapidly to engage Global Mute, muting all analog outputs and Dante transmit channels of the PlayAUDIO2U.
+Double tap the headphone encoder rapidly to engage Global Mute.
 
 Double tap again while Global Mute is active to unmute.
 
