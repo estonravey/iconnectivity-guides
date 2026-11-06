@@ -10,10 +10,7 @@ Version 2.6.0
 
 For more information about this and other products, please visit the iConnectivity Knowledge Base on the [iConnectivity Support Website](https://www.iconnectivity.com/support-system).
 
-[Download the latest Auracle X configuration software here](https://www.iconnectivity.com/auracle-x-series)
-
 ## Installing Auracle X
-Before you begin using your PlayAUDIO1U we recommend that you upgrade your unit's firmware to the latest version using iConnectivity's Auracle X application.
 
 [Download the latest version of the Auracle X software installer here](https://www.iconnectivity.com/software/control-software)
 
@@ -50,21 +47,21 @@ Please check the link below often to find current firmware release dates and to 
 
 [https\://www\.iconnectivity.com/firmware](https://www.iconnectivity.com/firmware) 
 
-# **Main Menu**
+## Main Menu
 
-## **Audio**
+### Audio
 <img src="images/01-audio-page.png" width="800" alt="Auracle X audio page for the PlayAUDIO2D">
 
 The audio page is customized to the device you are configuring. These pages will contain some items that are universal and some that are specific to the audio interface you are connected to.
 
-Current interface lineup showing the audio page include: AUDIO2+, AUDIO4+, AUDIO4c, PlayAUDIO12, PlayAUDIO1U, PlayAUDIO2U, and PlayAUDIO2D.
+Current interface lineup showing the audio page include: PlayAUDIO2D, PlayAUDIO2U, PlayAUDIO1U, PlayAUDIO12, AUDIO4c, AUDIO4+ and AUDIO2+.
 
 Analog audio output and routing can be configured in the following ways on the Audio page: Level, Mute, Stereo/Mono, Headphone Mix, Pan, and Solo.
 
 Analog audio input routing is adjustable for Level, Mute, 48V phantom power, and High Z/ Mic selection.  
 Dante receive/input channels can only be edited for mute/unmute.
 
-### Sample Rate   
+#### Sample Rate   
 At the bottom of the Audio page (you may have to scroll down depending on the size and resolution of your screen), choose the recording sample rate of the AUDIO series interface from between 44.1, 48, 88.2\*, and 96KHz\*.
 
 > **Note:** changing the sampling rate to 88.2 or 96KHz will render a channel change and some modes may be unavailable. After changing sample rates on the PlayAUDIO12 it will be necessary to select an output mode. While no output mode is selected no audio will output from the PlayAUDIO12.
@@ -76,14 +73,14 @@ At the bottom of the Audio page (you may have to scroll down depending on the si
 Both units of our PlayAUDIO series interfaces feature automatic and manual failover, as well as configuration menus for output mode selection, audio mixing, and more
 
 #### Scene Selection  
-<img src="images/scene-select.png" width="250" alt="Scene seletion indicator with scene A highlighted">
+<img src="images/scene-select.png" height="50" alt="Scene seletion indicator with scene A highlighted">
 
 Select the scene you wish to be active. Scene Selection buttons also respond in real time to scene selection changes made on the interface, and vice versa.  
 
 ---
 
 #### Failover Arm/ Disarm selection  
-<img src="images/failover-dis-arm.png" width="360" alt="Scene seletion indicator with scene A highlighted">
+<img src="images/failover-dis-arm.png" height="50" alt="Scene seletion indicator with scene A highlighted">
 
 To be able to arm automatic failover you must select a failover signal in the Failover Settings menu item on the bottom of the Audio menu page as well as activate that failover signal. You may arm or disarm automatic failover by clicking the appropriate button above.
 
@@ -91,27 +88,29 @@ To be able to arm automatic failover you must select a failover signal in the Fa
 
 Tripping the Failover Alarm & Backup Scene Selector
 
-<img src="images/trip-alarm.png" width="510" alt="Scene seletion indicator with scene A highlighted">
+<img src="images/trip-alarm.png" height="50" alt="Scene seletion indicator with scene A highlighted">
 
 When the Failover alarm is tripped by an interruption in the selected Trigger Mode exceeding your configured audio or MIDI timeout threshold, the Failover Arm / Disarm selection menu will be modified to include a red Failed Over visual alarm, as well as a button to clear the failover alert. Clicking the Clear Failover Alert button will remove the visual alarm but will not toggle the interface to Scene A.
 
 ---
 
-### **Output Mode Selection**
+#### Output Modes
 
-![][image8]
+<img src="images/ax-output-selection.png" height="50" alt="audio output mode selection menu">
 
 Both the PlayAUDIO12 and PlayAUDIO1U can be configured to use the ¼” TRS headphone jack as a pair of unbalanced audio outputs using a TRS to dual TS cable (not included), or as a mixable headphone output for monitoring the other outputs. 
 
-| Outputs | Adds headphone outputs left and right as discrete audio outputs 11 and 12 (PlayAUDIO12) or outputs 13 and 14 (PlayAUDIO1U) or outputs 25 and 26 (PlayAUDIO2U) |
+| Output Modes | |
 | ---- | ---- |
+| **Outputs** | Adds headphone outputs left and right as discrete audio outputs 11 and 12 (PlayAUDIO12) or outputs 13 and 14 (PlayAUDIO1U) or outputs 25 and 26 (PlayAUDIO2U) |
 | **Headphones** | Calls an additional mixing page allowing you to adjust the levels of each output sending to the headphone output. More info about Headphones mode can be found in the [**Headphones Mode**](#headphones-mode) section of this manual. |
 | | |
 
-### **Outputs/Headphones Shared Settings**
+#### Outputs/Headphones Shared Settings
 
-| Global Mute | Mutes/unmutes all analog outputs not including headphones output. Mutes the first 24 Dante Transmit channels  on the PlayAUDIO2D. |
+| Shared Settings | |
 | :---- | :---- |
+| **Global Mute** | Mutes/unmutes all analog outputs not including headphones output. Mutes the first 24 Dante Transmit channels  on the PlayAUDIO2D. |
 | **Max All Levels** | Changes the level of output on rear analog outputs to maximum level |
 | | |
 
@@ -119,7 +118,7 @@ Both the PlayAUDIO12 and PlayAUDIO1U can be configured to use the ¼” TRS head
 
 ---
 
-### **Outputs Mode**
+### Output Mode 
 
 <img src="images/ax-outputs-mode.png" width="800" alt="Auracle X PlayAUDIO1U audio menu page">
 
@@ -131,12 +130,13 @@ Both the PlayAUDIO12 and PlayAUDIO1U can be configured to use the ¼” TRS head
 
 ### 
 
-### **Headphones mode**
+### Headphones Mode
 
 <img src="images/ax-hp-mode.png" width="800" alt="Auracle X PlayAUDIO1U audio menu page, headphones selected">
 
-| Faders | Changes the audio output level by dragging up or down, or clicking a location in the vertical fader path |
+| Headphones Menu | |
 | :---- | :---- |
+| **Faders** | Changes the audio output level by dragging up or down, or clicking a location in the vertical fader path |
 | **dB indicator** | Sets and displays audio output level, editable field |
 | **Mute** | Mutes or unmutes the signal of the selected output channel |
 | **Solo** | Solos the selected output channel in the headphones mix |
@@ -147,7 +147,7 @@ For more info on the specific audio page data you will see please take a look in
 
 ---
 
-## **PlayAUDIO2D Dante Audio Options**
+### **PlayAUDIO2D Dante Audio Options**
 
 <img src="images/ax-pa2d-audio.png" width="800" alt="PlayAUDIO2D audio page, Dante selected">
 
@@ -161,15 +161,16 @@ The **Global Mute** button controls the mute & unmute function for all rear anal
 
 ---
 
-### **Failover Settings**
+#### **Failover Settings**
 
 <img src="images/ax-failover-settings.png" width="800" alt="PlayAUDIO Failover settings main menu">
 
 Failover settings are set to a standard default setting seen above but should be configured based on the capabilities and tolerances of your specific rig.
 
-| Failover Mode | Choose Dual Master to allow a PlayAUDIO interface to recognize an automatic failover signal on both scenes. Choose Single Master to allow automatic failover from scene A to scene B only  |
+| Failover Settings | |
 | :---- | :---- |
-| **Trigger Mode**  | **Audio Tone**: Use a tone generator like our [LifeSine VST available for download](https://www.iconnectivity.com/software/control-software) to stream a constant tone to a virtual audio channel. Interruptions in the tone above the Audio Timeout threshold will trigger an automatic failover. <br><br>**MIDI Stream:** Use a constant MIDI stream like sync or clock to stream a failover signal for automatic failover detection. Interruptions in the MIDI stream above the MIDI timeout threshold will trigger an automatic failover. <br><br>**Either**: The PlayAUDIO interface will remain on the current armed scene as long as either an Audio Tone or MIDI Stream is present and unbroken above the respective Audio or MIDI Timeout values. <br><br>**Both:** The PlayAUDIO interface will remain on the current armed scene as long as **both** the Audio Tone **and** MIDI Stream remain uninterrupted above the respective Audio or MIDI Timeout values. |
+| **Failover Mode** | Choose Dual Master to allow a PlayAUDIO interface to recognize an automatic failover signal on both scenes. Choose Single Master to allow automatic failover from scene A to scene B only  |
+| **Trigger Mode**  | **Audio Tone**: Use a tone generator like our [LifeSine VST](https://www.iconnectivity.com/software/control-software) to stream a constant tone to a virtual audio channel. Interruptions in the tone above the Audio Timeout threshold will trigger an automatic failover. <br><br>**MIDI Stream:** Use a constant MIDI stream like sync or clock to stream a failover signal for automatic failover detection. Interruptions in the MIDI stream above the MIDI timeout threshold will trigger an automatic failover. <br><br>**Either**: The PlayAUDIO interface will remain on the current armed scene as long as either an Audio Tone or MIDI Stream is present and unbroken above the respective Audio or MIDI Timeout values. <br><br>**Both:** The PlayAUDIO interface will remain on the current armed scene as long as **both** the Audio Tone **and** MIDI Stream remain uninterrupted above the respective Audio or MIDI Timeout values. |
 | **Audio Trigger** | **Host Connected**: Automatic failover will be triggered when failover is armed and the Host (device connected to the USB DAW port) is unplugged from the interface. <br><br>**Failover Signal:** Automatic failover will be triggered when failover is armed and audio signal on the audio channel selected in the Audio Channel menu is interrupted at or longer than the Audio Timeout threshold. |
 | **Audio Channel** | Select the virtual audio channel for a PlayAUDIO interface to listen for failover tone |
 | **Audio Time Out** | Set the tone timeout threshold for automatic failover. Spend some time here testing the minimum timeout threshold to find the value that works for your hardware configuration. Some older machines or very large sessions may require longer timeout values to accommodate computing resource limitations. |
@@ -178,13 +179,11 @@ Failover settings are set to a standard default setting seen above but should be
 | **MIDI Timeout** | Set the MIDI timeout threshold for automatic failover. |
 | | |
 
-## 
-
-### **MIDI Learn (PlayAUDIO1U, PlayAUDIO2U, PlayAUDIO2D)**
-
-On the Audio page on the PlayAUDIO1U Auracle X menu, use the Toggle MIDI Learn Set button to turn on the MIDI Learn function in order to map CC messages to available parameters.
+#### MIDI Learn (PlayAUDIO1U, PlayAUDIO2U, PlayAUDIO2D)
 
 <img src="images/ax-midi-learn.png" width="800" alt="PlayAUDIO1U Audio page, MIDI learn selected">
+
+On the Audio page on the PlayAUDIO1U Auracle X menu, use the Toggle MIDI Learn Set button to turn on the MIDI Learn function in order to map CC messages to available parameters.
 
 1. Plug in a MIDI controller capable of sending CC messages into the USB HOST port of the PlayAUDIO1U.
 
@@ -204,17 +203,17 @@ Click the MIDI Learn Settings button to see the list of active MIDI mapped param
 
 <img src="images/ax-midi-learn-delete.png" width="800" alt="MIDI Learn menu detail">
 
-To delete an active MIDI mapping click the trash icon at the far left of the mapping you’d like to delete.
+To delete an active MIDI mapping click the trash icon located in the far right of each MIDI map row.
 
 To edit an active MIDI mapping, click the MIDI Channel dropdown or the MIDI CC value field of the mapping you would like to edit.
 
 --- 
 
-## **MIDI Routing**
+## MIDI Routing
 
-### **General Info**
+### General Info
 
-Different iConnectivity interfaces have differing numbers of MIDI port types and amounts, but they can all be configured using our Auracle X software MIDI Routing page. The number and types of MIDI port sources and destinations will depend on the interface type you are using, but every MIDI port includes its own 16 MIDI channels (1-16). These can be used to send and receive SysEx/MIDI data to and from any other port.
+Different iConnectivity interfaces have differing numbers of MIDI port types and amounts but they can all be configured using our Auracle X software MIDI Routing page. The number and types of MIDI port sources and destinations will depend on the interface type you are using but every MIDI port includes its own 16 MIDI channels (1-16). These can be used to send and receive SysEx/MIDI data to and from any other port.
 
 #### MIDI Ports & Channels
 
@@ -224,11 +223,12 @@ MIDI information in the iConnectivity ecosystem is organized according to three 
 
 The four types of ***physical*** ports our devices may include are listed below:
 
-| DIN MIDI Port | The classic 5-pin MIDI DIN port |
+| Physical MIDI Port Types | |
 | :---- | :---- |
-| USB Host Port | USB A port used for connecting USB MIDI controllers |
-| USB DAW Port | USB B or USB C port used for connecting USB devices eg PCs and tablets |
-| RTP MIDI Port | RJ45 port for connecting CAT5e or better ethernet cables |
+| **DIN MIDI Port** | The classic 5-pin MIDI DIN port |
+| **USB Host Port** | USB A port used for connecting USB MIDI controllers |
+| **USB DAW Port**| USB B or USB C port used for connecting USB devices eg PCs and tablets |
+| **RTP MIDI Port** | RJ45 port for connecting CAT5e or better ethernet cables |
 | | |
 
 #### Virtual MIDI Ports
@@ -251,7 +251,7 @@ MIDI information is further separated by MIDI channels. Separating MIDI informat
 
 ---
 
-### **How To Route MIDI**
+### How To Route MIDI
 
 Navigate to the MIDI Routing page. On the left side of the page in the Input column select the physical (DIN MIDI) or virtual port you wish to route. The Input port becomes highlighted in blue and the Output field to the right populates with all available routing destinations for the selected source port.
 
@@ -267,7 +267,7 @@ To rename MIDI ports click the pencil icon and enter your personalized port name
 
 ---
 
-### **The MIDI Control Port**
+### The MIDI Control Port
 
 Send a program change message to the MIDI control port on MIDI Channel 1 to change interface presets.
 
@@ -281,7 +281,7 @@ In the example above, the MIDI Input port labelled “Control” in the USB DAW 
 
 Please note that MIDI control port enabled interfaces of ours have varying available programs. You should also note that in order to send program change messages to the interface from any preset, *all* presets must have MIDI control port routing enabled.
 
-## **Filter & Remap**
+## Filter & Remap
 
 <img src="images/midi-filter-remap.png" width="800" alt="MIDI Filter & Remap page">
 
@@ -289,18 +289,18 @@ Each MIDI port can be remapped or filtered based on channel or data types (ie No
 
 Check out [this video](https://www.iconnectivity.com/auracle-x-filter-remap) for help with the Filter & Remap section of iConnectivity devices.
 
-### **Input/Output**
+### Input/Output
 
 Selects whether to modify the input to the interface or the output from the interface. The terms referenced are from the interface’s point of view.
 
-### **Filter**
+### Filter
 
 Disable MIDI data type per port and channel channel by selecting the appropriate port on the left column, and by clicking the clickable square at the intersection of the desired MIDI channel (column) and data type (row).
 
 To filter all channels of a MIDI data type (for example, all Note On/Off messages) you may select the clickable square in the column marked All to the far right of the grid of clickable squares.  
 ---
 
-### **Remap**
+### Remap
 
 <img src="images/midi-remap.png" width="800" alt="MIDI Remap page">
 
@@ -328,9 +328,9 @@ Select to return to the main menu.
 
 ---
 
-## **Presets**
+## Presets
 
-### **Interfaces with multiple presets**
+### Interfaces with multiple presets
 
 If your interface supports multiple preset save and load, you will be presented with the option to save your current settings in one of many preset slots, or to save a single setting across all presets.	
 
@@ -340,7 +340,7 @@ To Load a preset, click the **Load Preset** dropdown button and select the prese
 
 ---
 
-### **Interfaces with single presets**
+### Interfaces with single presets
 
 If your interface supports only a single preset the Presets page of Auracle X will present you with only two options: save the current settings to memory or load the last save settings to memory.
 
@@ -366,7 +366,7 @@ Our Backup and Restore feature allows you to backup and recall single or all pre
 
 > **Note:**  restoring a preset restores the saved preset from file to the preset slot it was saved from. It is necessary to then load the preset using the Load Preset option.
 
-## **RTP / Network MIDI**
+## RTP / Network MIDI
 
 RTP / Network MIDI is a great and useful solution for applications where MIDI information needs to travel long distances between a network including RTP enabled iConnectivity MIDI interfaces and/or computers.
 
@@ -374,7 +374,7 @@ RTP / Network MIDI is a great and useful solution for applications where MIDI in
 
 While it is helpful to have some knowledge of computer networking, it is not absolutely necessary for building and maintaining RTP MIDI networks.
 
-For advice on how to setup an RTP network please check out this [instructional video](https://www.youtube.com/watch?v=i3ywIA2wCpI&t=697s)
+For advice on how to setup an RTP network please check out this [instructional video](https://www.youtube.com/watch?v=i3ywIA2wCpI&t=697s).
 
 ### 
 
@@ -416,55 +416,55 @@ The latest version of Auracle X introduces a new MIDI Processing section for mor
 
 <img src="images/midi-processing.png" width="800" alt="MIDI processing page">
 
-### **Transpose Notes**
+### Transpose Notes
 
 Shifts Note On/Off numbers by −48…+48 semitones. LUT-based, clamped at 0 and 127 (so extreme transposes flatten at the ends rather than wrapping). Set Semitones, optionally restrict Channel, pick targets.
 
-### **Mirror Notes**
+### Mirror Notes
 
 Reflects notes around a *Pivot Note*: note n becomes 2×pivot − n. Playing up the keyboard sounds like playing down. Pivot default C4/60. Fun for practice and for inverted-keyboard rigs.
 
-### **Drum Mapper**
+### Drum Mapper
 
 Arbitrary note→note remap. Click \+ Add note remap and pick a from/to pair (dropdowns show names like D\#1 (27)). Anything you don't list passes through unchanged, so you only enter the pads you actually need to move. This is the tool for reconciling a pad controller with a drum instrument's layout.
 
-### **Scale Quantizer**
+### Scale Quantizer
 
 Snaps every incoming note to the chosen *Root* \+ *Scale*. Fourteen scales from Major/Minor through the modes, Blues, and Whole Tone. Implementation snaps downward to the nearest scale tone at or below the played note, so out-of-key notes always fall to the degree below, never above.
 
-### **Velocity Curve**
+### Velocity Curve
 
 Reshapes Note On velocity through one of six presets: Linear, Soft (√x — makes light playing louder), Hard (x² — needs harder hitting), Logarithmic, Exponential, S-Curve (cosine ease). Only affects Note On.
 
-### **Fixed Velocity**
+### Fixed Velocity
 
 Forces every Note On to a constant 1–127. For non-velocity-sensitive controllers, organ/clav parts, or programming hi-hats at a uniform level.
 
-### **Velocity → Channel**
+### Velocity → Channel
 
 Velocity-layer splitting. Set a *Threshold*; hits at or above it go to the *Hard hits* channel, below it to *Soft hits*. Note Offs are echoed to both destination channels, so notes always release regardless of which layer triggered them (the device is stateless, so this is deliberate — expect two Note Offs per note downstream, which is harmless for nearly every synth).
 
-### **Channel Remap**
+### Channel Remap
 
 Collapses traffic onto one channel. *From* is the source filter (All or one channel), *To Channel* is the single destination. Applies to all channel-voice message types, not just notes.
 
-### **Keyboard Split**
+### Keyboard Split
 
 2 to 8 contiguous note zones, each routed to its own channel. Each zone row is low note … high note → channel; \+ Add Zone appends one (defaulting to the top of the keyboard) and ✕ removes one (minimum 2). Non-Note messages on the source channel pass through untouched, so sustain and mod wheel don't get trapped in a zone. Zones aren't validated for overlap or gaps — order and coverage are on you.
 
-### **Remap Message**
+### Remap Message
 
 Converts one MIDI event type into another (e.g. Channel Pressure → Control Change). Pick *Source Type* and *Dest Type* from the 7 channel-voice types. The orchestrator handles the 2-byte/3-byte mismatch automatically when you cross between types like Program Change and CC.
 
-### **Scale Values**
+### Scale Values
 
 Rescales CC values. Give an *Input Range* (min/max) and an *Output Range* (min/max); values outside the input range are clamped. Use it to limit an expression pedal's travel, or invert a control by setting output min \> max. Applies to Control Change only.
 
-### **Event Filter**
+### Event Filter
 
 The simplest gate. Pick an *Event Type* and either "Block this type" or "Pass only this type". Default is blocking Poly Aftertouch, which is the common case (keyboards that spray aftertouch at synths that choke on it).
 
-### **Value Range Filter**
+### Value Range Filter
 
 The precise gate. Pick *Event Type*, then whether you're filtering on byte 2 (note\# / CC\#) or byte 3 (the value), then a Min/Max window and an action:
 
@@ -473,15 +473,15 @@ The precise gate. Pick *Event Type*, then whether you're filtering on byte 2 (no
 
 Filtering byte 2 on Control Change is how you block a range of CC numbers; filtering byte 3 on Note On is how you drop ghost-quiet velocities.
 
-### **Pitch Bend Dead Zone**
+### Pitch Bend Dead Zone
 
 Snaps pitch bend MSB values within ±*width* of center (64) back to exactly 64, leaving the rest of the throw untouched. Width 0–32. This kills wheel jitter/off-center rest position without compressing the bend range. Width 4 is the default and is usually enough.
 
-### **Chord Generator**
+### Chord Generator
 
 Each input note produces N notes at fixed semitone offsets. Presets cover Major/Minor/Diminished/Augmented triads, Maj7/Dom7/Min7, Octaves, Power Chord. The number of intervals is fixed when you create the rule (it determines how many operator and LUT slots got reserved) — the default is 3 tones, so only 3-note presets appear in the Preset dropdown. You can freely edit each interval value (−24…+24); to get a 4-note chord you must remove the rule and re-add it.
 
-## **USB Host Reservation**
+## USB Host Reservation
 
 USB Host Reservation is a useful tool to ensure that your USB MIDI controllers always populate the same virtual USB Host Port when they’re plugged into your interface, especially if you use multiple USB MIDI controllers.
 
@@ -501,7 +501,7 @@ USB Host Reservation is a useful tool to ensure that your USB MIDI controllers a
 2. Choose the USB Host port you wish to reserve and find the plugged in deviceʻs device ID in the dropdown menu on the same USB  Host port.  
 3. Navigate to the Presets page and save your settings before unplugging or power cycling
 
----
+----
 
 > Notes on USB MIDI controllers and iConnectivity Interfaces:<br><br>
 > iConnectivity interfaces allow USB MIDI controllers to be connected via dedicated USB Host ports. The USB-A MIDI host port(s) have 2 main guidelines:<br>
@@ -515,7 +515,9 @@ USB Host Reservation is a useful tool to ensure that your USB MIDI controllers a
 >A maximum of eight controllers are supported for the following interfaces: PlayAUDIO2D, PlayAUDIO2U, >PlauAUDIO1U, PlayAUDIO12, AUDIO4+, AUDIO4c, MIDI4+, mio4, mioXM.<br><br>
 A maximum of 10 controllers are supported  for the following interfaces: mio10, mioXL.
 
-## **Control Ports**
+---
+
+## Control Ports
 
 <img src="images/control-ports.png" width="800" alt>
 
@@ -533,10 +535,13 @@ The Control In port on the PlayAUDIO12 can also be used with a footswitch such a
 
 ### PlayAUDIO2D, PlayAUDIO2U, PlayAUDIO1U
 
+<img src="images/control-ports.png" width="800">
+
 The control ports on the PlayAUDIO2D, PlayAUDIO2U PlayAUDIO1U can be configured to send MIDI CC or program change messages, as well as perform failover functions as listed below. The control ports can also be disabled by clicking the blue box in the **Enabled** column on the far left of the Control Ports menu page.
 
-| Enabled | Enables the assigned control port. |
+| Control Ports Menu | |
 | :---- | :---- |
+| **Enabled** | Enables the assigned control port. |
 | **Status** | Lights up green when a connected and compatible control switch is actuated regardless of enabled status. |
 | **Port Name** | Identifies the control switch by jack and number and type (Tip or Ring). |
 | **Switch Type** | Select input or output; input receives the switch actuation, output sends a selected control action. |
@@ -545,15 +550,13 @@ The control ports on the PlayAUDIO2D, PlayAUDIO2U PlayAUDIO1U can be configured 
 | **Actions** | *See Control Ports [Actions Page](#control-ports-action-page) below.* |
 | | |
 
-### **Control Ports Action Page**
+### Control Ports Action Page
 
 <img src="images/control-port-action.png" width="800" alt="Control Ports Action page">
 
 #### Device Settings Changes
 
-##### Failover Arm State dropdown menu:
-
-Failover Arm State| |
+| Failover Arm State | |
 | :---- | :---- |
 | **No Action** | No action is taken on Failover Arm State. |
 | **Arm** | Arms automatic failover detection if automatic failover detection is disarmed and a MIDI or Audio signal detection condition is met. |
@@ -561,7 +564,6 @@ Failover Arm State| |
 | **Toggle** | Toggles the automatic failover detection between armed and disarmed if a MIDI or Audio signal condition is met. |
 | | |
 
-##### Preset Load Mode
 
 | Preset Load Mode | |
 | :---- | :---- |
@@ -569,7 +571,6 @@ Failover Arm State| |
 | **Select**	 | The preset selected in the Preset Number dropdown menu is called. |
 | | |
 
-##### Send Spacebar
 
 | Send Spacebar | |
 | :---- | :---- |
@@ -581,8 +582,6 @@ Failover Arm State| |
 ##### Preset Number
 
 Chooses between Preset 1-Preset 16 to select the preset to recall when Preset Load Mode is on Select and the control is activated
-
-##### Scene Change Mode
 
 | Scene Change Mode | |
 | :---- | :---- |
