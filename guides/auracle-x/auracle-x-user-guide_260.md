@@ -1,7 +1,7 @@
 # Auracle X User Guide 
 
 <div align="center">
-<img src="images/00-ax-logo" width="500" alt="Auracle X logo">
+<img src="images/00-ax-logo.png" width="500" alt="Auracle X logo">
 </div>
 
 ---
@@ -71,14 +71,14 @@ At the bottom of the Audio page (you may have to scroll down depending on the si
 Both units of our PlayAUDIO series interfaces feature automatic and manual failover as well as configuration menus for output mode selection, audio mixing, and more.
 
 #### Scene Selection  
-<img src="images/scene-select.png" height="50" alt="Scene seletion indicator, scene A highlighted">
+<img src="images/scene-select.png" height="50px" alt="Scene selection indicator, scene A highlighted">
 
 Select the active scene. Scene Selection buttons also respond in real time to scene selection changes made on the interface.  
 
 ---
 
 #### Failover Arm/Disarm selection  
-<img src="images/failover-dis-arm.png" height="50" alt="Failover arm and alarm section; no alarm">
+<img src="images/failover-dis-arm.png" height="50px" alt="Failover arm and alarm section; no alarm">
 
 To be able to arm automatic failover you must select and activate a failover signal in the **Failover Settings** menu item on the bottom of the Audio menu page. You may arm or disarm automatic failover by clicking the appropriate button above.
 
@@ -86,7 +86,7 @@ To be able to arm automatic failover you must select and activate a failover sig
 
 #### Tripping the Failover Alarm
 
-<img src="images/trip-alarm.png" height="50" alt="Failover arm and alarm section: alarm triggered">
+<img src="images/trip-alarm.png" height="50px" alt="Failover arm and alarm section: alarm triggered">
 
 When the Failover alarm is triggered by an interruption in the selected failover signal, the Failover Arm / Disarm selection menu will be modified to include a red **Failed Over** visual alarm and a **Clear Failover Alert** button to clear the failover alert will appear. Clicking the **Clear Failover Alert** button will remove the visual alarm but will not toggle the interface to Scene A.
 
@@ -94,7 +94,7 @@ When the Failover alarm is triggered by an interruption in the selected failover
 
 #### Output Modes
 
-<img src="images/ax-output-selection.png" height="50" alt="Audio output mode selection menu; headphones selected">
+<img src="images/ax-output-selection.png" height="50px" alt="Audio output mode selection menu; headphones selected">
 
 Both the PlayAUDIO12 and PlayAUDIO1U can be configured to use the ¼” TRS headphone jack as a pair of unbalanced audio outputs using a TRS to dual TS cable (not included), or as a mixable headphone output for monitoring the other outputs. 
 
@@ -106,7 +106,7 @@ Both the PlayAUDIO12 and PlayAUDIO1U can be configured to use the ¼” TRS head
 
 #### Outputs/Headphones Shared Settings
 
-<img src="images/global-mute-max-all-levels.png" height="50" alt="global mute, max all levels button detail">
+<img src="images/global-mute-max-all-levels.png" height="50px" alt="global mute, max all levels button detail">
 
 | Shared Settings | |
 | :---- | :---- |
@@ -136,7 +136,7 @@ Both the PlayAUDIO12 and PlayAUDIO1U can be configured to use the ¼” TRS head
 | **Pan Slider** | Move the stereo pan slider left or right|
 | **Pan Indicator** |  Displays the current stereo pan value as a positive or negative integer; editable field |
 | **Mute** | Mutes or unmutes the signal of the selected output channel |
-| **Solo** | Solos the selected output channel in the headphones mix; non-exlusive |
+| **Solo** | Solos the selected output channel in the headphones mix; non-exclusive |
 | **Stereo** | Sums sequential odd-even pairs to stereo |
 | | |
 
@@ -165,7 +165,7 @@ Failover settings are set to a standard default setting seen above but should be
 | Failover Settings | |
 | :---- | :---- |
 | **Failover Mode** | Choose **Dual Master** to allow a PlayAUDIO interface to recognize an automatic failover signal on both scenes A & B.<br><br> Choose **Single Master** to allow automatic failover from scene A to scene B only  |
-| **Trigger Mode**  | **Audio Tone**: Use a tone generator like our [LifeSine VST](https://www.iconnectivity.com/software/control-software) to stream a constant tone to a virtual audio channel on your PlayAUDIO interface. Interruptions in the tone above the active **Audio Timeout** or **MIDI Timeout** threshold will trigger an automatic failover. <br><br>**MIDI Stream:** Use a constant MIDI output stream like sync/clock to stream a failover signal for automatic failover detection. Interruptions in the MIDI stream above the MIDI timeout threshold will trigger an automatic failover. <br><br>**Either**: The PlayAUDIO interface will remain on the current armed scene as long as either an Audio Tone or MIDI Stream is present and unbroken above the respective Audio or MIDI Timeout values. <br><br>**Both:** The PlayAUDIO interface will remain on the current armed scene as long as **both** the **Audio Tone** **and** **MIDI Stream **remain uninterrupted above the respective Audio or MIDI Timeout values. |
+| **Trigger Mode**  | **Audio Tone**: Use a tone generator like our [LifeSine VST](https://www.iconnectivity.com/software/control-software) to stream a constant tone to a virtual audio channel on your PlayAUDIO interface. Interruptions in the tone above the active **Audio Timeout** or **MIDI Timeout** threshold will trigger an automatic failover. <br><br>**MIDI Stream:** Use a constant MIDI output stream like sync/clock to stream a failover signal for automatic failover detection. Interruptions in the MIDI stream above the MIDI timeout threshold will trigger an automatic failover. <br><br>**Either**: The PlayAUDIO interface will remain on the current armed scene as long as either an Audio Tone or MIDI Stream is present and unbroken above the respective Audio or MIDI Timeout values. <br><br>**Both:** The PlayAUDIO interface will remain on the current armed scene as long as **both** the **Audio Tone** **and** **MIDI Stream** remain uninterrupted above the respective Audio or MIDI Timeout values. |
 | **Audio Trigger** | **Host Connected**: Automatic failover will be triggered when failover is armed and the Host (device connected to the USB DAW port) is unplugged from the interface. <br><br>**Failover Signal:** Automatic failover will be triggered when failover is armed and audio signal on the audio channel selected in the Audio Channel menu is interrupted at or longer than the **Audio Timeout** threshold. |
 | **Audio Channel** | Select the virtual audio channel for a PlayAUDIO interface to listen for failover tone. |
 | **Audio Time Out** | Set the tone timeout threshold for automatic failover. Spend some time here testing the minimum timeout threshold to find the value that works for your hardware configuration. Some older machines or very large sessions may require longer timeout values to accommodate computing resource limitations. |
@@ -186,7 +186,7 @@ Use the **Toggle MIDI Learn Set** button to turn on the MIDI Learn function in o
 
 3. Click the **Toggle MIDI Learn Set** button to reveal available parameters to be mapped. MIDI CC mappable fields will become outlined in blue.
 
-4. Click the field of the object on the audio page you wish to MIDI map. The object start to slowly glow in blue.
+4. Click the field of the object on the audio page you wish to MIDI map. The object will start to slowly glow in blue.
 
 5. Engage the knob or fader on your MIDI controller that you wish to map to the object field from the step above until the field of that object is steadily highlighted in blue.
 
@@ -231,7 +231,7 @@ The DIN MIDI ports are 1-to-1; each physical DIN MIDI port corresponds to the id
 
 The mioXL has eight DIN MIDI input- and 12 DIN MIDI output- ports as listed in the MIDI routing page of Auracle X. 
 
-The single **USB DAW** port however houses sixteen virtual ports in the its MIDI port group as you can see most clearly in the Output:USB DAW MIDI port group column 
+The single **USB DAW** port however houses sixteen virtual ports in its MIDI port group as you can see most clearly in the Output:USB DAW MIDI port group column 
 
 The image below shows the mioXL MIDI routing page with sixteen virtual ports encapsulated within the physical USB DAW port, as well as ten virtual host ports on the physical USB Host port. To gain access to additional USB Host ports on our audio and MIDI interfaces you will need a powered USB hub, purchased separately.  
 
@@ -266,7 +266,7 @@ Interfaces with multiple presets (PlayAUDIO2D, PlayAUDIO2U, PlayAUDIO1U, mioXL, 
 
 #### DAW Preset Control
 
-Choose the MIDI port labelled **Control** as the output on an avaiable MIDI channel and send a program change message that corresponds to the preset number expected on MIDI channel 1.
+Choose the MIDI port labelled **Control** as the output on an available MIDI channel and send a program change message that corresponds to the preset number expected on MIDI channel 1.
 
 > **Note:** This works because the virtual **Input** **Control** port on the physical **USB DAW** port is routed by default to the internal virtual **Output** **Control** port that controls preset selection as pictured above.
 
@@ -280,7 +280,7 @@ Route a connected controller MIDI **Input** to the interface **Output** **Contro
 
 <img src="images/midi-filter-remap.png" width="800" alt="MIDI Filter & Remap page, input and filter selected">
 
-Each MIDI port can be remapped or filtered based on channel or general data types (ie Note, Control Change, Pitch Bend). Like the MIDI Routing page, you must first select an Input port for the Filter and Remap options to populate in the field the the left. Output is also selectable to the right of input to filter or remap MIDI data at the Output port. 
+Each MIDI port can be remapped or filtered based on channel or general data types (ie Note, Control Change, Pitch Bend). Like the MIDI Routing page, you must first select an Input port for the Filter and Remap options to populate in the field on the left. Output is also selectable to the right of input to filter or remap MIDI data at the Output port. 
 
 Check out [this video](https://www.iconnectivity.com/auracle-x-filter-remap) for help with the Filter & Remap section of iConnectivity devices.
 
@@ -336,7 +336,7 @@ To Load a preset, click the **Load Preset** dropdown button and select the prese
 
 If your interface supports only a single preset the Presets page of Auracle X will present you with only two options: save the current settings to memory or load the last save settings to memory.
 
-> **Note:** To save current settings on the PlayaUDIO12 tap the rotary encoder on the front panel of the unit. All cap touch buttons will flash amber to indicate that settings at the preset level have been saved
+> **Note:** To save current settings on the PlayAUDIO12 tap the rotary encoder on the front panel of the unit. All cap touch buttons will flash amber to indicate that settings at the preset level have been saved
 
 ### **Backup / Restore**
 
@@ -507,14 +507,14 @@ When using multiple MIDI devices this way, use the USB Host Reservation menu to 
 
 You can connect a powered USB hub to any of our host ports to add more controllers but there will still be a limit for each interface that doesn’t change.
 
-A maximum of eight controllers are supported for the following interfaces: PlayAUDIO2D, PlayAUDIO2U, >PlauAUDIO1U, PlayAUDIO12, AUDIO4+, AUDIO4c, MIDI4+, mio4, mioXM.
+A maximum of eight controllers are supported for the following interfaces: PlayAUDIO2D, PlayAUDIO2U, >PlayAUDIO1U, PlayAUDIO12, AUDIO4+, AUDIO4c, MIDI4+, mio4, mioXM.
 
 A maximum of 10 controllers are supported  for the following interfaces: mio10, mioXL.
 
 
 ## Control Ports
 
-<img src="images/control-ports.png" width="800" alt>
+<img src="images/control-ports.png" width="800" alt="">
 
 All PlayAUDIO interfaces are equipped with ¼” control ports.
 
@@ -540,7 +540,7 @@ The control ports on the PlayAUDIO2D, PlayAUDIO2U PlayAUDIO1U can be configured 
 | **Status** | Lights up green when a connected and compatible control switch is actuated regardless of enabled status. |
 | **Port Name** | Identifies the control switch by jack and number and type (Tip or Ring). |
 | **Switch Type** | Select input or output; input receives the switch actuation, output sends a selected control action. |
-| **Trigger Type** | Chooses between Momentary and Toggle switching. Experimenation may be required to achieve desired functionality if your footswitch also has a latching/unlatching switch.|
+| **Trigger Type** | Chooses between Momentary and Toggle switching. Experimentation may be required to achieve desired functionality if your footswitch also has a latching/unlatching switch.|
 | **Invert** | Check to invert the polarity of the control switch. |
 | **Actions** | *See Control Ports [Actions Page](#control-ports-action-page) below.* |
 | | |
@@ -596,7 +596,7 @@ configured to send a MIDI control change, program change, or note when activated
 | **Send to** | Selects the port to send a MIDI message on control activation . |
 | **Channel** | Selects a MIDI message action channel: 1-16. |
 | **Message** | Selects Control Change or Program change as the type of message sent. |
-| **CC, PC, Note Number Number** | Select control change, program change, or note number 0-127. |
+| **CC, PC, Note Number** | Select control change, program change, or note number 0-127. |
 | | |
 
 ## **Control Buttons**
@@ -613,7 +613,7 @@ The control buttons can also be disabled by clicking the blue box in the **Enabl
 
 ### **Load Latest From Web**
 
-<img src="images/fw-web.png" width="800" alt="Update firwmare from web menu">
+<img src="images/fw-web.png" width="800" alt="Update firmware from web menu">
 
 To use Auracle X to update your device’s firmware:
 
@@ -646,7 +646,7 @@ The latest firmware for your device is also available for manual download at: [h
 
 [**Auracle X Interface Configuration Software**](https://www.iconnectivity.com/auracle-x-series) page.
 
-[**Interface Firwmware updates**](https://www.iconnectivity.com/firmware).
+[**Interface Firmware updates**](https://www.iconnectivity.com/firmware).
 
 [**iConnectivity Warranty Policy**](http://www.iconnectivity.com/warranty).
 
@@ -658,7 +658,7 @@ Windows is a registered trademark of Microsoft Corporation in the United States 
 
 Android is a trademark of Google LLC.
 
-iConnectivity, PlayAUDIO2D, PlayAUDIO2U, PlauAUDIO1U, PlayAUDIO12, AUDIO4+, AUDIO4c, MIDI4+, mio4, mioXM, and mioXL are trademarks of iKingdom Corp. Features of this product are protected under patent pending. 
+iConnectivity, PlayAUDIO2D, PlayAUDIO2U, PlayAUDIO1U, PlayAUDIO12, AUDIO4+, AUDIO4c, MIDI4+, mio4, mioXM, and mioXL are trademarks of iKingdom Corp. Features of this product are protected under patent pending. 
 
 For more details see [iConnectivity Patents](http://www.iConnectivity.com/patents). 
 
