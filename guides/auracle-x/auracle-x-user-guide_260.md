@@ -114,14 +114,13 @@ Both the PlayAUDIO12 and PlayAUDIO1U can be configured to use the ¼” TRS head
 | **Max All Levels** | Changes the level of output on rear analog outputs to maximum level |
 | | |
 
----
-
 ### Output Mode 
 
 <img src="images/ax-outputs-mode.png" width="800" alt="Auracle X PlayAUDIO1U audio menu page, outputs selected">
 
-| Faders | Drag fader up or down, or click on the vertical fader travel path to adjust output level |
+| Outputs Menu | |
 | :---- | :---- |
+| Faders | Drag fader up or down, or click on the vertical fader travel path to adjust output level |
 | **dB indicator** | Sets and displays audio output level, editable field |
 | **Mute** | Mutes or unmutes the signal of the selected output channel |
 | | |
@@ -173,7 +172,7 @@ Failover settings are set to a standard default setting seen above but should be
 | **MIDI Trigger** | **Host Connected:** Automatic failover will be triggered when the Host (device connected to the USB DAW port) is unplugged or otherwise loses connection to the interface.<br><br>**MIDI Recognized**: You must first route a constant MIDI signal like clock or sync from a connected device to any virtual MIDI output port in the USB DAW section. Automatic failover will be triggered if the current scene is armed and there is an interruption in MIDI traffic at or above the MIDI Timeout threshold. <br><br>**Failover Signal**: You must first route a constant MIDI signal like clock or sync from a connected device to the virtual MIDI port enumerated in the MIDI port field. Automatic failover will be triggered if the current scene is armed and there is an interruption in MIDI traffic at or above the MIDI Timeout threshold on the MIDI port selected in the MIDI port field. |
 | **MIDI Port** | Set the virtual MIDI port for automatic failover monitoring when using the MIDI Trigger mode Failover Signal. Ports 1-16 correspond to the 16 MIDI ports located under the USB DAW header of your PlayAUDIO interface. |
 | **MIDI Timeout** | Set the MIDI timeout threshold for automatic failover. |
-| | |
+
 
 #### MIDI Learn (PlayAUDIO2D, PlayAUDIO2U, PlayAUDIO1U)
 
@@ -203,8 +202,6 @@ To delete an active MIDI mapping click the **trash** icon located in the far rig
 
 To edit an active MIDI mapping, click the MIDI Channel dropdown or the MIDI CC value field of the mapping you would like to edit and repeat the MIDI mapping process detailed above.
 
---- 
-
 ## MIDI Routing
 
 ### General Info
@@ -225,7 +222,6 @@ The four types of physical ports our devices may include are listed below:
 | **USB Host** | USB A port used for connecting USB MIDI controllers. |
 | **USB DAW** | USB B or USB C port used for connecting USB devices like PCs and tablets. |
 | **RTP MIDI** | RJ45 port for connecting CAT5e or better ethernet cables. |
-| | |
 
 #### Virtual MIDI Ports
 
@@ -298,8 +294,6 @@ Disable MIDI data type per port and channel by selecting the appropriate port on
 
 To filter all channels of a MIDI data type (for example, all Note On/Off messages) click the square in the column marked **All** to the far right of the grid of clickable squares.  
 
----
-
 ### Remap
 
 <img src="images/midi-remap.png" width="800" alt="MIDI Filter & Remap page, input and remap selected">
@@ -325,8 +319,6 @@ Clear the current configuration.
 #### Back button
 
 Select to return to the main menu.  
-
----
 
 ## Presets
 
@@ -396,7 +388,6 @@ For advice on how to setup an RTP network please check out this [instructional v
 | **RTP virtual port label** | Displays the name of the virtual RTP session. |
 | | |
 
-
 | Initiator / Responder |  |
 | :---- | :---- |
 | **Initiator** | Select Initiator to allow the virtual RTP port to initiate an RTP session. RTP sessions must always have one initiator and one responder. |
@@ -406,7 +397,6 @@ For advice on how to setup an RTP network please check out this [instructional v
 | **Responder** | Select Responder to open the virtual RTP port to session Initiator requests. |
 | **Bonjour Name**  | Enter the Bonjour name of the RTP session in this field. |
 | | |
-
 
 ## **MIDI Processing**
 
@@ -521,7 +511,6 @@ A maximum of eight controllers are supported for the following interfaces: PlayA
 
 A maximum of 10 controllers are supported  for the following interfaces: mio10, mioXL.
 
----
 
 ## Control Ports
 
@@ -593,8 +582,7 @@ Chooses between Preset 1 through Preset 16 to select the preset to recall when P
 | :---- | :---- |
 | **No Action** | Activating the control switch takes no action on scene selection. |
 | **Toggle** | Activating the control toggles between Scene A and Scene B. Depending on the polarity of your switch, toggle action will be initiated either when the control is activated or when it is released. |
-
----
+| | |
 
 #### MIDI Message Actions
 
