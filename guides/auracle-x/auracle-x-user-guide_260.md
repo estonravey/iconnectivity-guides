@@ -636,7 +636,7 @@ The latest firmware for your device is also available for manual download at: [h
 
 ---
 
-# **APPENDIX A: MORE RESOURCES**
+## **APPENDIX A: MORE RESOURCES**
 
 [**iConnectivity Website**](https://www.iconnectivity.com/)
 
