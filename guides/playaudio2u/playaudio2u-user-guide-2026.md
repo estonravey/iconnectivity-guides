@@ -102,6 +102,7 @@ Launch the rtpMIDISetup Application and follow all prompts to install.
 > **Note:** After installing the RTP-MIDI driver and Apple Bonjour Print Services be sure to restart your computer in order for the RTP-MIDI driver to default to using Apple Bonjour instead of lightweight mDNS for RTP session discovery.
 
 ### MIDI Monitoring tools
+
 MIDI monitoring applications are very useful for routing debugging and troubleshooting. We recommend these free tools for your operating system:
 
 Windows: [MIDI-OX](http://www.midiox.com/)
@@ -116,6 +117,7 @@ Download the latest version of the Auracle X software installer at: https://www.
 ### Mac Users
 
 ## First time Installation
+
 <img src="../images/ax-dmg.png" alt="Auracle X installation; macOS.">
 
 When the Auracle X application has finished downloading open the .dmg file
@@ -123,11 +125,13 @@ When the Auracle X application has finished downloading open the .dmg file
 Drag the Auracle X application to the Applications folder.
 
 ### Mac Users: Auracle X update
+
 <img src="../images/ax-check-updates.png">
 
 If you already have the Auracle X application installed, use the Auracle X main menu to check for updates and follow the prompts that follow if a newer version of Auracle X is available.
 
 ### Windows Users
+
 **First time installation**
 
 When the package installer download is complete, run the Auracle X installer.
@@ -143,6 +147,9 @@ Install for all users
 ## Updating PlayAUDIO2U Firmware
 
 ### Load Latest From Web
+
+<img src="../auracle-x/images/fw-web.png" width="800px" alt="Auracle X firwmare update; load latest from web.">
+
 To use Auracle X to update your device’s firmware:
 
 1. Ensure your computer is connected to the internet.
@@ -156,6 +163,8 @@ To use Auracle X to update your device’s firmware:
 5. If a newer firmware for your device is available a menu option to update firmware will appear in the Load Latest From Web section. Click Install to update from web.
 
 ### Firmware Update: Load from file
+
+<img src="../auracle-x/images/fw-file.png" width="800px" alt="Auracle X firwmare update; from file.">
 
 The latest firmware for your device is  also available for manual download at: https://www.iconnectivity.com/firmware
 
