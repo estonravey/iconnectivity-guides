@@ -1,9 +1,9 @@
 # PlayAUDIO1U User Guide
 
 ## Introduction
-![PlayAUDIO1u](images/playaudio1u-main.jpeg)
+<img src="images/playaudio1u-main.jpeg" width="800px" alt="PlayAUDIO1U front view.">
 
-Congratulations on the purchase of your new PlayAUDIO1U USB Audio, MIDI & Dante interface!
+Congratulations on the purchase of your new PlayAUDIO1U USB Audio & MIDI interface!
 
 ### Feature List
 
@@ -97,7 +97,7 @@ https://support.apple.com/en-us/106380
 
 Launch the rtpMIDISetup Application and follow all prompts to install.
 
-> **Note:** After installing the RTP-MIDI driver and Apple Bonjour Print Services be sure to restart your computer in order for the RTP-MIDI driver to default to using Apple Bonjour instead of lightweight mDNS for RTP session discovery
+> **Note:** After installing the RTP-MIDI driver and Apple Bonjour Print Services be sure to restart your computer in order for the RTP-MIDI driver to default to using Apple Bonjour instead of lightweight mDNS for RTP session discovery.
 
 ### MIDI Monitoring tools
 MIDI monitoring applications are very useful for routing debugging and troubleshooting. We recommend these free tools for your operating system:
@@ -114,14 +114,14 @@ Download the latest version of the Auracle X software installer at: https://www.
 ### Mac Users
 
 ## First time Installation
-![Auracle X .dmg](../images/ax-dmg.png)
+<img src="../images/ax-dmg.png" alt="Auracle X installation; macOS.">
 
 When the Auracle X application has finished downloading open the .dmg file.
 
 Drag the Auracle X application to the Applications folder.
 
 ### Mac Users: Auracle X update
-![Auracle X firmware update](../images/ax-check-updates.png)
+<img src="../images/ax-check-updates.png">
 
 If you already have the Auracle X application installed, use the Auracle X main menu to check for updates and follow the prompts that follow if a newer version of Auracle X is available.
 
@@ -149,9 +149,9 @@ To use Auracle X to update your device’s firmware:
 
 3. Open the Auracle X application.
 
-4. On the PlayAUDIO1U main menu tab click the Firmware menu option
+4. On the PlayAUDIO1U main menu tab click the Firmware menu option.
 
-5. If a newer firmware for your device is available a menu option to update firmware will appear in the Load Latest From Web section. Click Install to update from web
+5. If a newer firmware for your device is available a menu option to update firmware will appear in the Load Latest From Web section. Click Install to update from web.
 
 ### Firmware Update: Load from file
 
@@ -194,12 +194,15 @@ iConnectivity firmware is formatted as a Standard MIDI File with a .MID file ext
 iConnectivity interfaces have three modes of operation:
 
 ### Power Off
+
 The interface is powered off and not operational.
 
 ### Application Mode
+
 This is the normal operational mode that you will use nearly all of the time. In this mode, the device is powered on and operates as a fully functional interface.
 
 ### Bootloader Mode
+
 Bootloader Mode is a special service mode used to perform firmware updates. Normally you will use Auracle X software to update your firmware and Auracle X will automatically switch your interface between Normal and Bootloader modes as necessary. In rare situations users may prefer to manually update their firmware via the bootloader. This manual process is described in detail in the [Updating Firmware](#updating-PlayAUDIO1U-firmware) section of this guide.
 
 To manually force your PlayAUDIO1U into Bootloader mode:
@@ -210,17 +213,20 @@ To manually force your PlayAUDIO1U into Bootloader mode:
 
 The PlayAUDIO1U will reboot and enter Bootloader mode ready to accept a manual firmware file send.
 
-> **Note:** The PlayAUDIO1U is in Bootloader mode when the OLED display is blank and both the System and Exit Mode buttons alternately flash.
+> **Note:** The PlayAUDIO1U is in Bootloader mode when the OLED display is blank and both the MIDI and Exit cap touch buttons alternately flash.
 
 ## PlayAUDIO1U Failover Redundancy
 
 ### How the PlayAUDIO1U's Failover System Works
-Your PlayAUDIO1U unit comes equipped with two independent failover mechanisms: Automatic Failover and Manual Failover. This failover redundancy is designed to ensure that your backup system can always be engaged instantly and seamlessly, whether via auto-detection or through manual switching. Taking advantage of both of these failover mechanisms is recommended for all live performance scenarios.
+
+The PlayAUDIO1U is capable of automatically switching audio and MIDI input sources from primary to backup devices by monitoring a constant, inaudible failover signal. You may also choose to manually fail over to your backup device using the onboard Scene Mode button.
 
 ### Automatic Failover
-Automatic Failover uses an audio test tone or MIDI stream sent from your DAW to establish an audio- or MIDI- recognition sync lock between your primary playback device and your PlayAUDIO1U interface on a dedicated internal audio or MIDI channel. Once armed, the PlayAUDIO1U instantly switches to your secondary device if any break in the test tone signal or MIDI stream is detected, providing a seamless failover to your backup system without audio or MIDI interruption. We recommend using the audio tone based failover to prevent needless scene switching when playback is stopped.
+
+Automatic failover protection is achieved by routing a constant audio test signal from your primary playback device plugged into USB DAW port A to a virtual audio output on the PlayAUDIO1U. When an interruption is detected in the test signal (usually caused by CPU spikes, DAW crashes or skips), the PlayAUDIO1U will swap input sources to the backup device plugged into USB DAW port B.
 
 ### Manual Failover
+
 Manual Failover allows you to control scene switching at the touch of an cap touch button or press of a connected and assigned footswitch. Note that if automatic failover is not armed, the PlayAUDIO1U will NOT switch to your backup playback device in the event of a primary device failure.
 
 ### How to Arm the PlayAUDIO1U for Automatic Failover
@@ -253,24 +259,25 @@ Refer to Auracle X documentation for detailed instructions including adjusting f
 
 ### How to Test Automatic Failover
 
-Ensure that the PlayAUDIO1U is armed for automatic failover by checking for the blinking shield icon on the front panel OLED and that playback has been triggered on both computers. To force failover from Computer A to Computer B, remove the USB cable from USB DAW port A. The PlayAUDIO1U will instantly switch over to Computer B as audio and MIDI playback continues uninterrupted. The Scene Mode Button LED will change to illuminate in red and the OLED will display “B”, indicating that Scene B is now the active scene.
+Ensure that the PlayAUDIO1U is armed for automatic failover by checking for the blinking shield icon on the front panel OLED and that playback has been triggered on both computers. To force failover from Computer A to Computer B, remove the USB cable from USB DAW port A. The PlayAUDIO1U will instantly switch over to Computer B as audio and MIDI playback continues uninterrupted. The Scene cap touch button LED will change to illuminate in red and the OLED will display “B”, indicating that Scene B is now the active scene.
 
 ### How to use PlayAUDIO1U Manual Failover
 
 Failover can be engaged manually by touching eithe Scene cap touch buttons on the front panel of the PlayAUDIO1U. The current scene is indicated as follows:  
 
-- Scene A: The upper Scene cap touch OLED is illuminated in green, and the Touch panel display shows the letter “A”
+- Scene A: The upper Scene cap touch OLED is illuminated in green, and the Touch panel display shows the letter “A”.
 
-- Scene B: The lower Scene cap touch OLED is illuminated in red, and the Touch panel display shows the letter “B”
+- Scene B: The lower Scene cap touch OLED is illuminated in red, and the OLED display shows the letter “B”.
 
 For information on how to use a footswitch to initiate manual failover, please see the updated Auracle X manual in the Control Ports section.
 
 ### Safe Mode
+
 The Safe Mode feature is integrated into your PlayAUDIO1U interface to safeguard performers and audience members from potentially harmful audio levels. Activation of Safe Mode is indicated by the display of a dedicated Safe Mode screen and alternating red LEDs within the Audio LED section on the front panel. Upon activation, all outputs, excluding the headphone output, will be automatically muted.
 
 <img src="../images/safemode-01.png" alt="Safe mode OLED display.">
 
-<img src="images/pa1u-safemode-check.png" alt="Safe mode analog outputs; safe mode alarm.">
+<img src="images/pa1u-safemode-check.png" alt="Analog outptus monitor; safe mode alarm.">
 
 <img src="../images/safe-mode-check.png" alt="Safe Mode options: Check, Disable, Unmute.">
 
@@ -286,7 +293,7 @@ Scene Indicator Icon Legend (Top Left next to Scene A or Scene B Indicator):
 
 | Icon | Info |
 | ---       | --- |
-| **A or B **  | Current Scene selection, A or B |
+| **A or B**  | Current Scene selection, A or B |
 | **Checkmark Icon Only**           | Tone Check is enabled but no tone is detected |
 | **Shield with Checkmark Icon**    | Tone Check is enabled and tone is detected; Automatic failover engaged |
 | **Safe Mode Screen**              | Audio level on current scene exceeds tone check maximum volume (only used when tone check is enabled). Lower tone volume and double press headphone knob to unmute. For more detailed information about how Safe Mode activates and how to Disengage please visit https://www.iconnectivity.com/safemode  |
@@ -300,7 +307,7 @@ Tone and MIDI traffic Indicator Icon Legend (top and bottom right):
 | **Sine Wave** | Tone Check is enabled and tone is detected |
 | **MIDI Activity** | Monitors general incoming and outgoing MIDI activity |
 
-### Using the Touch Panel and Main Rotary Encoder
+### Using the Main Rotary Encoder
 
 The main rotary encoder is continuous and can make fine or coarse adjustments depending on how quickly you rotate the encoder.
 
@@ -314,8 +321,7 @@ Fine adjustments are recommended if there is a risk of signal overload. Rotary E
 | **View Failover Tone information** | From the Home page, turn the encoder clockwise to access audio meter displays showing the current level of the failover tone in both numerical and live metering <br>No tone will produce a blank meter display above the “Tone A” and “Tone B” labels. <br>Note that a failover tone level above -3dBFS will cause the PlayAUDIO1U to enter into Safe Mode and all analog and Dante Transmit outputs to be automatically muted. <br>You will not be able to unmute analog outputs until the failover tone level is adjusted below the threshold displayed on the Tone Meter menu page. |
 
 ### OLED Cap Touch Panel
-
-![PlayAUDIO1U cap touch buttons](images/playaudio1u-oled-audio.png)
+<img src="images/playaudio1u-oled-audio.png" alt="PlayAUDIO1U cap touch buttons detail.">
 
 The PlayAUDIO1U features Cap Touch Buttons with fixed functionality for the most commonly used functions of the PlayAUDIO1U.
 
@@ -467,12 +473,15 @@ Complete instructions on configuring Control port footswitch actions can be foun
 - USB Host Port supports up to eight USB MIDI devices (via powered USB hub, not included) 
 
 ### USB Host Ports
+
 - Power: +5V DC, 500mA maximum
 
 ### USB-C Ports
+
 Connect to Windows or macOS computer(s), Android or iPadOS devices (USB only, Apple Lightning not supported)
 
 ### Power
+
 - Input:    100V - 240V AC, 50 - 60 Hz 24W
 - Fuse:     1A Slow-Blow
 
