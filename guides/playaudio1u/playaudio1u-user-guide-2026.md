@@ -1,14 +1,14 @@
 # PlayAUDIO1U User Guide
 
 ## Introduction
-![PlayAUDIO1U](images/playaudio1u-main.jpeg)
+![PlayAUDIO1u](images/playaudio1u-main.jpeg)
 
-Congratulations on the purchase of your new PlayAUDIO1U USB Audio & MIDI interface!
+Congratulations on the purchase of your new PlayAUDIO1U USB Audio, MIDI & Dante interface!
 
 ### Feature List
 
 - Two USB Type C DAW ports – use up to 2 computer devices Mac OS/Windows simultaneously
-- Twelve XLR analog audio Line Outputs 
+- Twelve  XLR analog audio Line Outputs 
 - Stereo ¼” headphone output with two independent mixes (summable to one mix)
 - DIN-MIDI ports built-in (1-in, 1-out)
 - USB Host port (connect up to 8 USB MIDI class-compliant devices with a USB hub)
@@ -20,7 +20,6 @@ Congratulations on the purchase of your new PlayAUDIO1U USB Audio & MIDI interfa
 - Endless multifunction rotary encoders
 - 19” rack mountable
 
-
 ### What's in the Box
 
 - The PlayAUDIO1U Audio + MIDI Interface
@@ -30,7 +29,6 @@ Congratulations on the purchase of your new PlayAUDIO1U USB Audio & MIDI interfa
 - Two USB Type C to Type C cables (black, white)
 - One USB-Adapter: female USB-C to male USB-A
 - Four Rubber feet  
-
 
 ### Minimum System Requirements
 - macOS - macOS 12 or later (for Auracle X control software), One free USB port
@@ -45,7 +43,7 @@ Congratulations on the purchase of your new PlayAUDIO1U USB Audio & MIDI interfa
 
 ### Front Panel
 
-![Front panel](images/playaudio1u-panel-front.png)
+<img src="images/playaudio1u-panel-front.png" width="800px" alt="PlayAUDIO1U front panel detail">
 
 - USB Host port. Directly plug in a class-compliant MIDI device, or plug in up to eight class-compliant MIDI devices via a powered USB hub (not included).
 - Control ports. Plug in up to two foot switches
@@ -56,25 +54,22 @@ Congratulations on the purchase of your new PlayAUDIO1U USB Audio & MIDI interfa
 - 3.5mm Headphone port. Stereo mix
 - Headphone Rotary Encoder. Multi-function encoder. Rotate to increase/decrease the headphone mix output volume; this also temporarily calls up the headphone volume display. Additionally: Double press to mute all rear outputs; double press again to unmute; press once to call the headphone volume display, and press again to return to the previous active menu. 
 
-
 ### Rear Panel
 
-![Rear panel](images/playaudio1u-panel-rear.png)
+<img src="images/playaudio1u-panel-rear.png" width="800px" alt="PlayAUDIO1U rear panel detail">
 
 - AC Power inlet. Fused Input jack for included IEC C13 power supply cable.
 - Power switch. Turn the PlayAUDIO1U on or off. The switch will illuminate when power is turned on. 
 - XLR Balanced Audio Outputs. The PlayAUDIO1U's 12 analog outputs provide low noise, phantom power-resistant connections with up to 24-bit/96kHz DA conversion.
 - RTP MIDI Port. Make long distance MIDI connections over ethernet.
 
-
 ## Getting Started
+
 ### Mac Users
 There are no software drivers to download or install; the PlayAUDIO1U interface uses the USB MIDI class-compliant drivers built into macOS.
 
 ### Windows - Install iConnectivity Audio Drivers
 Before connecting the PlayAUDIO1U to a Windows computer please download and install the latest version of our Unified Windows Driver at https://www.iconnectivity.com/windows-drivers.
-
-You may also download the unified USB driver separate from Auracle X at https://www.iconnectivity.com/windows-drivers.
 
 Connect your computer to your PlayAUDIO1U USB DAW Port A using a USB 2.0 or better data cable.
 
@@ -85,14 +80,15 @@ Quick and simple configuration of the PlayAUDIO1U is possible via onboard contro
 
 Read on in the Auracle X section below for more information.
 
-![Auracle X audio page for the PlayAUDIO1U](images/playaudio1u-auracle-x-audio.png)
+<img src="images/playaudio1u-auracle-x-audio.png" width="800px" alt="Auracle X audio page for the PlayAUDIO1U">
 
 > **Note:** All analog output volumes including the headphones output are muted by default and need to be raised for monitoring.
 
 ## Recommended Software Installation
+
 ### Windows - Install iConnectivity RTP MIDI Driver for Network MIDI
 
-![rtpMIDI network driver](../images/win-ax-install.png)
+<img src="../images/rtp-midi.png" alt="rtpMIDI network driver installation popup.">
 
 The RTP-MIDI driver for Network MIDI can be found at https://www.iconnectivity.com/windows-drivers
 
@@ -101,6 +97,8 @@ https://support.apple.com/en-us/106380
 
 Launch the rtpMIDISetup Application and follow all prompts to install.
 
+> **Note:** After installing the RTP-MIDI driver and Apple Bonjour Print Services be sure to restart your computer in order for the RTP-MIDI driver to default to using Apple Bonjour instead of lightweight mDNS for RTP session discovery
+
 ### MIDI Monitoring tools
 MIDI monitoring applications are very useful for routing debugging and troubleshooting. We recommend these free tools for your operating system:
 
@@ -108,18 +106,17 @@ Windows: [MIDI-OX](http://www.midiox.com/)
 
 MacOS: [Snoize MIDI monitor and Sysex Librarian](http://www.midiox.com/)
 
-> **Note:** After installing the RTP-MIDI driver and Apple Bonjour Print Services be sure to restart your computer in order for the RTP-MIDI driver to default to using Apple Bonjour instead of lightweight mDNS for RTP session discovery
-
 ## Installing Auracle X
 Before you begin using your PlayAUDIO1U we recommend that you upgrade your unit's firmware to the latest version using iConnectivity's Auracle X application.
 
 Download the latest version of the Auracle X software installer at: https://www.iconnectivity.com/software/control-software
 
 ### Mac Users
+
 ## First time Installation
 ![Auracle X .dmg](../images/ax-dmg.png)
 
-When the Auracle X application has finished downloading open the .dmg file
+When the Auracle X application has finished downloading open the .dmg file.
 
 Drag the Auracle X application to the Applications folder.
 
@@ -133,15 +130,16 @@ If you already have the Auracle X application installed, use the Auracle X main 
 
 When the package installer download is complete, run the Auracle X installer.
 
-![Windows installation](../images/win-ax-install.png)
+<img src="../images/win-ax-install.png" alt="Windows Auracle X installation popup.">
 
-Click Yes to allow Auracle X Setup
+Click Yes to allow Auracle X Setup.
 
-![Windows install for all users](../images/win-ax-install-2.png)
+<img src="../images/win-ax-install-2.png" alt="Windows Auracle X installation popup; install mode.">
 
-Install for all users
+Install for all users.
 
 ## Updating PlayAUDIO1U Firmware
+
 ### Load Latest From Web
 To use Auracle X to update your device’s firmware:
 
@@ -157,7 +155,7 @@ To use Auracle X to update your device’s firmware:
 
 ### Firmware Update: Load from file
 
-The latest firmware for your device is  also available for manual download at: https://www.iconnectivity.com/firmware
+The latest firmware for your device is  also available for manual download at: https://www.iconnectivity.com/firmware.
 
 1. Connect the PlayAUDIO1U to your computer via the USB DAW A port on your PlayAUDIO1U.
 
@@ -208,13 +206,14 @@ To manually force your PlayAUDIO1U into Bootloader mode:
 
 1. Power on your PlayAUDIO1U and wait until the bootup process is complete.
 
-2. Long press the main rotary encoder for approximately 6 seconds until all mode buttons illuminate red, then release the encoder
+2. Long press the main rotary encoder for approximately 6 seconds until all mode buttons illuminate red, then release the encoder.
 
 The PlayAUDIO1U will reboot and enter Bootloader mode ready to accept a manual firmware file send.
 
 > **Note:** The PlayAUDIO1U is in Bootloader mode when the OLED display is blank and both the System and Exit Mode buttons alternately flash.
 
 ## PlayAUDIO1U Failover Redundancy
+
 ### How the PlayAUDIO1U's Failover System Works
 Your PlayAUDIO1U unit comes equipped with two independent failover mechanisms: Automatic Failover and Manual Failover. This failover redundancy is designed to ensure that your backup system can always be engaged instantly and seamlessly, whether via auto-detection or through manual switching. Taking advantage of both of these failover mechanisms is recommended for all live performance scenarios.
 
@@ -225,6 +224,7 @@ Automatic Failover uses an audio test tone or MIDI stream sent from your DAW to 
 Manual Failover allows you to control scene switching at the touch of an cap touch button or press of a connected and assigned footswitch. Note that if automatic failover is not armed, the PlayAUDIO1U will NOT switch to your backup playback device in the event of a primary device failure.
 
 ### How to Arm the PlayAUDIO1U for Automatic Failover
+
 #### LifeSine Installation
 
 1. Download our LifeSine test tone plugin from https://www.iconnectivity.com/downloads/ and install it on both your primary and backup computers.
@@ -245,7 +245,7 @@ Manual Failover allows you to control scene switching at the touch of an cap tou
 
 #### Transport Control Setup
 
-1. Connect a MIDI controller to an available USB host or DIN input port and follow your DAW’s instructions to map incoming MIDI messages to DAW transport commands. Both playback sessions must have identical MIDI mapping for correct operation.
+Connect a MIDI controller to an available USB host or DIN input port and follow your DAW’s instructions to map incoming MIDI messages to DAW transport commands. Both playback sessions must have identical MIDI mapping for correct operation.
 
 > **Note:** When adding the LifeSine plugin to your DAW for the first time it may be necessary to restart your DAW session for the LifeSine plugin to activate.
 
@@ -268,39 +268,37 @@ For information on how to use a footswitch to initiate manual failover, please s
 ### Safe Mode
 The Safe Mode feature is integrated into your PlayAUDIO1U interface to safeguard performers and audience members from potentially harmful audio levels. Activation of Safe Mode is indicated by the display of a dedicated Safe Mode screen and alternating red LEDs within the Audio LED section on the front panel. Upon activation, all outputs, excluding the headphone output, will be automatically muted.
 
-![Safe Mode screen](../images/safemode-01.png)
+<img src="../images/safemode-01.png" alt="Safe mode OLED display.">
 
-![Safe Mode check screen](images/pa1u-safemode-check.png)
+<img src="images/pa1u-safemode-check.png" alt="Safe mode analog outputs; safe mode alarm.">
 
-![Safe Mode options: Check, Disable, Unmute](../images/safe-mode-check.png)
+<img src="../images/safe-mode-check.png" alt="Safe Mode options: Check, Disable, Unmute.">
 
 For more information about Safe Mode including Safe Mode triggers and how to disengage Safe Mode and return to normal operation, please see our Safe Mode Guide at https://www.iconnectivity.com/safemode
 
 ## Controls
 
 ### OLED Home Page Legend
-![Home page: Scene A armed for automatic failover (shield and sine wave icons)](images/pa1u-audio-tone.png)
+
+<img src="images/pa1u-audio-tone.png" alt="PlayAUDIO1U OLED; home display; Scene A armed for automatic failover.">
 
 Scene Indicator Icon Legend (Top Left next to Scene A or Scene B Indicator):
 
 | Icon | Info |
 | ---       | --- |
-| A or B    | Current Scene selection, A or B |
-| Checkmark Icon Only           | Tone Check is enabled but no tone is detected |
-| Shield with Checkmark Icon    | Tone Check is enabled and tone is detected; Automatic failover engaged |
-| Safe Mode Screen              | Audio level on current scene exceeds tone check maximum volume (only used when tone check is enabled). Lower tone volume and double press headphone knob to unmute. For more detailed information about how Safe Mode activates and how to Disengage please visit https://www.iconnectivity.com/safemode  |
+| **A or B **  | Current Scene selection, A or B |
+| **Checkmark Icon Only**           | Tone Check is enabled but no tone is detected |
+| **Shield with Checkmark Icon**    | Tone Check is enabled and tone is detected; Automatic failover engaged |
+| **Safe Mode Screen**              | Audio level on current scene exceeds tone check maximum volume (only used when tone check is enabled). Lower tone volume and double press headphone knob to unmute. For more detailed information about how Safe Mode activates and how to Disengage please visit https://www.iconnectivity.com/safemode  |
 
 Tone and MIDI traffic Indicator Icon Legend (top and bottom right):
 
-![PlayAUDIO1U main page](images/pa1u-audiopage-tone.png)
-
-
 | Icon  | Info  |
 | ---   | ---   |
-| No Icon   | Tone Check not enabled |
-| Flat line | Device (computer or tablet) is detected but no tone is detected |
-| Sine Wave | Tone Check is enabled and tone is detected |
-| MIDI Activity | Monitors general incoming and outgoing MIDI activity |
+| **No Icon**   | Tone Check not enabled |
+| **Flat line** | Device (computer or tablet) is detected but no tone is detected |
+| **Sine Wave** | Tone Check is enabled and tone is detected |
+| **MIDI Activity** | Monitors general incoming and outgoing MIDI activity |
 
 ### Using the Touch Panel and Main Rotary Encoder
 
@@ -310,10 +308,10 @@ Fine adjustments are recommended if there is a risk of signal overload. Rotary E
 
 | Function  | Action    |
 | ---       | ---       |
-| Commit Settings to Memory | Short press the Main Rotary Encoder twice to save the current state of the PlayAUDIO1U to the current preset. A notification will appear on the OLED and all Mode buttons will flash green three times.   |
-| Restart unit  | Long press the main rotary encoder for approximately 10 seconds until all cap touch buttons have turned off after illuminating in red, then release. |
-| Enter Bootloader Mode | Long press the main rotary encoder for approximately 6 seconds until all Mode buttons illuminate red and release while buttons are still illuminated red. |
-| View Failover Tone information  | From the Home page, turn the encoder clockwise to access audio meter displays showing the current level of the failover tone in both numerical and live metering <br>No tone will produce a blank meter display above the “Tone A” and “Tone B” labels. <br>Note that a failover tone level above -3dBFS will cause the PlayAUDIO1U to enter into Safe Mode and all analog outputs to be automatically muted. <br>You will not be able to unmute analog outputs until the failover tone level is adjusted below the threshold displayed on the Tone Meter menu page. |
+| **Commit Settings to Memory** | Short press the Main Rotary Encoder twice to save the current state of the PlayAUDIO1U to the current preset. A notification will appear on the OLED and all Mode buttons will flash green three times.   |
+| **Restart unit** | Long press the main rotary encoder for approximately 10 seconds until all cap touch buttons have turned off after illuminating in red, then release. |
+| **Enter Bootloader Mode** | Long press the main rotary encoder for approximately 6 seconds until all Mode buttons illuminate red and release while buttons are still illuminated red. |
+| **View Failover Tone information** | From the Home page, turn the encoder clockwise to access audio meter displays showing the current level of the failover tone in both numerical and live metering <br>No tone will produce a blank meter display above the “Tone A” and “Tone B” labels. <br>Note that a failover tone level above -3dBFS will cause the PlayAUDIO1U to enter into Safe Mode and all analog and Dante Transmit outputs to be automatically muted. <br>You will not be able to unmute analog outputs until the failover tone level is adjusted below the threshold displayed on the Tone Meter menu page. |
 
 ### OLED Cap Touch Panel
 
@@ -323,10 +321,10 @@ The PlayAUDIO1U features Cap Touch Buttons with fixed functionality for the most
 
 | Button | Function |
 |---|---|
-| Scene | Toggles the current scene between scene A and scene B |
-| Audio | Displays the audio output menu.<br>Press again to toggle between viewing the 12 rear analog outputs and the home page.<br>When the Output menu is active, turn the encoder to cycle through editable parameters and press the encoder to edit the selected parameter |
-| MIDI | Calls the MIDI monitoring page. <br>Turn the encoder to cycle between MIDI monitoring pages for all PlayAUDIO1U MIDI ports. |
-| Exit | Exits to the main page |
+| **Scene** | Toggles the current scene between scene A and scene B |
+| **Audio** | Displays the audio output menu.<br>Press again to toggle between viewing the 12 rear analog outputs and the home page.<br>When the Output menu is active, turn the encoder to cycle through editable parameters and press the encoder to edit the selected parameter |
+| **MIDI** | Calls the MIDI monitoring page. <br>Turn the encoder to cycle between MIDI monitoring pages for all PlayAUDIO1U MIDI ports. |
+| **Exit** | Exits to the main page |
 
 #### Scene
 
@@ -336,28 +334,23 @@ The current scene selection is indicated by a large letter A or B on the OLED di
 
 Green cap touch button above Scene label for Scene A.
 
-![PlayAUDIO1u Scene A active](images/playaudio1u-oled-scene-a.png)
+<img src="images/playaudio1u-oled-scene-a.png" alt="PlayAUDIO1U touch cap Scene A active.">
 
 Red cap touch button below Scene label for Scene B.
 
-![PlayAUDIO1u Scene A active](images/playaudio1u-oled-scene-b.png)
-
-Turn the rotary encoder while on the main page to navigate to the tone check page which shows the current level of the audio failover tone if present.
-
-![PlayAUDIO1U main page](images/pa1u-audiopage-tone.png)
-
+<img src="images/playaudio1u-oled-scene-b.png" alt="PlayAUDIO1U touch cap Scene B active.">
 
 #### Audio
 
-![Playaudio1u OLED menu Audio selected](images//oled-audio.png)
+<img src="images/oled-audio.png" alt="PlayAUDIO1U touch cap menu Audio selected.">
 
 Touch the top or bottom Audio cap touch button to access the Audio menu page displayed below. The main audio page monitors output level of all rear analog outputs and offers the ability to choose any or all outputs for level adjustment.
 
-![PlayAUDIO1U audio output meters](images/display-audio-outs.png)
+<img src="images/display-audio-outs.png" alt="PlayAUDIO1U OLED; analog output monitor.">
 
 Once the Audio page is active, use the rotary encoder to:
 
-![PlayAUDIO1U single audio output monitor](images/display-audio-out-1.png)
+<img src="images/display-audio-out-1.png" alt="PlayAUDIO1U single audio output edit detail.">
 
 1. Scroll through audio outputs between all, and 1-12 singularly.
 
@@ -366,47 +359,54 @@ Once the Audio page is active, use the rotary encoder to:
 3. Short press again to exit to the main Audio page.
 
 You can also tap the top Audio cap touch button to increment through output channels or tap the bottom cap touch button to decrement through output channels.
+
 ---
 
 #### MIDI
 
 The MIDI menu page displays real-time monitoring of all PlayAUDIO1U MIDI inputs and outputs grouped by physical MIDI port.
 
-![MIDI monitor page](images/playaudio1u-oled-midi.png)
+<img src="images/playaudio1u-oled-midi.png" alt="PlayAUDIO1U touch cap menu MIDI selected.">
 
 Touch the top or bottom MIDI cap touch button to access the MIDI menu page, displayed below. 
 
 The main MIDI page monitors MIDI traffic at the input or output channels of the selected port.
 
-![PlayAUDIO1U input MIDI monitor](images/playaudio1u-midi-monitor.png)
+<img src="images/playaudio1u-midi-monitor.png" alt="PlayAUDIO1U OLED MIDI monitor detail; note and clock output DAW A ports 1 through 5.">
 
-![PlayAUDIO1U input MIDI monitor](images/playaudio1u-midi-monitor-2.png)
+<img src="images/playaudio1u-midi-monitor-2.png" alt="PlayAUDIO1U OLED MIDI monitor detail; clock output DAW A port 5.">
 
 1. Turn to cycle between MIDI port monitor pages: DAW A, DAW B, RTP, USB, DIN.
 
 2. Tap has no function.
 
+---
+
 Once on the MIDI menu page, turn the main rotary encoder to cycle between MIDI port groups: USB (Host), DIN, DAW A, DAW B, and RTP.
+
+---
 
 If a MIDI message is detected on an actively monitored MIDI input/output group from the MIDI menu page, a MIDI message-dependent icon will appear in the appropriate input or output row on screen.
 
 | Icon | Info |
 |---|---|
-| Fader | CC message |
-| Music Note | MIDI note message |
-| Bold Circle | Clock |
-| SX | SysEx message |
+| **Fader** | CC message |
+| **Music Note** | MIDI note message |
+| **Bold Circle** | Clock |
+| **SX** | SysEx message |
 
 ---
 
 #### Exit
 
-Press the Exit cap touch button to exit to the main page.
+Press the **Exit** cap touch button to exit to the main page.
 
 ---
 
 ### Using the Headphone Rotary Encoder
-![PlayAUDIO1U Headphone encoder](images/playaudio1u-hp-encoder.png)
+
+<img src="images/playaudio1u-hp-encoder.png" alt="PlayAUDIO1U headphone encoder detail.">
+
 #### Normal Use
 
 The headphone encoder controls the main functions of the headphone port.
@@ -425,13 +425,13 @@ Double tap again while Global Mute is active to unmute.
 
 Turn the encoder slowly to raise or lower the selected headphone mix volume in 0.5 dB increments.
 
-![Global Mute on the PlayAUDIO1U display](images/)
+<img src="images/pa1u-global-mute.png" alt="PlayAUDIO1U OLED; global mute activated.">
 
-![Global Mute ON in Auracle X](images/)
+<img src="../playaudio2d/images/auracle-x/global-mute-on.png" alt="Auracle X detail; global mute on.">
 
 ### Using the Control Ports
 
-![PlayAUDIO1U Contorl Ports](images/playaudio1u-control-ports.png)
+<img src="images/playaudio1u-control-ports.png" alt="PlayAUDIO1U front panel detail; control ports">
 
 Use the PlayAUDIO1U Control ports with compatible footswitch(es) to Arm/Disarm/Toggle Failover Arm state, load Presets, toggle active scenes, send a spacebar key message, and/or send CC/PC or Note On/Off messages.
 
@@ -466,7 +466,6 @@ Complete instructions on configuring Control port footswitch actions can be foun
 - Up to 16 MIDI ports (256 total MIDI channels) per computer device
 - USB Host Port supports up to eight USB MIDI devices (via powered USB hub, not included) 
 
-
 ### USB Host Ports
 - Power: +5V DC, 500mA maximum
 
@@ -477,14 +476,12 @@ Connect to Windows or macOS computer(s), Android or iPadOS devices (USB only, Ap
 - Input:    100V - 240V AC, 50 - 60 Hz 24W
 - Fuse:     1A Slow-Blow
 
-
 ### Dimensions and Weights
 
 - Width:    19” (483 mm)
 - Height:  	1.48” (37.5 mm)
 - Depth:  	7.81” (200 mm)
 - Weight:  	8.73 lbs (3.96 kg) 
-
 
 ## APPENDIX A: MORE RESOURCES
 
@@ -538,3 +535,5 @@ Changes or modifications not expressly approved by iConnectivity could void the 
 ### Disposal of Waste Equipment by Users in the European Union
 
 *This product must not be disposed of with other waste. Instead, it is your responsibility to dispose of your waste equipment by handing it over to a designated collection point for the recycling of waste electrical and electronic equipment. The separate collection and recycling of your waste equipment at the time of disposal will help conserve natural resources and ensure that it is recycled in a manner that protects human health and the environment. For more information about where you can drop off your waste equipment for recycling, please contact your local city recycling office or the dealer from whom you purchased the product.*
+
+---
