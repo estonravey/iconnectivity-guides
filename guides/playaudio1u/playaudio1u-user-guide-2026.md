@@ -20,7 +20,6 @@ Congratulations on the purchase of your new PlayAUDIO1U USB Audio, MIDI & Dante 
 - Endless multifunction rotary encoders
 - 19” rack mountable
 
-
 ### What's in the Box
 
 - The PlayAUDIO1U Audio + MIDI Interface
@@ -30,7 +29,6 @@ Congratulations on the purchase of your new PlayAUDIO1U USB Audio, MIDI & Dante 
 - Two USB Type C to Type C cables (black, white)
 - One USB-Adapter: female USB-C to male USB-A
 - Four Rubber feet  
-
 
 ### Minimum System Requirements
 - macOS - macOS 12 or later (for Auracle X control software), One free USB port
@@ -45,7 +43,7 @@ Congratulations on the purchase of your new PlayAUDIO1U USB Audio, MIDI & Dante 
 
 ### Front Panel
 
-![Front panel](images/playaudio1u-panel-front.png)
+<img src="images/playaudio1u-panel-front.png" width="800px" alt="PlayAUDIO1U front panel detail">
 
 - USB Host port. Directly plug in a class-compliant MIDI device, or plug in up to eight class-compliant MIDI devices via a powered USB hub (not included).
 - Control ports. Plug in up to two foot switches
@@ -56,25 +54,22 @@ Congratulations on the purchase of your new PlayAUDIO1U USB Audio, MIDI & Dante 
 - 3.5mm Headphone port. Stereo mix
 - Headphone Rotary Encoder. Multi-function encoder. Rotate to increase/decrease the headphone mix output volume; this also temporarily calls up the headphone volume display. Additionally: Double press to mute all rear outputs; double press again to unmute; press once to call the headphone volume display, and press again to return to the previous active menu. 
 
-
 ### Rear Panel
 
-![Rear panel](images/playaudio1u-panel-rear.png)
+<img src="images/playaudio1u-panel-rear.png" width="800px" alt="PlayAUDIO1U rear panel detail">
 
 - AC Power inlet. Fused Input jack for included IEC C13 power supply cable.
 - Power switch. Turn the PlayAUDIO1U on or off. The switch will illuminate when power is turned on. 
 - XLR Balanced Audio Outputs. The PlayAUDIO1U's 12 analog outputs provide low noise, phantom power-resistant connections with up to 24-bit/96kHz DA conversion.
 - RTP MIDI Port. Make long distance MIDI connections over ethernet.
 
-
 ## Getting Started
+
 ### Mac Users
 There are no software drivers to download or install; the PlayAUDIO1U interface uses the USB MIDI class-compliant drivers built into macOS.
 
 ### Windows - Install iConnectivity Audio Drivers
 Before connecting the PlayAUDIO1U to a Windows computer please download and install the latest version of our Unified Windows Driver at https://www.iconnectivity.com/windows-drivers.
-
-You may also download the unified USB driver separate from Auracle X at https://www.iconnectivity.com/windows-drivers.
 
 Connect your computer to your PlayAUDIO1U USB DAW Port A using a USB 2.0 or better data cable.
 
@@ -85,14 +80,15 @@ Quick and simple configuration of the PlayAUDIO1U is possible via onboard contro
 
 Read on in the Auracle X section below for more information.
 
-![Auracle X audio page for the PlayAUDIO1U](images/playaudio1u-auracle-x-audio.png)
+<img src="images/playaudio1u-auracle-x-audio.png" width="800px" alt="Auracle X audio page for the PlayAUDIO1U">
 
 > **Note:** All analog output volumes including the headphones output are muted by default and need to be raised for monitoring.
 
 ## Recommended Software Installation
+
 ### Windows - Install iConnectivity RTP MIDI Driver for Network MIDI
 
-![rtpMIDI network driver](../images/win-ax-install.png)
+<img src="../images/rtp-midi.png" alt="rtpMIDI network driver installation popup.">
 
 The RTP-MIDI driver for Network MIDI can be found at https://www.iconnectivity.com/windows-drivers
 
@@ -101,6 +97,8 @@ https://support.apple.com/en-us/106380
 
 Launch the rtpMIDISetup Application and follow all prompts to install.
 
+> **Note:** After installing the RTP-MIDI driver and Apple Bonjour Print Services be sure to restart your computer in order for the RTP-MIDI driver to default to using Apple Bonjour instead of lightweight mDNS for RTP session discovery
+
 ### MIDI Monitoring tools
 MIDI monitoring applications are very useful for routing debugging and troubleshooting. We recommend these free tools for your operating system:
 
@@ -108,18 +106,17 @@ Windows: [MIDI-OX](http://www.midiox.com/)
 
 MacOS: [Snoize MIDI monitor and Sysex Librarian](http://www.midiox.com/)
 
-> **Note:** After installing the RTP-MIDI driver and Apple Bonjour Print Services be sure to restart your computer in order for the RTP-MIDI driver to default to using Apple Bonjour instead of lightweight mDNS for RTP session discovery
-
 ## Installing Auracle X
 Before you begin using your PlayAUDIO1U we recommend that you upgrade your unit's firmware to the latest version using iConnectivity's Auracle X application.
 
 Download the latest version of the Auracle X software installer at: https://www.iconnectivity.com/software/control-software
 
 ### Mac Users
+
 ## First time Installation
 ![Auracle X .dmg](../images/ax-dmg.png)
 
-When the Auracle X application has finished downloading open the .dmg file
+When the Auracle X application has finished downloading open the .dmg file.
 
 Drag the Auracle X application to the Applications folder.
 
@@ -133,15 +130,16 @@ If you already have the Auracle X application installed, use the Auracle X main 
 
 When the package installer download is complete, run the Auracle X installer.
 
-![Windows installation](../images/win-ax-install.png)
+<img src="../images/win-ax-install.png" alt="Windows Auracle X installation popup.">
 
-Click Yes to allow Auracle X Setup
+Click Yes to allow Auracle X Setup.
 
-![Windows install for all users](../images/win-ax-install-2.png)
+<img src="../images/win-ax-install-2.png" alt="Windows Auracle X installation popup; install mode.">
 
-Install for all users
+Install for all users.
 
 ## Updating PlayAUDIO1U Firmware
+
 ### Load Latest From Web
 To use Auracle X to update your device’s firmware:
 
@@ -157,7 +155,7 @@ To use Auracle X to update your device’s firmware:
 
 ### Firmware Update: Load from file
 
-The latest firmware for your device is  also available for manual download at: https://www.iconnectivity.com/firmware
+The latest firmware for your device is  also available for manual download at: https://www.iconnectivity.com/firmware.
 
 1. Connect the PlayAUDIO1U to your computer via the USB DAW A port on your PlayAUDIO1U.
 
@@ -208,13 +206,14 @@ To manually force your PlayAUDIO1U into Bootloader mode:
 
 1. Power on your PlayAUDIO1U and wait until the bootup process is complete.
 
-2. Long press the main rotary encoder for approximately 6 seconds until all mode buttons illuminate red, then release the encoder
+2. Long press the main rotary encoder for approximately 6 seconds until all mode buttons illuminate red, then release the encoder.
 
 The PlayAUDIO1U will reboot and enter Bootloader mode ready to accept a manual firmware file send.
 
 > **Note:** The PlayAUDIO1U is in Bootloader mode when the OLED display is blank and both the System and Exit Mode buttons alternately flash.
 
 ## PlayAUDIO1U Failover Redundancy
+
 ### How the PlayAUDIO1U's Failover System Works
 Your PlayAUDIO1U unit comes equipped with two independent failover mechanisms: Automatic Failover and Manual Failover. This failover redundancy is designed to ensure that your backup system can always be engaged instantly and seamlessly, whether via auto-detection or through manual switching. Taking advantage of both of these failover mechanisms is recommended for all live performance scenarios.
 
@@ -225,6 +224,7 @@ Automatic Failover uses an audio test tone or MIDI stream sent from your DAW to 
 Manual Failover allows you to control scene switching at the touch of an cap touch button or press of a connected and assigned footswitch. Note that if automatic failover is not armed, the PlayAUDIO1U will NOT switch to your backup playback device in the event of a primary device failure.
 
 ### How to Arm the PlayAUDIO1U for Automatic Failover
+
 #### LifeSine Installation
 
 1. Download our LifeSine test tone plugin from https://www.iconnectivity.com/downloads/ and install it on both your primary and backup computers.
@@ -245,7 +245,7 @@ Manual Failover allows you to control scene switching at the touch of an cap tou
 
 #### Transport Control Setup
 
-1. Connect a MIDI controller to an available USB host or DIN input port and follow your DAW’s instructions to map incoming MIDI messages to DAW transport commands. Both playback sessions must have identical MIDI mapping for correct operation.
+Connect a MIDI controller to an available USB host or DIN input port and follow your DAW’s instructions to map incoming MIDI messages to DAW transport commands. Both playback sessions must have identical MIDI mapping for correct operation.
 
 > **Note:** When adding the LifeSine plugin to your DAW for the first time it may be necessary to restart your DAW session for the LifeSine plugin to activate.
 
@@ -279,6 +279,7 @@ For more information about Safe Mode including Safe Mode triggers and how to dis
 ## Controls
 
 ### OLED Home Page Legend
+
 ![Home page: Scene A armed for automatic failover (shield and sine wave icons)]()
 
 ![Home page: tone check enabled, no tone detected (checkmark and flat line icons)]()
