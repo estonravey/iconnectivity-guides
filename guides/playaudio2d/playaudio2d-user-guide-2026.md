@@ -40,8 +40,8 @@ Congratulations on the purchase of your new PlayAUDIO2D USB Audio, MIDI & Dante 
 ## Hardware Description
 
 ### Front Panel
+<img src="images/000-product/pa2d-hwd-front.png" width="800px" alt="PlayAUDIO2D front panel detail.">
 
-![Front panel](images/000-product/pa2d-hwd-front.png)
 
 - XLR TRS Combo jack. Plug in microphones, DI boxes, or instruments.
 - USB HOST Port. Directly plug in a class-compliant MIDI device, or plug in up to eight class-compliant MIDI devices via a powered USB hub (not included).
