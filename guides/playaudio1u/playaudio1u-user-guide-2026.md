@@ -1,14 +1,14 @@
 # PlayAUDIO1U User Guide
 
 ## Introduction
-![PlayAUDIO1u](images/playaudio1u-main.jpeg)
+![PlayAUDIO1U](images/playaudio1u-main.jpeg)
 
-Congratulations on the purchase of your new PlayAUDIO1U USB Audio, MIDI & Dante interface!
+Congratulations on the purchase of your new PlayAUDIO1U USB Audio & MIDI interface!
 
 ### Feature List
 
 - Two USB Type C DAW ports – use up to 2 computer devices Mac OS/Windows simultaneously
-- Twelve  XLR analog audio Line Outputs 
+- Twelve XLR analog audio Line Outputs 
 - Stereo ¼” headphone output with two independent mixes (summable to one mix)
 - DIN-MIDI ports built-in (1-in, 1-out)
 - USB Host port (connect up to 8 USB MIDI class-compliant devices with a USB hub)
@@ -270,19 +270,16 @@ The Safe Mode feature is integrated into your PlayAUDIO1U interface to safeguard
 
 ![Safe Mode screen](../images/safemode-01.png)
 
-![Safe Mode options: Check, Disable, Unmute](../images/safe-mode-check.png)
+![Safe Mode check screen](images/pa1u-safemode-check.png)
 
-![Safe Mode options: Check, Enable, Mute](../images/safe-mode-enable.png)
+![Safe Mode options: Check, Disable, Unmute](../images/safe-mode-check.png)
 
 For more information about Safe Mode including Safe Mode triggers and how to disengage Safe Mode and return to normal operation, please see our Safe Mode Guide at https://www.iconnectivity.com/safemode
 
 ## Controls
 
 ### OLED Home Page Legend
-
-![Home page: Scene A armed for automatic failover (shield and sine wave icons)]()
-
-![Home page: tone check enabled, no tone detected (checkmark and flat line icons)]()
+![Home page: Scene A armed for automatic failover (shield and sine wave icons)](images/pa1u-audio-tone.png)
 
 Scene Indicator Icon Legend (Top Left next to Scene A or Scene B Indicator):
 
@@ -294,6 +291,9 @@ Scene Indicator Icon Legend (Top Left next to Scene A or Scene B Indicator):
 | Safe Mode Screen              | Audio level on current scene exceeds tone check maximum volume (only used when tone check is enabled). Lower tone volume and double press headphone knob to unmute. For more detailed information about how Safe Mode activates and how to Disengage please visit https://www.iconnectivity.com/safemode  |
 
 Tone and MIDI traffic Indicator Icon Legend (top and bottom right):
+
+![PlayAUDIO1U main page](images/pa1u-audiopage-tone.png)
+
 
 | Icon  | Info  |
 | ---   | ---   |
@@ -313,7 +313,7 @@ Fine adjustments are recommended if there is a risk of signal overload. Rotary E
 | Commit Settings to Memory | Short press the Main Rotary Encoder twice to save the current state of the PlayAUDIO1U to the current preset. A notification will appear on the OLED and all Mode buttons will flash green three times.   |
 | Restart unit  | Long press the main rotary encoder for approximately 10 seconds until all cap touch buttons have turned off after illuminating in red, then release. |
 | Enter Bootloader Mode | Long press the main rotary encoder for approximately 6 seconds until all Mode buttons illuminate red and release while buttons are still illuminated red. |
-| View Failover Tone information    | From the Home page, turn the encoder clockwise to access audio meter displays showing the current level of the failover tone in both numerical and live metering <br>No tone will produce a blank meter display above the “Tone A” and “Tone B” labels. <br>Note that a failover tone level above -3dBFS will cause the PlayAUDIO1U to enter into Safe Mode and all analog and Dante Transmit outputs to be automatically muted. <br>You will not be able to unmute analog outputs until the failover tone level is adjusted below the threshold displayed on the Tone Meter menu page. |
+| View Failover Tone information  | From the Home page, turn the encoder clockwise to access audio meter displays showing the current level of the failover tone in both numerical and live metering <br>No tone will produce a blank meter display above the “Tone A” and “Tone B” labels. <br>Note that a failover tone level above -3dBFS will cause the PlayAUDIO1U to enter into Safe Mode and all analog outputs to be automatically muted. <br>You will not be able to unmute analog outputs until the failover tone level is adjusted below the threshold displayed on the Tone Meter menu page. |
 
 ### OLED Cap Touch Panel
 
@@ -342,6 +342,11 @@ Red cap touch button below Scene label for Scene B.
 
 ![PlayAUDIO1u Scene A active](images/playaudio1u-oled-scene-b.png)
 
+Turn the rotary encoder while on the main page to navigate to the tone check page which shows the current level of the audio failover tone if present.
+
+![PlayAUDIO1U main page](images/pa1u-audiopage-tone.png)
+
+
 #### Audio
 
 ![Playaudio1u OLED menu Audio selected](images//oled-audio.png)
@@ -360,6 +365,7 @@ Once the Audio page is active, use the rotary encoder to:
 
 3. Short press again to exit to the main Audio page.
 
+You can also tap the top Audio cap touch button to increment through output channels or tap the bottom cap touch button to decrement through output channels.
 ---
 
 #### MIDI
@@ -380,11 +386,7 @@ The main MIDI page monitors MIDI traffic at the input or output channels of the 
 
 2. Tap has no function.
 
----
-
 Once on the MIDI menu page, turn the main rotary encoder to cycle between MIDI port groups: USB (Host), DIN, DAW A, DAW B, and RTP.
-
----
 
 If a MIDI message is detected on an actively monitored MIDI input/output group from the MIDI menu page, a MIDI message-dependent icon will appear in the appropriate input or output row on screen.
 

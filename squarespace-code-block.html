@@ -20,7 +20,7 @@ window.ICX_GUIDE_CONFIG = {
 <style>
 /* Styled to match iconnectivity.com (Squarespace Brine template, Futura PT). */
 /* Your template makes single blocks 50% wide; let the guide's Code Block use the full content width. */
-.sqs-block:has(#icx-guide) { width: 100% !important; max-width: 1240px; margin-left: auto !important; margin-right: auto !important; }
+.sqs-block:has(#icx-guide) { width: 100% !important; max-width: none !important; }
 #icx-guide {
   --icx-font: futura-pt, "Futura PT", Futura, "Helvetica Neue", Arial, sans-serif;
   --icx-text: #464444;          /* site paragraph color */
@@ -85,7 +85,7 @@ window.ICX_GUIDE_CONFIG = {
 #icx-guide .icx-toggle { display: none; }
 
 /* ---------- Guide body ---------- */
-#icx-guide .icx-body { max-width: 860px; min-width: 0; overflow-wrap: break-word; }
+#icx-guide .icx-body { min-width: 0; overflow-wrap: break-word; }
 #icx-guide .icx-body a { overflow-wrap: anywhere; }
 #icx-guide .icx-body h1, #icx-guide .icx-body h2, #icx-guide .icx-body h3, #icx-guide .icx-body h4 {
   font-family: var(--icx-font); font-weight: 400; font-style: normal; letter-spacing: 0; text-transform: none;
@@ -134,8 +134,7 @@ window.ICX_GUIDE_CONFIG = {
 }
 #icx-guide .icx-body hr { border: 0; border-bottom: 1px solid #ccc; margin: 2.5em 0; }
 
-/* Previous / Next styled like the site's buttons */
-/* PDF downloads: list in the contents window + button under the guide title */
+/* PDF download: the selected guide's PDF in the contents window + button under the guide title */
 #icx-guide .icx-downloads { margin: 0 0 36px; }
 #icx-guide .icx-downloads[hidden] { display: none; }
 #icx-guide .icx-downloads ul { list-style: none; margin: 0; padding: 0; }
@@ -146,7 +145,6 @@ window.ICX_GUIDE_CONFIG = {
   color: var(--icx-nav); text-decoration: none; border: 0; transition: color .15s ease-out;
 }
 #icx-guide .icx-dl-link:hover { color: var(--icx-accent); }
-#icx-guide .icx-dl-link.is-current { color: var(--icx-heading); }
 #icx-guide .icx-dl-link small { margin-left: auto; font-size: 12px; letter-spacing: .06em; color: var(--icx-muted); white-space: nowrap; }
 #icx-guide .icx-dl-icon { flex: none; width: 14px; height: 14px; position: relative; top: 2px; }
 #icx-guide .icx-body .icx-pdf-button {
@@ -158,6 +156,7 @@ window.ICX_GUIDE_CONFIG = {
 #icx-guide .icx-body .icx-pdf-button:hover { background: var(--icx-button); color: #fff; border-color: var(--icx-button); }
 #icx-guide .icx-body .icx-pdf-button small { font-size: 11px; font-weight: 400; letter-spacing: .06em; opacity: .7; text-transform: none; }
 
+/* Previous / Next styled like the site's buttons */
 #icx-guide .icx-pager {
   display: flex; justify-content: space-between; gap: 16px; flex-wrap: wrap;
   margin-top: 4em; padding-top: 2em; border-top: 1px solid var(--icx-line);
@@ -209,7 +208,7 @@ window.ICX_GUIDE_CONFIG = {
       <label class="icx-label" for="icx-select">Guide</label>
       <select id="icx-select" class="icx-select"></select>
       <div class="icx-downloads" hidden>
-        <span class="icx-label">PDF downloads</span>
+        <span class="icx-label">PDF download</span>
         <ul></ul>
       </div>
       <span class="icx-label">On this page</span>
@@ -256,7 +255,7 @@ window.ICX_GUIDE_CONFIG = {
   }
   // widen the Code Block (fallback for browsers without CSS :has)
   var block = root.closest(".sqs-block");
-  if (block) { block.style.setProperty("width", "100%", "important"); block.style.maxWidth = "1240px";
+  if (block) { block.style.setProperty("width", "100%", "important"); block.style.setProperty("max-width", "none", "important");
                block.style.setProperty("margin-left", "auto", "important"); block.style.setProperty("margin-right", "auto", "important"); }
   measureHeader();
   applyAccent();
@@ -315,17 +314,14 @@ window.ICX_GUIDE_CONFIG = {
     if (!g.pdf) return "";
     return /^https?:\/\//i.test(g.pdf) ? g.pdf : new URL(g.pdf, C.baseUrl || location.href).href;
   }
-  function buildDownloads() {
+  // shows only the selected guide's PDF; hidden when that guide has none
+  function buildDownloads(guide) {
     var box = root.querySelector(".icx-downloads"), list = box.querySelector("ul");
-    var withPdf = guides.filter(function (g) { return g.pdf; });
-    list.innerHTML = withPdf.map(function (g) {
-      return '<li><a class="icx-dl-link" data-guide="' + esc(g.id) + '" href="' + esc(pdfUrl(g)) + '" target="_blank" rel="noopener">' +
-             DL_ICON + '<span>' + esc(g.title) + '</span><small>PDF' + (g.pdfSize ? " · " + esc(g.pdfSize) : "") + '</small></a></li>';
-    }).join("");
-    box.hidden = !withPdf.length;
-  }
-  function markCurrentDownload() {
-    root.querySelectorAll(".icx-dl-link").forEach(function (a) { a.classList.toggle("is-current", current && a.dataset.guide === current.id); });
+    list.innerHTML = guide && guide.pdf
+      ? '<li><a class="icx-dl-link" href="' + esc(pdfUrl(guide)) + '" target="_blank" rel="noopener">' +
+        DL_ICON + '<span>' + esc(guide.title) + '</span><small>PDF' + (guide.pdfSize ? " · " + esc(guide.pdfSize) : "") + '</small></a></li>'
+      : "";
+    box.hidden = !(guide && guide.pdf);
   }
   function addPdfButton(guide) {
     if (!guide.pdf) return;
@@ -408,7 +404,6 @@ window.ICX_GUIDE_CONFIG = {
     buildToc();
     buildPager(guide);
     addPdfButton(guide);
-    markCurrentDownload();
     var h1 = body.querySelector("h1");
     if (h1 && !root.dataset.keepTitle) document.title = h1.textContent + " — " + (root.dataset.siteTitle || document.title.split(" — ").pop());
   }
@@ -499,7 +494,7 @@ window.ICX_GUIDE_CONFIG = {
     if (!guide) return;
     root.classList.remove("toc-open"); toggle.setAttribute("aria-expanded", "false");
     if (current === guide) { scrollToSection(h.section, smooth); return; }
-    current = guide; select.value = guide.id;
+    current = guide; select.value = guide.id; buildDownloads(guide);
     body.innerHTML = '<p class="icx-status">Loading ' + esc(guide.title) + "…</p>";
     fetchText(guide.file).then(function (md) {
       if (current !== guide) return;
@@ -528,7 +523,6 @@ window.ICX_GUIDE_CONFIG = {
     var data = JSON.parse(txt);
     guides = data.guides || data;
     buildSelect();
-    buildDownloads();
     route(false);
   }).catch(function (e) {
     body.innerHTML = '<p class="icx-status">Sorry — the user guides could not be loaded (' + esc(e.message) + ").</p>";

@@ -1,7 +1,7 @@
 # PlayAUDIO2D User Guide
 
 ## Introduction
-![PlayAUDIO2D](images/000-product/pa2d-front-trans-small.png)
+<img src="images/000-product/pa2d-front-trans-small.png" width="887" alt="PlayAUDIO2D Audio MIDI and Dante Interface">
 
 Congratulations on the purchase of your new PlayAUDIO2D USB Audio, MIDI & Dante interface!
 
@@ -286,8 +286,6 @@ The Safe Mode feature is integrated into your PlayAUDIO2D interface to safeguard
 ![Warning icon on the Tone A meter](images/05-safemode/03-check-exceed.png)
 
 ![Safe Mode options: Check, Disable, Unmute](images/05-safemode/02.png)
-
-![Safe Mode options: Check, Enable, Mute](images/05-safemode/04-check-enable.png)
 
 For more information about Safe Mode including Safe Mode triggers and how to disengage Safe Mode and return to normal operation, please see our Safe Mode Guide at https://www.iconnectivity.com/safemode
 
