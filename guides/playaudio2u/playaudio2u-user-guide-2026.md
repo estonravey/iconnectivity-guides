@@ -401,7 +401,7 @@ Rotate the main encoder to select a single channel or all channels. Short press 
 
 The Output page displays active analog output metering and allows you to edit these parameters.
 
-![Analog outputs with live meters](/iconnectivity-guides/guides/playaudio2d/images/02-output/analog-outputs-live.png)
+<img src="../playaudio2d/images/02-output/analog-outputs-live.png" alt="OLED display; analog output detail.">
 
 ##### Editing Analog Output Channels
 
@@ -419,13 +419,13 @@ You can also press the Output Mode button to step through all outputs one at a t
 
 Continuing to short press the Output Mode Button will wrap around to the first audio output channel.
 
-![Editing all analog outputs](/iconnectivity-guides/guides/playaudio2d/images/02-output/analog-single-edit.png)
+<img src="../playaudio2d/images/02-output/analog-single-edit.png" alt="OLED display; analog output detail.">
 
 #### MIDI
 
 The MIDI menu page displays real-time monitoring of all PlayAUDIO2U MIDI inputs and outputs grouped by physical MIDI port.
 
-![MIDI monitor page](/iconnectivity-guides/guides/playaudio2d/images/03-midi/midi-monitor.png)
+<img src="../playaudio2d/images/03-midi/midi-monitor.png" alt="OLED display; MIDI monitor detail.">
 
 Press the MIDI Mode button to call the PlayAUDIO2U’s onboard MIDI monitor page.
 
