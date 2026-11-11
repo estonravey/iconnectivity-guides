@@ -142,7 +142,7 @@ Click Yes to allow Auracle X Setup
 
 <img src="../images/win-ax-install-2.png" alt="Windows Auracle X installation popup; install mode.">
 
-Install for all users
+Install for all users.
 
 ## Updating PlayAUDIO2U Firmware
 
