@@ -1,6 +1,7 @@
 # PlayAUDIO2D User Guide
 
 ## Introduction
+
 <img src="images/000-product/pa2d-front-trans-small.png" width="887" alt="PlayAUDIO2D Audio MIDI and Dante Interface">
 
 Congratulations on the purchase of your new PlayAUDIO2D USB Audio, MIDI & Dante interface!
@@ -29,6 +30,7 @@ Congratulations on the purchase of your new PlayAUDIO2D USB Audio, MIDI & Dante 
 - 1 Each - US, UK, EU type IEC C14 power cables. (Type I is included in Australia)
 
 ### Minimum System Requirements
+
 - macOS - macOS 12 or later (for Auracle X control software), One free USB port
 
 - PC/Windows - Windows 10 or later (for Auracle X control software), One free USB port
@@ -40,8 +42,8 @@ Congratulations on the purchase of your new PlayAUDIO2D USB Audio, MIDI & Dante 
 ## Hardware Description
 
 ### Front Panel
-<img src="images/000-product/pa2d-hwd-front.png" width="800px" alt="PlayAUDIO2D front panel detail.">
 
+<img src="images/000-product/pa2d-hwd-front.png" width="800px" alt="PlayAUDIO2D front panel detail.">
 
 - **XLR TRS Combo jack**. Plug in microphones, DI boxes, or instruments.
 - **USB HOST Port**. Directly plug in a class-compliant MIDI device, or plug in up to eight class-compliant MIDI devices via a powered USB hub (not included).
@@ -57,7 +59,6 @@ Congratulations on the purchase of your new PlayAUDIO2D USB Audio, MIDI & Dante 
 
 ### Rear Panel
 <img src="images/000-product/pa2d-hwd-rear.png" width="800px" alt="PlayAUDIO2U rear panel detail.">
-
 
 - **AC Power Inlet**. Fused Input jack for included IEC C13 power supply cable.
 - **Power switch**. Turn the PlayAUDIO2D on or off. The switch will illuminate when power is turned on.
@@ -176,9 +177,9 @@ To use Auracle X to update your device’s firmware:
 
 3. Open the Auracle X application.
 
-4. On the PlayAUDIO2D main menu tab click the Firmware menu option
+4. On the PlayAUDIO2D main menu tab click the Firmware menu option.
 
-5. If a newer firmware for your device is available a menu option to update firmware will appear in the Load Latest From Web section. Click Install to update from web
+5. If a newer firmware for your device is available a menu option to update firmware will appear in the Load Latest From Web section. Click Install to update from web.
 
 ### Firmware Update: Load from file
 
@@ -202,11 +203,11 @@ The preferred method for updating your device’s firmware is to use iConnectivi
 
 In rare situations, you may prefer to manually update your firmware using the bootloader. This will require several steps:
 
-1. Download the firmware from the iConnectivity website Firmware Page
+1. Download the firmware from the iConnectivity website Firmware Page.
 
-2. Manually set your PlayAUDIO2D interface to Bootloader Mode by following the instructions here
+2. Manually set your PlayAUDIO2D interface to Bootloader Mode by following the instructions here.
 
-3. Transmit the firmware file to the PlayAUDIO2D and allow the update to complete
+3. Transmit the firmware file to the PlayAUDIO2D and allow the update to complete.
 
 4. Manually restart your PlayAUDIO2D by first powering off the device and then powering on again.
 
@@ -238,7 +239,7 @@ To manually force your PlayAUDIO2D into Bootloader mode:
 
 1. Power on your PlayAUDIO2D and wait until the bootup process is complete.
 
-2. Long press the main rotary encoder for approximately 6 seconds until all mode buttons illuminate red, then release the encoder
+2. Long press the main rotary encoder for approximately 6 seconds until all mode buttons illuminate red, then release the encoder.
 
 The PlayAUDIO2D will reboot and enter Bootloader mode ready to accept a manual firmware file send.
 
@@ -294,9 +295,9 @@ Ensure that the PlayAUDIO2D is armed for automatic failover by checking for the 
 
 Failover can be engaged manually by touching the Scene Mode Button on the front panel of the PlayAUDIO2D. The current scene is indicated as follows:
 
-- Scene A: The Scene Mode Button is illuminated in green, and the Touch panel display shows the letter “A”
+- Scene A: The Scene Mode Button is illuminated in green, and the Touch panel display shows the letter “A”.
 
-- Scene B: The Scene Mode Button is illuminated in red, and the Touch panel display shows the letter “B”
+- Scene B: The Scene Mode Button is illuminated in red, and the Touch panel display shows the letter “B”.
 
 [Comment]: # (NEED LINK to Auracle X manual)
 For information on how to use a footswitch to initiate manual failover, please see the updated Auracle X manual in the Control Ports section.
@@ -349,8 +350,6 @@ Fine adjustments are recommended if there is a risk of signal overload. Rotary E
 | **Restart unit**  | Long press the main rotary encoder for approximately 10 seconds until all Mode buttons have turned off after illuminating in red, then release. |
 | **Enter Bootloader Mode** | Long press the main rotary encoder for approximately 6 seconds until all Mode buttons illuminate red and release while buttons are still illuminated red. |
 | **View Failover Tone information**    | From the Home page, turn the encoder clockwise to access audio meter displays showing the current level of the failover tone in both numerical and live metering <br>No tone will produce a blank meter display above the “Tone A” and “Tone B” labels. <br>Note that a failover tone level above -3dBFS will cause the PlayAUDIO2D to enter into Safe Mode and all analog and Dante Transmit outputs to be automatically muted. <br>You will not be able to unmute analog outputs until the failover tone level is adjusted below the threshold displayed on the Tone Meter menu page. |
-
-![Failover tone meters for Tone A and Tone B](images/00-scene/05-tone.png)
 
 ### Mode Buttons
 
@@ -414,6 +413,7 @@ Rotate the encoder to move between the pages listed below, and short press to se
 Each page will have varying selectable parameters. Short press the encoder to select editable parameters; rotate the encoder to change the value of the selected parameter.
 
 #### Input
+
 The Input page monitors and edits analog inputs and digital receive channels.
 
 Press the Input Mode button to call the Analog Input menu.
@@ -430,11 +430,17 @@ The Input page displays analog input gain level and active input metering, 48V a
 
 The Input page also displays the active input level of Dante receive channels 1-8 and allows you to mute or unmute all or individual Dante receive channels.
 
-![Dante receive channels 1-8 with live meters](images/01-input/dante-rx-live-meters.png)
+<img src="images/01-input/dante-rx-live-meters.png" alt="Dante receive channels 1-8 with live meters">
 
-![Dante receive: all channels selected](images/01-input/dante-rx-all.png)
+Dante receive channels 1-8 with live meters.
 
-![Dante receive: channel 1 selected](images/01-input/dante-rx-1-ch.png)
+<img src="images/01-input/dante-rx-all.png" alt="Dante receive: all channels selected">
+
+Dante receive: all channels selected for edit (mute only).
+
+<img src="images/01-input/dante-rx-1-ch.png" alt="Dante receive: channel 1 selected">
+
+Dante receive: Channel 1 selected for edit (mute only).
 
 ##### Editing Analog Input Channels
 
@@ -444,11 +450,18 @@ Rotate the main encoder to toggle between editable audio input parameters and sh
 
 Turn the main encoder to change the value of the selected parameter. Press the main encoder again to select another editable parameter.
 
-![Editing analog input 1](images/01-input/analog-input-edit-single.png)
+<img src="images/01-input/analog-input-edit-single.png" alt="Editing analog input 1">
 
-![Editing all analog inputs](images/01-input/analog-inputs-some-mute.png)
+Editing analog input 1 (48V active, cursor on gain, gain set to +16dbFS)
 
-![Analog inputs after editing](images/01-input/analog-inputs-all-edits.png)
+<img src="images/01-input/analog-inputs-some-mute.png" alt="Editing all analog inputs">
+
+Editing all analog inputs. Cursor on input selection "All." Changes made here affect all four analog inputs identically.
+
+<img src="images/01-input/analog-inputs-all-edits.png" alt="Analog inputs detail">
+
+Analog inputs detail, channel 2 selected for editing.
+
 
 #### Output
 
@@ -464,15 +477,17 @@ Rotate the main encoder to select a single channel or all channels. Short press 
 
 The Output page displays active analog output metering and allows you to edit these parameters.
 
-![Analog outputs with live meters](images/02-output/analog-outputs-live.png)
+<img src="images/02-output/analog-outputs-live.png" alt="Analog outputs with live meters">
 
 ##### Dante Transmit Channel Monitoring
 
+<img src="images/02-output/dante-tx-32-monitoring.png" alt="Dante transmit channels 1-32 with live meters">
+
 The Output page also displays the active output level of Dante transmit channels 1-32 and allows you to mute or unmute all or individual Dante transmit channels.
 
-![Dante transmit channels 1-32 with live meters](images/02-output/dante-tx-32-monitoring.png)
-
 ##### Editing Analog Output Channels
+
+<img src="images/02-output/analog-single-edit.png" alt="Analog output edit menu detail; output level set at -5.0 dBFS.">
 
 Select a single or all analog output channels by turning the encoder to the channel(s) you wish to edit and pressing the encoder.
 
@@ -488,46 +503,39 @@ You can also press the Output Mode button to step through all outputs one at a t
 
 Continuing to short press the Output Mode Button will wrap around to the first audio output channel.
 
-![Editing all analog outputs](images/02-output/analog-single-edit.png)
-
 ##### Editing Dante Transmit Channels
+
+<img src="images/02-output/dante-tx-detail.png" alt="Dante transmit channel edit detail; all selected">
+<img src="images/02-output/dante-tx-monitoring.png" alt="Dante transmit channel edit detail; channel 19 selected">
 
 Dante transmit channels can only be edited for mute/unmute.
 
-![Dante transmit: all channels selected](images/02-output/dante-tx-detail.png)
-
-![Dante transmit: channel 19 selected](images/02-output/dante-tx-monitoring.png)
-
 #### MIDI
 
-The MIDI menu page displays real-time monitoring of all PlayAUDIO2D MIDI inputs and outputs grouped by physical MIDI port.
+<img src="images/03-midi/midi-monitor.png" alt="MIDI monitor page; DAW A port detail">
 
-![MIDI monitor page](images/03-midi/midi-monitor.png)
+The MIDI menu page displays real-time monitoring of all PlayAUDIO2D MIDI inputs and outputs grouped by physical MIDI port.
 
 Press the MIDI Mode button to call the PlayAUDIO2D’s onboard MIDI monitor page.
 
 Double-tapping the MIDI Mode button will send a MIDI Panic message to all MIDI outputs.
 
----
-
 Once on the MIDI menu page, turn the main rotary encoder to cycle between MIDI port groups: USB (Host), DIN, DAW A, DAW B, and RTP.
-
----
 
 If a MIDI message is detected on an actively monitored MIDI input/output group from the MIDI menu page, a MIDI message-dependent icon will appear in the appropriate input or output row on screen.
 
 | Icon | Info |
 |---|---|
-| Fader | CC message |
-| Music Note | MIDI note message |
-| Bold Circle | Clock |
-| SX | SysEx message |
+| **Fader** | CC message |
+| **Music Note** | MIDI note message |
+| **Bold Circle** | Clock |
+| **SX** | SysEx message |
 
 #### System
 
 Press the System Mode Button to display the PlayAUDIO2D info page
 
-![System info page](images/04-system/system.png)
+<img src="images/04-system/system.png" alt="System info page detail">
 
 #### Exit
 
@@ -565,7 +573,7 @@ To select between headphone mixer options:
 
 2. Turn the headphone encoder slowly to raise or lower the selected headphone mix volume in 0.5 dB increments.
 
-![Headphones Mixer in Auracle X](images/auracle-x/02-audio.headphones.png)
+<img src="images/auracle-x/02-audio.headphones.png" width="800px" alt="Auracle X headphones Mixer for the PlayAUDIO2D">
 
 #### Headphone Mix Options: Scene A
 
@@ -643,16 +651,16 @@ From left to right, the default MIDI note programming is:
 
 | Button | Note |
 | --- | --- |
-| Button 1:	| Note 36 |
-| Button 2:	| Note 39 |
-| Button 3:	| Note 41 |
-| Button 4:	| Note 38 |
+| **Button 1**	| Note 36 |
+| **Button 2**	| Note 39 |
+| **Button 3**	| Note 41 |
+| **Button 4**	| Note 38 |
 
 Each Control button can also be custom mapped to a MIDI note, CC parameter and single value.
 
 ### Using the Control Ports and Control Buttons
 
-Use the PlayAUDIO2D Control ports with compatible footswitch(es) to Arm/Disarm/Toggle Failover Arm state, load Presets, toggle active scenes, send a spacebar key message, and/or send CC/PC or Note On/Off messages.
+Use the PlayAUDIO2D Control ports with a compatible footswitch to Arm/Disarm/Toggle Failover Arm state, load Presets, toggle active scenes, send a spacebar key message, and/or send CC/PC or Note On/Off messages.
 
 The PlayAUDIO2D Control Buttons have the same programmable functionality as the user mappable Control ports described above.
 
@@ -696,9 +704,9 @@ To change the RTP MIDI settings of the PlayAUDIO2D including RTP-MIDI IP address
 
 | Port | Description |
 | --- | --- |
-| Port 1 | Dante audio + RTP-MIDI (switched network) |
-| Port 2 | Dante audio + RTP-MIDI (switched network) |
-| Redundancy | Not available in this mode |
+| **Port 1** | Dante audio + RTP-MIDI (switched network) |
+| **Port 2** | Dante audio + RTP-MIDI (switched network) |
+| **Redundancy** | Not available in this mode |
 
 **Function**
 
@@ -726,6 +734,7 @@ This is the unit's default, single-network mode, and is not the same as Dante re
 | Redundancy | Not available in this mode |
 
 **Function**
+
 This configuration splits the two ports into independent logical networks. Port 1 carries Dante audio exclusively, including its clocking and control traffic.
 
 Port 2 carries RTP-MIDI exclusively, typically on its own IP subnet.
@@ -744,11 +753,12 @@ Because the two networks are isolated at the unit, MIDI traffic cannot interfere
 
 | Port | Description |
 | --- | --- |
-| Port 1 | Dante audio — Primary network + RTP-MIDI |
-| Port 2 | Dante audio — Secondary network (mirrored) |
-| Redundancy | Dante redundant mode — audio only |
+| **Port 1** | Dante audio — Primary network + RTP-MIDI |
+| **Port 2** | Dante audio — Secondary network (mirrored) |
+| **Redundancy** | Dante redundant mode — audio only |
 
 **Function**
+
 Port 1 and Port 2 operate as Dante's Primary and Secondary redundant networks, each carrying an identical, mirrored copy of every Dante audio stream so that audio continues uninterrupted if one network path fails.
 
 In this variant, RTP-MIDI is added to Port 1, sharing the Primary network alongside Dante audio and clocking traffic.
@@ -764,9 +774,10 @@ In this variant, RTP-MIDI is added to Port 1, sharing the Primary network alongs
 
 | Port | Description |
 | --- | --- |
-| Port 1 | Dante audio — Primary network
-| Port 2 | Dante audio — Secondary network + RTP-MIDI
-| Redundancy | Dante redundant mode — audio only
+| **Port 1** | Dante audio — Primary network
+| **Port 2** | Dante audio — Secondary network + RTP-MIDI
+| **Redundancy** | Dante redundant mode — audio only
+
 **Function**
 
 Port 1 and Port 2 operate as Dante's Primary and Secondary redundant networks, each carrying an identical, mirrored copy of every Dante audio stream so that audio continues uninterrupted if one network path fails.
@@ -787,13 +798,13 @@ Use the table below to compare all four supported configurations at a glance.
 
 | | Combined (Port 1 & 2) | Split (Dante / MIDI) | Redundant + MIDI on Primary | Redundant + MIDI on Secondary |
 | --- | --- | --- | --- | --- |
-| Ports Required | 1 logical internal switch | 2 independent networks | 2 (Primary/Secondary) | 2 (Primary/Secondary) |
-| Audio redundancy| none | none | yes | yes |
-| MIDI redundancy | N/A | N/A | None | None |
-| Network isolation | None | Full | Partial (Primary) | Partial (Secondary) |
-| Clock stability impact | Low-moderate | None | Moderate | Low |
-| Setup complexity | Low | Moderate | High | High |
-| Recommended for | Small/touring rigs | Large / latency-critical installs | Redundant systems | Redundant systems; best practice default |
+| **Ports Required** | 1 logical internal switch | 2 independent networks | 2 (Primary/Secondary) | 2 (Primary/Secondary) |
+| **Audio redundancy**| none | none | yes | yes |
+| **MIDI redundancy** | N/A | N/A | None | None |
+| **Network isolation** | None | Full | Partial (Primary) | Partial (Secondary) |
+| **Clock stability impact** | Low-moderate | None | Moderate | Low |
+| **Setup complexity** | Low | Moderate | High | High |
+| **Recommended for** | Small/touring rigs | Large / latency-critical installs | Redundant systems | Redundant systems; best practice default |
 
 > **Note:** When Dante redundancy and RTP-MIDI must share the unit's two ports, the Redundant + MIDI on Secondary configuration is the recommended default as it keeps the Primary Dante network free of non-audio traffic.
 
@@ -942,3 +953,5 @@ Changes or modifications not expressly approved by iConnectivity could void the 
 ### Disposal of Waste Equipment by Users in the European Union
 
 *This product must not be disposed of with other waste. Instead, it is your responsibility to dispose of your waste equipment by handing it over to a designated collection point for the recycling of waste electrical and electronic equipment. The separate collection and recycling of your waste equipment at the time of disposal will help conserve natural resources and ensure that it is recycled in a manner that protects human health and the environment. For more information about where you can drop off your waste equipment for recycling, please contact your local city recycling office or the dealer from whom you purchased the product.*
+
+---
