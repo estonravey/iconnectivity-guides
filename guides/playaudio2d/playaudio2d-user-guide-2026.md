@@ -223,12 +223,15 @@ iConnectivity firmware is formatted as a Standard MIDI File with a .MID file ext
 iConnectivity interfaces have three modes of operation:
 
 ### Power Off
+
 The interface is powered off and not operational.
 
 ### Application Mode
+
 This is the normal operational mode that you will use nearly all of the time. In this mode, the device is powered on and operates as a fully functional interface.
 
 ### Bootloader Mode
+
 Bootloader Mode is a special service mode used to perform firmware updates. Normally you will use Auracle X software to update your firmware and Auracle X will automatically switch your interface between Normal and Bootloader modes as necessary. In rare situations users may prefer to manually update their firmware via the bootloader. This manual process is described in detail in the [Updating Firmware](#updating-playaudio2d-firmware) section of this guide.
 
 To manually force your PlayAUDIO2D into Bootloader mode:
@@ -242,16 +245,21 @@ The PlayAUDIO2D will reboot and enter Bootloader mode ready to accept a manual f
 > **Note:** The PlayAUDIO2D is in Bootloader mode when the OLED display is blank and both the System and Exit Mode buttons alternately flash.
 
 ## PlayAUDIO2D Failover Redundancy
+
 ### How the PlayAUDIO2D's Failover System Works
+
 Your PlayAUDIO2D unit comes equipped with two independent failover mechanisms: Automatic Failover and Manual Failover. This failover redundancy is designed to ensure that your backup system can always be engaged instantly and seamlessly, whether via auto-detection or through manual switching. Taking advantage of both of these failover mechanisms is recommended for all live performance scenarios.
 
 ### Automatic Failover
+
 Automatic Failover uses an audio test tone or MIDI stream sent from your DAW to establish an audio- or MIDI- recognition sync lock between your primary playback device and your PlayAUDIO2D interface on a dedicated internal audio or MIDI channel. Once armed, the PlayAUDIO2D instantly switches to your secondary device if any break in the test tone signal or MIDI stream is detected, providing a seamless failover to your backup system without audio or MIDI interruption. We recommend using the audio tone based failover to prevent needless scene switching when playback is stopped.
 
 ### Manual Failover
+
 Manual Failover allows you to control scene switching at the touch of a button or press of a connected and assigned footswitch. Note that if automatic failover is not armed, the PlayAUDIO2D will NOT switch to your backup playback device in the event of a primary device failure.
 
 ### How to Arm the PlayAUDIO2D for Automatic Failover
+
 #### LifeSine Installation
 
 1. Download our LifeSine test tone plugin from https://www.iconnectivity.com/downloads/ and install it on both your primary and backup computers.
@@ -294,40 +302,40 @@ Failover can be engaged manually by touching the Scene Mode Button on the front 
 For information on how to use a footswitch to initiate manual failover, please see the updated Auracle X manual in the Control Ports section.
 
 ### Safe Mode
+
 The Safe Mode feature is integrated into your PlayAUDIO2D interface to safeguard performers and audience members from potentially harmful audio levels. Activation of Safe Mode is indicated by the display of a dedicated Safe Mode screen and alternating red LEDs within the Audio LED section on the front panel. Upon activation, all outputs, excluding the headphone output, will be automatically muted.
 
-![Safe Mode screen](images/05-safemode/safemode-01.png)
+<img src="../images/safemode-01.png" alt="Safe mode OLED display.">
 
-![Warning icon on the Tone A meter](images/05-safemode/03-check-exceed.png)
+<img src="images/05-safemode/03-check-exceed.png" alt="Analog outputs monitor; safe mode alarm">
 
-![Safe Mode options: Check, Disable, Unmute](images/05-safemode/02.png)
+<img src="../images/safe-mode-check.png" alt="Safe Mode options: Check, Disable, Unmute.">
 
 For more information about Safe Mode including Safe Mode triggers and how to disengage Safe Mode and return to normal operation, please see our Safe Mode Guide at https://www.iconnectivity.com/safemode
 
 ## Controls
 
 ### OLED Home Page Legend
-![Home page: Scene A armed for automatic failover (shield and sine wave icons)](images/00-scene/00-dual-master.png)
 
-![Home page: tone check enabled, no tone detected (checkmark and flat line icons)](images/00-scene/00-start.png)
+<img src="../playaudio2u/images/pa2-oled-legend.png" width="255" alt="PlayAUDIO2D OLED; home display; Scene A armed for automatic failover.">
 
 Scene Indicator Icon Legend (Top Left next to Scene A or Scene B Indicator):
 
 | Icon | Info |
 | ---       | --- |
-| A or B    | Current Scene selection, A or B |
-| Checkmark Icon Only           | Tone Check is enabled but no tone is detected |
-| Shield with Checkmark Icon    | Tone Check is enabled and tone is detected; Automatic failover engaged |
-| Safe Mode Screen              | Audio level on current scene exceeds tone check maximum volume (only used when tone check is enabled). Lower tone volume and double press headphone knob to unmute. For more detailed information about how Safe Mode activates and how to Disengage please visit https://www.iconnectivity.com/safemode  |
+| **A or B**   | Current Scene selection, A or B |
+| **Checkmark Icon Only**           | Tone Check is enabled but no tone is detected |
+| **Shield with Checkmark Icon**    | Tone Check is enabled and tone is detected; Automatic failover engaged |
+| **Safe Mode Screen**              | Audio level on current scene exceeds tone check maximum volume (only used when tone check is enabled). Lower tone volume and double press headphone knob to unmute. For more detailed information about how Safe Mode activates and how to Disengage please visit https://www.iconnectivity.com/safemode  |
 
 Tone and MIDI traffic Indicator Icon Legend (top and bottom right):
 
 | Icon  | Info  |
 | ---   | ---   |
-| No Icon   | Tone Check not enabled |
-| Flat line | Device (computer or tablet) is detected but no tone is detected |
-| Sine Wave | Tone Check is enabled and tone is detected |
-| MIDI Activity | Monitors general incoming and outgoing MIDI activity |
+| **No Icon**   | Tone Check not enabled |
+| **Flat line** | Device (computer or tablet) is detected but no tone is detected |
+| **Sine Wave** | Tone Check is enabled and tone is detected |
+| **MIDI Activity** | Monitors general incoming and outgoing MIDI activity |
 
 ### Using the Touch Panel and Main Rotary Encoder
 
@@ -337,10 +345,10 @@ Fine adjustments are recommended if there is a risk of signal overload. Rotary E
 
 | Function  | Action    |
 | ---       | ---       |
-| Commit Settings to Memory | Short press the Main Rotary Encoder twice to save the current state of the PlayAUDIO2D to the current preset. A notification will appear on the OLED and all Mode buttons will flash green three times.   |
-| Restart unit  | Long press the main rotary encoder for approximately 10 seconds until all Mode buttons have turned off after illuminating in red, then release. |
-| Enter Bootloader Mode | Long press the main rotary encoder for approximately 6 seconds until all Mode buttons illuminate red and release while buttons are still illuminated red. |
-| View Failover Tone information    | From the Home page, turn the encoder clockwise to access audio meter displays showing the current level of the failover tone in both numerical and live metering <br>No tone will produce a blank meter display above the “Tone A” and “Tone B” labels. <br>Note that a failover tone level above -3dBFS will cause the PlayAUDIO2D to enter into Safe Mode and all analog and Dante Transmit outputs to be automatically muted. <br>You will not be able to unmute analog outputs until the failover tone level is adjusted below the threshold displayed on the Tone Meter menu page. |
+| **Commit Settings to Memory** | Short press the Main Rotary Encoder twice to save the current state of the PlayAUDIO2D to the current preset. A notification will appear on the OLED and all Mode buttons will flash green three times.   |
+| **Restart unit**  | Long press the main rotary encoder for approximately 10 seconds until all Mode buttons have turned off after illuminating in red, then release. |
+| **Enter Bootloader Mode** | Long press the main rotary encoder for approximately 6 seconds until all Mode buttons illuminate red and release while buttons are still illuminated red. |
+| **View Failover Tone information**    | From the Home page, turn the encoder clockwise to access audio meter displays showing the current level of the failover tone in both numerical and live metering <br>No tone will produce a blank meter display above the “Tone A” and “Tone B” labels. <br>Note that a failover tone level above -3dBFS will cause the PlayAUDIO2D to enter into Safe Mode and all analog and Dante Transmit outputs to be automatically muted. <br>You will not be able to unmute analog outputs until the failover tone level is adjusted below the threshold displayed on the Tone Meter menu page. |
 
 ![Failover tone meters for Tone A and Tone B](images/00-scene/05-tone.png)
 
@@ -350,11 +358,11 @@ The PlayAUDIO2D features Mode Buttons with fixed functionality for the most comm
 
 | Button | Function |
 |---|---|
-| Input | Displays the audio input menu.<br>Press again to toggle between viewing the four front analog inputs and eight Dante receive channels.<br>When the Input menu is active, turn the encoder to cycle through editable parameters and press the encoder to edit the selected parameter |
-| Output | Displays the audio output menu.<br>Press again to toggle between viewing the 24 rear analog outputs and 32 Dante transmit channels.<br>When the Output menu is active, turn the encoder to cycle through editable parameters and press the encoder to edit the selected parameter |
-| MIDI | Calls the MIDI monitoring page. <br>Turn the encoder to cycle between MIDI monitoring pages for all PlayAUDIO2D MIDI ports.<br>Double tap the encoder while the MIDI page is active to generate a MIDI Panic message to all MIDI ports |
-| System | Displays the PlayAUDIO2D info page |
-| Exit | Steps backward through the menu hierarchy per press |
+| **Input** | Displays the audio input menu.<br>Press again to toggle between viewing the four front analog inputs and eight Dante receive channels.<br>When the Input menu is active, turn the encoder to cycle through editable parameters and press the encoder to edit the selected parameter |
+| **Output** | Displays the audio output menu.<br>Press again to toggle between viewing the 24 rear analog outputs and 32 Dante transmit channels.<br>When the Output menu is active, turn the encoder to cycle through editable parameters and press the encoder to edit the selected parameter |
+| **MIDI** | Calls the MIDI monitoring page. <br>Turn the encoder to cycle between MIDI monitoring pages for all PlayAUDIO2D MIDI ports.<br>Double tap the encoder while the MIDI page is active to generate a MIDI Panic message to all MIDI ports |
+| **System** | Displays the PlayAUDIO2D info page |
+| **Exit** | Steps backward through the menu hierarchy per press |
 
 #### Scene
 The Scene page displays current output metering per channel on the currently active scene.
