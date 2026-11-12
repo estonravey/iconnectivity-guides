@@ -1,7 +1,8 @@
 # PlayAUDIO2U User Guide
 
 ## Introduction
-<img src="images/pa2u-main.png" width="887" alt="PlayAUDIO2U Audio MIDI interface">
+
+<img src="images/pa2u-main.png" width="887px" alt="PlayAUDIO2U Audio MIDI interface">
 
 Congratulations on the purchase of your new PlayAUDIO2U USB Audio & MIDI interface!
 
@@ -40,6 +41,7 @@ Congratulations on the purchase of your new PlayAUDIO2U USB Audio & MIDI interfa
 ## Hardware Description
 
 ### Front Panel
+
 <img src="images/pa2u-panel-front.png" width="800px" alt="PlayAUDIO2U front panel detail.">
 
 - **XLR TRS Combo Jack** Plug in microphones, line-level devices, DI boxes, or instruments.
@@ -55,6 +57,7 @@ Congratulations on the purchase of your new PlayAUDIO2U USB Audio & MIDI interfa
 - **Headphone Rotary Encoder.** Multi-function encoder. Turn to increase or decrease the headphone mix output volume; turning also temporarily calls up the headphone volume display. Press once to call the headphone volume display, and press again to return to the previous active menu. Additionally, double press to mute and unmute all analog outputs.
 
 ### Rear Panel
+
 <img src="images/pa2u-panel-rear.png" width="800px" alt="PlayAUDIO2U rear panel detail.">
 
 - **AC Power Inlet.** Fused Input jack for included IEC C13 power supply cable.
@@ -63,7 +66,6 @@ Congratulations on the purchase of your new PlayAUDIO2U USB Audio & MIDI interfa
 - **MIDI DIN Ports.** 5 pin DIN connections for MIDI Controllers.
 - **USB HOST Ports.** Directly plug in a class-compliant MIDI device, or plug in up to eight class-compliant MIDI devices via a powered USB hub (not included).
 - **RTP MIDI Ports.** Make long distance MIDI connections over ethernet.
-
 
 ## Getting Started
 
@@ -85,7 +87,7 @@ Quick and simple configuration of the PlayAUDIO2U is possible via onboard contro
 
 Please explore the [Auracle X User Guide](https://static1.squarespace.com/static/58976aeee6f2e12da0026d7f/t/6ace6f796c6d5d71a7eb8788/1791913849639/auracle-x-user-guide-260-20261013.pdf) for more information.
 
-<img src="../playaudio2d/images/auracle-x/00-audio.main.png" width="800px" alt="Auracle X audio page for the PlayAUDIO2U">
+<img src="../playaudio2d/images/auracle-x/00-audio.main.png" width="800px" alt="Auracle X audio page for the PlayAUDIO2D">
 
 ## Recommended Software Installation
 
@@ -339,7 +341,7 @@ The PlayAUDIO2U features Mode Buttons with fixed functionality for the most comm
 
 | Button | Function |
 |---|---|
-| **Scene** | Toggles between active scenes |
+| **Scene** | Toggles between active scenes. |
 | **Input** | Displays the audio input menu.<br> When the Input menu is active, press to select an input channel. Press again to advance to next input channel with wraparound |
 | **Output** | Displays the audio output menu.<br>When the Output menu is active press to select an output channel. Press again to advance to next output channel with wraparound |
 | **MIDI** | Calls the MIDI monitoring page.<br>Turn the encoder to cycle between MIDI monitoring pages for all PlayAUDIO2U MIDI ports.<br>Double tap the encoder while the MIDI page is active to generate a MIDI Panic message to all MIDI ports |
@@ -347,6 +349,7 @@ The PlayAUDIO2U features Mode Buttons with fixed functionality for the most comm
 | **Exit** | Steps backward through the menu hierarchy per press |
 
 #### Scene
+
 The Scene page displays current output metering per channel on the currently active scene.
 
 Press the scene button to toggle the PlayAUDIO2U between Scene A and Scene B.
@@ -370,11 +373,13 @@ Rotate the encoder to move between the pages listed below, and short press to se
 Each page will have varying selectable parameters. Short press the encoder to select editable parameters; rotate the encoder to change the value of the selected parameter.
 
 #### Input
+
 The Input page monitors and edits analog input channels.
 
 Press the Input Mode button to call the Analog Input menu.
 
 ##### Analog Input monitoring
+
 <img src="../playaudio2d/images/01-input/analog-inputs-all-edits.png" alt="PlayAUDIO2U analog input monitoring detail.">
 
 The Input page displays analog input gain level and active input metering, 48V and Hi-Z status on analog inputs and allows you to edit these parameters.
@@ -405,6 +410,8 @@ The Output page displays active analog output metering and allows you to edit th
 
 ##### Editing Analog Output Channels
 
+<img src="../playaudio2d/images/02-output/analog-single-edit.png" alt="OLED display; analog output detail.">
+
 Select a single or all analog output channels by turning the encoder to the channel(s) you wish to edit and pressing the encoder.
 
 A detailed menu of editable audio output parameters appears.
@@ -419,38 +426,32 @@ You can also press the Output Mode button to step through all outputs one at a t
 
 Continuing to short press the Output Mode Button will wrap around to the first audio output channel.
 
-<img src="../playaudio2d/images/02-output/analog-single-edit.png" alt="OLED display; analog output detail.">
-
 #### MIDI
 
-The MIDI menu page displays real-time monitoring of all PlayAUDIO2U MIDI inputs and outputs grouped by physical MIDI port.
-
 <img src="../playaudio2d/images/03-midi/midi-monitor.png" alt="OLED display; MIDI monitor detail.">
+
+The MIDI menu page displays real-time monitoring of all PlayAUDIO2U MIDI inputs and outputs grouped by physical MIDI port.
 
 Press the MIDI Mode button to call the PlayAUDIO2U’s onboard MIDI monitor page.
 
 Double-tapping the MIDI Mode button will send a MIDI Panic message to all MIDI outputs.
 
----
-
 Once on the MIDI menu page, turn the main rotary encoder to cycle between MIDI port groups: USB (Host), DIN, DAW A, DAW B, and RTP.
-
----
 
 If a MIDI message is detected on an actively monitored MIDI input/output group from the MIDI menu page, a MIDI message-dependent icon will appear in the appropriate input or output row on screen.
 
 | Icon | Info |
 |---|---|
-| Fader | CC message |
-| Music Note | MIDI note message |
-| Bold Circle | Clock |
-| SX | SysEx message |
+| **Fader** | CC message |
+| **Music Note** | MIDI note message |
+| **Bold Circle** | Clock |
+| **SX** | SysEx message |
 
 #### System
 
-Press the System Mode Button to display the PlayAUDIO2U info page
+<img src="../playaudio2d/images/04-system/system.png" alt="System info page detail">
 
-![System info page](/iconnectivity-guides//guides/playaudio2d/images/04-system/system.png)
+Press the System Mode Button to display the PlayAUDIO2U info page.
 
 #### Exit
 
@@ -468,15 +469,15 @@ Turn the headphone encoder to adjust the volume of the currently selected headph
 
 #### Global Mute
 
+<img src="../playaudio2d/images/auracle-x/mute-global-mute.png" alt="Global Mute on OLED display">
+
+<img src="../playaudio2d/images/auracle-x/global-mute-on.png" alt="Auracle X detail; global mute on.">
+
 Global Mute mutes all rear analog outputs and preserves the headphone output.
 
 Double tap the headphone encoder rapidly to engage Global Mute.
 
 Double tap again while Global Mute is active to unmute.
-
-![Global Mute on the display](../playaudio2d/images/05-safemode/safemode-01.png)
-
-<img src="../playaudio2d/images/auracle-x/global-mute-on.png" alt="Auracle X detail; global mute on.">
 
 #### Headphone Mixes
 
@@ -488,11 +489,12 @@ To select between headphone mixer options:
 
 2. Turn the headphone encoder slowly to raise or lower the selected headphone mix volume in 0.5 dB increments.
 
-<img src="../playaudio2d/images/auracle-x/02-audio.headphones.png" width="800" alt="Auracle X headphones mix detail.">
+<img src="../playaudio2d/images/auracle-x/02-audio.headphones.png" width="800px" alt="Auracle X headphones mix detail.">
 
 #### Headphone Mix Options: Scene A
 
 ##### Mix A1
+
 <img src="../playaudio2d/images/hp/A1.png" alt="Headphone mix A1 detail.">
 
 - All 24 outputs from USB DAW A
@@ -557,10 +559,10 @@ From left to right, the default MIDI note programming is:
 
 | Button | Note |
 | --- | --- |
-| Button 1:	| Note 36 |
-| Button 2:	| Note 39 |
-| Button 3:	| Note 41 |
-| Button 4:	| Note 38 |
+| **Button 1**	| Note 36 |
+| **Button 2**	| Note 39 |
+| **Button 3**	| Note 41 |
+| **Button 4**	| Note 38 |
 
 Each Control button can also be custom mapped to a MIDI note, CC parameter and single value.
 
@@ -568,7 +570,7 @@ Each Control button can also be custom mapped to a MIDI note, CC parameter and s
 
 Use the PlayAUDIO2U Control ports with a compatible footswitch to Arm/Disarm/Toggle Failover Arm state, load Presets, toggle active scenes, send a spacebar key message, and/or send CC/PC or Note On/Off messages.
 
-The PlayAUDIO2U Control Buttons have the same programmable functionality as the user mappable Control ports described above.
+The PlayAUDIO2U Control Buttons have the same programmable functionality as the user mappable Control ports described above with the exclusion of being able to operate as a control output.
 
 Complete instructions on configuring Control port footswitch actions can be found in our [Auracle documentation](https://www.iconnectivity.com/s/auracle-x-user-guide-260-20261013.pdf).
 
@@ -661,6 +663,7 @@ The PlayAUDIO2U meets the requirements of the following standards and directives
 We, iConnectivity, declare that the PlayAUDIO2U complies with Part 15 of the FCC Rules. Operation is subject to the following two conditions: (1) this device may not cause harmful interference, and (2) this device must accept any interference received, including interference that may cause undesired operation.
 
 ### Communication Statement
+
 This equipment has been tested and found to comply with the limits for a Class B digital device, pursuant to Part 15 of the FCC Rules.
 
 These limits are designed to provide reasonable protection against harmful interference in a residential installation. This equipment generates, uses and can radiate radio frequency energy and, if not installed and used in accordance with the instructions, may cause harmful interference to radio communications.

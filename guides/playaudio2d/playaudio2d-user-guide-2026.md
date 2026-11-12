@@ -77,8 +77,6 @@ There are no software drivers to download or install; the PlayAUDIO2D interface 
 
 Before connecting the PlayAUDIO2D to a Windows computer please download and install the latest version of our Unified Windows Driver at https://www.iconnectivity.com/windows-drivers.
 
-You may also download the unified USB driver separate from Auracle X at https://www.iconnectivity.com/windows-drivers.
-
 Connect your computer to your PlayAUDIO2D USB DAW Port A using a USB 2.0 or better data cable.
 
 The interface should appear as a standard audio output device in Windows. You can route audio from music or video apps directly to the interface to test.
@@ -299,9 +297,6 @@ Failover can be engaged manually by touching the Scene Mode Button on the front 
 
 - Scene B: The Scene Mode Button is illuminated in red, and the Touch panel display shows the letter “B”.
 
-[Comment]: # (NEED LINK to Auracle X manual)
-For information on how to use a footswitch to initiate manual failover, please see the updated Auracle X manual in the Control Ports section.
-
 ### Safe Mode
 
 The Safe Mode feature is integrated into your PlayAUDIO2D interface to safeguard performers and audience members from potentially harmful audio levels. Activation of Safe Mode is indicated by the display of a dedicated Safe Mode screen and alternating red LEDs within the Audio LED section on the front panel. Upon activation, all outputs, excluding the headphone output, will be automatically muted.
@@ -353,6 +348,8 @@ Fine adjustments are recommended if there is a risk of signal overload. Rotary E
 
 ### Mode Buttons
 
+<img src="../playaudio2u/images/pa2-mode-buttons-small.png" >
+
 The PlayAUDIO2D features Mode Buttons with fixed functionality for the most commonly used functions of the PlayAUDIO2D.
 
 | Button | Function |
@@ -364,6 +361,7 @@ The PlayAUDIO2D features Mode Buttons with fixed functionality for the most comm
 | **Exit** | Steps backward through the menu hierarchy per press |
 
 #### Scene
+
 The Scene page displays current output metering per channel on the currently active scene.
 
 Press the scene button to toggle the PlayAUDIO2D between Scene A and Scene B.
@@ -462,7 +460,6 @@ Editing all analog inputs. Cursor on input selection "All." Changes made here af
 
 Analog inputs detail, channel 2 selected for editing.
 
-
 #### Output
 
 The Output page monitors and edits all 24 rear analog outputs and all 32 Dante transmit channels.
@@ -533,9 +530,9 @@ If a MIDI message is detected on an actively monitored MIDI input/output group f
 
 #### System
 
-Press the System Mode Button to display the PlayAUDIO2D info page
-
 <img src="images/04-system/system.png" alt="System info page detail">
+
+Press the System Mode Button to display the PlayAUDIO2D info page.
 
 #### Exit
 
@@ -553,15 +550,15 @@ Turn the headphone encoder to adjust the volume of the currently selected headph
 
 #### Global Mute
 
+<img src="images/auracle-x/mute-global-mute.png" alt="Global Mute on OLED display">
+
+<img src="images/auracle-x/global-mute-on.png" alt="Auracle X detail; global mute on.">
+
 Global Mute mutes all rear analog and Dante Transmit outputs and preserves the headphone output.
 
-Double tap the headphone encoder rapidly to engage Global Mute, muting all analog outputs and Dante transmit channels of the PlayAUDIO2D.
+Double tap the headphone encoder rapidly to engage Global Mute.
 
 Double tap again while Global Mute is active to unmute.
-
-![Global Mute on the display](images/auracle-x/mute-global-mute.png)
-
-![Global Mute ON in Auracle X](images/auracle-x/global-mute-on.png)
 
 #### Headphone Mixes
 
@@ -573,7 +570,7 @@ To select between headphone mixer options:
 
 2. Turn the headphone encoder slowly to raise or lower the selected headphone mix volume in 0.5 dB increments.
 
-<img src="images/auracle-x/02-audio.headphones.png" width="800px" alt="Auracle X headphones Mixer for the PlayAUDIO2D">
+<img src="images/auracle-x/02-audio.headphones.png" width="800px" alt="Auracle X headphones mix detail.">
 
 #### Headphone Mix Options: Scene A
 
@@ -662,7 +659,7 @@ Each Control button can also be custom mapped to a MIDI note, CC parameter and s
 
 Use the PlayAUDIO2D Control ports with a compatible footswitch to Arm/Disarm/Toggle Failover Arm state, load Presets, toggle active scenes, send a spacebar key message, and/or send CC/PC or Note On/Off messages.
 
-The PlayAUDIO2D Control Buttons have the same programmable functionality as the user mappable Control ports described above.
+The PlayAUDIO2D Control Buttons have the same programmable functionality as the user mappable Control ports described above with the exclusion of being able to operate as a control output.
 
 Complete instructions on configuring Control port footswitch actions can be found in our [Auracle documentation](https://www.iconnectivity.com/s/auracle-x-user-guide-260-20261013.pdf).
 
@@ -700,6 +697,7 @@ To change the RTP MIDI settings of the PlayAUDIO2D including RTP-MIDI IP address
 
 > **Note:** Changing the PlayAUDIO2D Dante / MIDI switch configuration via Dante Controller requires the unit to be power cycled while the network interface resets.
 > **Note:** Do not connect both RJ45 jacks to the same Ethernet switch (or other device) because this will result in an Ethernet feedback loop.
+
 ### Dante and MIDI Combined on Port 1 & Port 2
 
 | Port | Description |
@@ -810,6 +808,8 @@ Use the table below to compare all four supported configurations at a glance.
 
 ## Updating Dante Firmware via Dante Updater
 
+<img src="images/dante-controller/dante-updater.png" width="800px" alt="Dante Updater firmware upate detail.">
+
 The PlayAUDIO2D is equipped with a Brooklyn 3 Dante networking module from Audinate.
 
 As with any Dante-enabled hardware device, you must use the Dante Updater application bundled with Dante Controller to update firmware on your onboard Dante networking module.
@@ -821,8 +821,6 @@ Checking for available firmware updates and updating your Dante networking modul
 2. The Dante Updater Application (bundled with Dante Controller available for your macOS or Windows operating system here)
 
 3. A network connection between your PlayAUDIO2D and a computer running Dante Updater.
-
-![Dante Controller Status tab showing the Dante module and firmware versions](images/dante-controller/dc-device-view-status.png)
 
 ### Configuring the Dante Interface
 
@@ -843,11 +841,13 @@ Click the arrow icons to expand and collapse the sections.
 The Updates Available section of the Home tab lists devices that have been discovered on your Dante network which are eligible for a firmware update (devices for which there is new or imported firmware available in the Dante Updater Library).
 
 #### To update all eligible devices:
+
 1. Click the top checkbox to select all the eligible devices.
 2. Click Update Selected Devices.
 3. When the update is complete, reboot the updated devices.
 
 #### To update a subset of the eligible devices:
+
 1. Click the individual checkboxes for the devices that you want to update.
 2. Click Update Selected Devices.
 3. When the update is complete, reboot the updated devices.
@@ -855,6 +855,7 @@ The Updates Available section of the Home tab lists devices that have been disco
 ## Specifications
 
 ### Audio
+
 **Digital Performance**
 - 24-bit resolution
 - Supported sample rates: 44.1 kHz, 48 kHz, 88.2 kHz, and 96 kHz
@@ -885,19 +886,23 @@ The Updates Available section of the Home tab lists devices that have been disco
 - Up to 16 MIDI ports (256 total MIDI channels) per computer device
 
 ### USB Host Ports
+
 - Four USB Host ports supporting a total of up to eight USB MIDI devices via powered USB hubs (not included).
-- Power: 	+5V DC, 500mA maximum per port
+- Power: +5V DC, 500mA maximum per port
 
 ### USB-C Ports
+
 Connect to Windows or macOS computer(s), Android or iPadOS devices (USB only, Apple Lightning not supported)
 
 ### Power
-- Input:  		100V - 240V AC, 50 - 60 Hz, 48W
-- Fuse: 		1A Slow-Blow
+
+- Input:  	100V - 240V AC, 50 - 60 Hz, 48W
+- Fuse: 	1A Slow-Blow
 
 ### Dimensions and Weights
-- Width:	  	19” (482 mm)
-- Height:		3.43” (87 mm)
+
+- Width:	  19” (482 mm)
+- Height:	3.43” (87 mm)
 - Depth:  	7.87” (200 mm)
 - Weight:  	8.38 lbs (3.8 kg)
 
@@ -937,6 +942,7 @@ The PlayAUDIO2D meets the requirements of the following standards and directives
 We, iConnectivity, declare that the PlayAUDIO2D complies with Part 15 of the FCC Rules. Operation is subject to the following two conditions: (1) this device may not cause harmful interference, and (2) this device must accept any interference received, including interference that may cause undesired operation.
 
 ### Communication Statement
+
 This equipment has been tested and found to comply with the limits for a Class B digital device, pursuant to Part 15 of the FCC Rules.
 
 These limits are designed to provide reasonable protection against harmful interference in a residential installation. This equipment generates, uses and can radiate radio frequency energy and, if not installed and used in accordance with the instructions, may cause harmful interference to radio communications.
