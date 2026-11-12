@@ -38,8 +38,11 @@ Congratulations on the purchase of your new mio X-Series MIDI interface!
 
 ### Minimum System Requirements
 - macOS - macOS 12 or later (for Auracle X control software), One free USB port for firmware updates
+
 - PC/Windows - Windows 10 or later (for Auracle X control software), One free USB port
+
 - iOS - Device must be equipped with a USB-C port and CoreMIDI compatible app
+
 - Android - Android 8.0 or higher with USB-C connector
 
 ## Hardware Description
