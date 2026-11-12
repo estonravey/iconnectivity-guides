@@ -45,23 +45,23 @@ Congratulations on the purchase of your new PlayAUDIO1U USB Audio & MIDI interfa
 
 <img src="images/playaudio1u-panel-front.png" width="800px" alt="PlayAUDIO1U front panel detail">
 
-- USB Host port. Directly plug in a class-compliant MIDI device, or plug in up to eight class-compliant MIDI devices via a powered USB hub (not included).
-- Control ports. Plug in up to two foot switches
-- MIDI DIN ports. 5 pin DIN connections for MIDI Controllers
-- Capacitive (cap) touch buttons & OLED. Manually switch scenes or inspect real time MIDI and audio information
-- Rotary Encoder. Multi-function encoder. Double press to save current settings or spin to cycle through pages in the currently selected page 
-- USB DAW ports. USB C ports for connecting computers or tablets.**
-- 3.5mm Headphone port. Stereo mix
-- Headphone Rotary Encoder. Multi-function encoder. Rotate to increase/decrease the headphone mix output volume; this also temporarily calls up the headphone volume display. Additionally: Double press to mute all rear outputs; double press again to unmute; press once to call the headphone volume display, and press again to return to the previous active menu. 
+- **USB Host port**. Directly plug in a class-compliant MIDI device, or plug in up to eight class-compliant MIDI devices via a powered USB hub (not included).
+- **Control ports**. Plug in up to two foot switches
+- **MIDI DIN ports**. 5 pin DIN connections for MIDI Controllers
+- **Capacitive (cap) touch buttons & OLED**. Manually switch scenes or inspect real time MIDI and audio information
+- **Rotary Encoder**. Multi-function encoder. Double press to save current settings or spin to cycle through pages in the currently selected page 
+- **USB DAW ports**. USB C ports for connecting computers or tablets.**
+- **3.5mm Headphone port**. Stereo mix
+- **Headphone Rotary Encoder**. Multi-function encoder. Rotate to increase/decrease the headphone mix output volume; this also temporarily calls up the headphone volume display. Additionally: Double press to mute all rear outputs; double press again to unmute; press once to call the headphone volume display, and press again to return to the previous active menu. 
 
 ### Rear Panel
 
 <img src="images/playaudio1u-panel-rear.png" width="800px" alt="PlayAUDIO1U rear panel detail">
 
-- AC Power inlet. Fused Input jack for included IEC C13 power supply cable.
-- Power switch. Turn the PlayAUDIO1U on or off. The switch will illuminate when power is turned on. 
-- XLR Balanced Audio Outputs. The PlayAUDIO1U's 12 analog outputs provide low noise, phantom power-resistant connections with up to 24-bit/96kHz DA conversion.
-- RTP MIDI Port. Make long distance MIDI connections over ethernet.
+- **AC Power inlet**. Fused Input jack for included IEC C13 power supply cable.
+- **Power switch**. Turn the PlayAUDIO1U on or off. The switch will illuminate when power is turned on. 
+- **XLR Balanced Audio Outputs**. The PlayAUDIO1U's 12 analog outputs provide low noise, phantom power-resistant connections with up to 24-bit/96kHz DA conversion.
+- **RTP MIDI Port**. Make long distance MIDI connections over ethernet.
 
 ## Getting Started
 
@@ -78,13 +78,12 @@ Connect your computer to your PlayAUDIO1U USB DAW Port A using a USB 2.0 or bett
 The interface should appear as a standard audio output device in Windows. You can route audio from music or video apps directly to the interface to test.
 
 ### Auracle X configuration software from iConnectivity
+
 Quick and simple configuration of the PlayAUDIO1U is possible via onboard controls but deep customization is available via our Auracle X application.
 
-Read on in the Auracle X section below for more information.
+Please explore the [Auracle X User Guide](https://static1.squarespace.com/static/58976aeee6f2e12da0026d7f/t/6ace6f796c6d5d71a7eb8788/1791913849639/auracle-x-user-guide-260-20261013.pdf) for more information.
 
 <img src="images/playaudio1u-auracle-x-audio.png" width="800px" alt="Auracle X audio page for the PlayAUDIO1U">
-
-> **Note:** All analog output volumes including the headphones output are muted by default and need to be raised for monitoring.
 
 ## Recommended Software Installation
 
@@ -109,7 +108,7 @@ Windows: [MIDI-OX](http://www.midiox.com/)
 
 MacOS: [Snoize MIDI monitor and Sysex Librarian](http://www.midiox.com/)
 
-## Installing Auracle X
+### Installing Auracle X
 
 Before you begin using your PlayAUDIO1U we recommend that you upgrade your unit's firmware to the latest version using iConnectivity's Auracle X application.
 
@@ -117,7 +116,7 @@ Download the latest version of the Auracle X software installer at: https://www.
 
 ### Mac Users
 
-## First time Installation
+#### First Time Installation
 
 <img src="../images/ax-dmg.png" alt="Auracle X installation; macOS.">
 
@@ -125,14 +124,15 @@ When the Auracle X application has finished downloading open the .dmg file.
 
 Drag the Auracle X application to the Applications folder.
 
-### Mac Users: Auracle X update
+#### Auracle X update
+
 <img src="../images/ax-check-updates.png">
 
 If you already have the Auracle X application installed, use the Auracle X main menu to check for updates and follow the prompts that follow if a newer version of Auracle X is available.
 
 ### Windows Users
 
-**First time installation**
+#### First time installation
 
 When the package installer download is complete, run the Auracle X installer.
 
@@ -279,8 +279,6 @@ Failover can be engaged manually by touching eithe Scene cap touch buttons on th
 - Scene A: The upper Scene cap touch OLED is illuminated in green, and the Touch panel display shows the letter “A”.
 
 - Scene B: The lower Scene cap touch OLED is illuminated in red, and the OLED display shows the letter “B”.
-
-For information on how to use a footswitch to initiate manual failover, please see the updated Auracle X manual in the Control Ports section.
 
 ### Safe Mode
 

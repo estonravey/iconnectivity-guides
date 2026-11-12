@@ -43,34 +43,37 @@ Congratulations on the purchase of your new PlayAUDIO2D USB Audio, MIDI & Dante 
 <img src="images/000-product/pa2d-hwd-front.png" width="800px" alt="PlayAUDIO2D front panel detail.">
 
 
-- XLR TRS Combo jack. Plug in microphones, DI boxes, or instruments.
-- USB HOST Port. Directly plug in a class-compliant MIDI device, or plug in up to eight class-compliant MIDI devices via a powered USB hub (not included).
-- CONTROL Ports. Plug in up to two foot switches or chain multiple PlayAUDIO interfaces.
-- MIDI DIN Ports. 5 pin DIN connections for MIDI Controllers.
-- High Resolution OLED display. Inspect real time MIDI and audio information.
-- Mode Buttons. Select PlayAUDIO2D menu functions such as scene, audio inputs and outputs, and MIDI.
-- Rotary Encoder. Multi-function encoder. Double press to save current settings or turn encoder to change page, change selection, or change value. Long press to force into manual bootloader mode.
-- USB DAW Ports. USB Type C ports for connecting host computers or tablets.
-- Control Buttons. User programmable control buttons.
-- ¼-inch Headphone Port. Stereo mix.
-- Headphone Rotary Encoder. Multi-function encoder. Turn to increase or decrease the headphone mix output volume; turning also temporarily calls up the headphone volume display. Additionally, double press to mute and unmute all analog outputs. Press once to call the headphone volume display, and press again to return to the previous active menu.
+- **XLR TRS Combo jack**. Plug in microphones, DI boxes, or instruments.
+- **USB HOST Port**. Directly plug in a class-compliant MIDI device, or plug in up to eight class-compliant MIDI devices via a powered USB hub (not included).
+- **CONTROL Ports**. Plug in up to two foot switches or chain multiple PlayAUDIO interfaces.
+- **MIDI DIN Ports**. 5 pin DIN connections for MIDI Controllers.
+- **High Resolution OLED display**. Inspect real time MIDI and audio information.
+- **Mode Buttons**. Select PlayAUDIO2D menu functions such as scene, audio inputs and outputs, and MIDI.
+- **Rotary Encoder**. Multi-function encoder. Double press to save current settings or turn encoder to change page, change selection, or change value. Long press to force into manual bootloader mode.
+- **USB DAW Ports**. USB Type C ports for connecting host computers or tablets.
+- **Control Buttons**. User programmable control buttons.
+- **¼-inch Headphone Port**. Stereo mix.
+- **Headphone Rotary Encoder**. Multi-function encoder. Turn to increase or decrease the headphone mix output volume; turning also temporarily calls up the headphone volume display. Additionally, double press to mute and unmute all analog outputs. Press once to call the headphone volume display, and press again to return to the previous active menu.
 
 ### Rear Panel
+<img src="images/000-product/pa2d-hwd-rear.png" width="800px" alt="PlayAUDIO2U rear panel detail.">
 
-![Rear panel](images/000-product/pa2d-hwd-rear.png)
 
-- AC Power Inlet. Fused Input jack for included IEC C13 power supply cable.
-- Power switch. Turn the PlayAUDIO2D on or off. The switch will illuminate when power is turned on.
+- **AC Power Inlet**. Fused Input jack for included IEC C13 power supply cable.
+- **Power switch**. Turn the PlayAUDIO2D on or off. The switch will illuminate when power is turned on.
 - XLR Balanced Audio Outputs. The PlayAUDIO2D's 24 analog outputs provide low noise, phantom power-resistant connections with up to 24-bit/96kHz DA conversion.
-- MIDI DIN Ports. 5 pin DIN connections for MIDI Controllers.
-- USB HOST Ports. Directly plug in a class-compliant MIDI device, or plug in up to eight class-compliant MIDI devices via a powered USB hub (not included).
-- RTP MIDI / Dante Ports. Make long distance MIDI connections over ethernet and/or connect to a Dante network.
+- **MIDI DIN Ports**. 5 pin DIN connections for MIDI Controllers.
+- **USB HOST Ports**. Directly plug in a class-compliant MIDI device, or plug in up to eight class-compliant MIDI devices via a powered USB hub (not included).
+- **RTP MIDI / Dante Ports**. Make long distance MIDI connections over ethernet and/or connect to a Dante network.
 
 ## Getting Started
+
 ### Mac Users
+
 There are no software drivers to download or install; the PlayAUDIO2D interface uses the USB MIDI class-compliant drivers built into macOS.
 
 ### Windows - Install iConnectivity Audio Drivers
+
 Before connecting the PlayAUDIO2D to a Windows computer please download and install the latest version of our Unified Windows Driver at https://www.iconnectivity.com/windows-drivers.
 
 You may also download the unified USB driver separate from Auracle X at https://www.iconnectivity.com/windows-drivers.
@@ -80,18 +83,18 @@ Connect your computer to your PlayAUDIO2D USB DAW Port A using a USB 2.0 or bett
 The interface should appear as a standard audio output device in Windows. You can route audio from music or video apps directly to the interface to test.
 
 ### Auracle X configuration software from iConnectivity
+
 Quick and simple configuration of the PlayAUDIO2D is possible via onboard controls but deep customization is available via our Auracle X application.
 
-Read on in the Auracle X section below for more information.
+Please explore the [Auracle X User Guide](https://static1.squarespace.com/static/58976aeee6f2e12da0026d7f/t/6ace6f796c6d5d71a7eb8788/1791913849639/auracle-x-user-guide-260-20261013.pdf) for more information.
 
-![Auracle X audio page for the PlayAUDIO2D](images/auracle-x/00-audio.main.png)
-
-> **Note:** All analog output volumes including the headphones output are muted by default and need to be raised for monitoring.
+<img src="images/auracle-x/00-audio.main.png" width="800px" alt="Auracle X audio page for the PlayAUDIO2D">
 
 ## Recommended Software Installation
+
 ### Windows - Install iConnectivity RTP MIDI Driver for Network MIDI
 
-![rtpMIDI network driver](images/third-party-apps/rtp-midi.png)
+<img src="../images/rtp-midi.png" alt="rtpMIDI network driver installation popup.">
 
 The RTP-MIDI driver for Network MIDI can be found at https://www.iconnectivity.com/windows-drivers
 
@@ -100,9 +103,11 @@ https://support.apple.com/en-us/106380
 
 Launch the rtpMIDISetup Application and follow all prompts to install.
 
+> **Note:** After installing the RTP-MIDI driver and Apple Bonjour Print Services be sure to restart your computer in order for the RTP-MIDI driver to default to using Apple Bonjour instead of lightweight mDNS for RTP session discovery
+
 ### Dante Controller & Dante Updater
 
-![Dante Controller](images/dante-controller/dc-routing-pa2u-tx.png)
+<img src="images/dante-controller/dc-routing-pa2u-tx.png" width="800px" alt="Dante Controller application routing menu.">
 
 Routing digital audio to and/or from your PlayAUDIO2D is achieved by using Audinate’s Dante Controller application located at
 https://www.getDante.com/products/software-essentials/Dante-controller/
@@ -114,47 +119,55 @@ While the Dante Controller application is required for configuring the Dante por
 Dante Updater is necessary to update the Dante Brooklyn 3 networking module on the PlayAUDIO2D, and is bundled with Dante Controller.
 
 ### MIDI Monitoring tools
+
 MIDI monitoring applications are very useful for routing debugging and troubleshooting. We recommend these free tools for your operating system:
 
 Windows: [MIDI-OX](http://www.midiox.com/)
 
 MacOS: [Snoize MIDI monitor and Sysex Librarian](http://www.midiox.com/)
 
-> **Note:** After installing the RTP-MIDI driver and Apple Bonjour Print Services be sure to restart your computer in order for the RTP-MIDI driver to default to using Apple Bonjour instead of lightweight mDNS for RTP session discovery
-
 ## Installing Auracle X
+
 Before you begin using your PlayAUDIO2D we recommend that you upgrade your unit's firmware to the latest version using iConnectivity's Auracle X application.
 
 Download the latest version of the Auracle X software installer at: https://www.iconnectivity.com/software/control-software
 
 ### Mac Users
-## First time Installation
-![Auracle X .dmg](images/ax-install/ax-dmg.png)
+
+#### First time Installation
+
+<img src="../images/ax-dmg.png" alt="Auracle X installation; macOS.">
 
 When the Auracle X application has finished downloading open the .dmg file
 
 Drag the Auracle X application to the Applications folder.
 
-### Mac Users: Auracle X update
-![Auracle X firmware update](images/ax-install/ax-check-updates.png)
+#### Mac Users: Auracle X update
+
+<img src="../images/ax-check-updates.png">
 
 If you already have the Auracle X application installed, use the Auracle X main menu to check for updates and follow the prompts that follow if a newer version of Auracle X is available.
 
 ### Windows Users
-**First time installation**
+
+#### First time installation
 
 When the package installer download is complete, run the Auracle X installer.
 
-![Windows installation](images/ax-install/win-ax-install.png)
+<img src="../images/win-ax-install.png" alt="Windows Auracle X installation popup.">
 
 Click Yes to allow Auracle X Setup
 
-![Windows install for all users](images/ax-install/win-ax-install-2.png)
+<img src="../images/win-ax-install-2.png" alt="Windows Auracle X installation popup; install mode.">
 
-Install for all users
+Install for all users.
 
 ## Updating PlayAUDIO2D Firmware
+
 ### Load Latest From Web
+
+<img src="../auracle-x/images/fw-web.png" width="800px" alt="Auracle X firwmare update; load latest from web.">
+
 To use Auracle X to update your device’s firmware:
 
 1. Ensure your computer is connected to the internet.
@@ -168,6 +181,8 @@ To use Auracle X to update your device’s firmware:
 5. If a newer firmware for your device is available a menu option to update firmware will appear in the Load Latest From Web section. Click Install to update from web
 
 ### Firmware Update: Load from file
+
+<img src="../auracle-x/images/fw-file.png" width="800px" alt="Auracle X firwmare update; from file.">
 
 The latest firmware for your device is  also available for manual download at: https://www.iconnectivity.com/firmware
 

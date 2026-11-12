@@ -76,7 +76,7 @@ Congratulations on the purchase of your new mio X-Series MIDI interface!
 - **USB Host Ports.** Connect USB MIDI class-compliant devices.
 - **Device Port.** USB B port for connecting computers or tablets.
 
-### mi0XL Rear Panel
+### mioXL Rear Panel
 
 <img src="images/mioxl-panel-rear.png" width="800" alt="mioXL rear panel description">
 
@@ -87,27 +87,30 @@ Congratulations on the purchase of your new mio X-Series MIDI interface!
 - **Power Port.** Plug in provided power adapter.
 
 ## Getting Started
+
 ### Mac Users
+
 There are no software drivers to download or install; the mio X-Series interface uses the USB MIDI class-compliant drivers built into macOS.
 
 ### Windows - Install iConnectivity Audio Drivers
-Before connecting the mioMX or mioXL to a Windows computer please download and install the latest version of our Unified Windows Driver at https://www.iconnectivity.com/windows-drivers.
 
-You may also download the unified USB driver separate from Auracle X at https://www.iconnectivity.com/windows-drivers.
+Before connecting the PlayAUDIO1U to a Windows computer please download and install the latest version of our Unified Windows Driver at https://www.iconnectivity.com/windows-drivers.
 
-Connect your computer to your mioXM or mioXL USB DAW Port using a USB 2.0 or better data cable.
+Connect your computer to your PlayAUDIO1U USB DAW Port A using a USB 2.0 or better data cable.
 
 The interface should appear as a standard audio output device in Windows. You can route audio from music or video apps directly to the interface to test.
 
 ### Auracle X configuration software from iConnectivity
+
 Both the mioXM and mioXL are shipped with default MIDI settings that will work for most simple applications but deep customization is available via our Auracle X application.
 
 Please explore the [Auracle X User Guide](https://static1.squarespace.com/static/58976aeee6f2e12da0026d7f/t/6ace6f796c6d5d71a7eb8788/1791913849639/auracle-x-user-guide-260-20261013.pdf) for more information.
 
 ## Recommended Software Installation
+
 ### Windows - Install iConnectivity RTP MIDI Driver for Network MIDI
 
-<img src="../images/rtp-midi.png" atl="Windows rtpMIDI network driver">
+<img src="../images/rtp-midi.png" alt="rtpMIDI network driver installation popup.">
 
 The RTP-MIDI driver for Network MIDI can be found at https://www.iconnectivity.com/windows-drivers
 
@@ -116,48 +119,58 @@ https://support.apple.com/en-us/106380
 
 Launch the rtpMIDISetup Application and follow all prompts to install.
 
+> **Note:** After installing the RTP-MIDI driver and Apple Bonjour Print Services be sure to restart your computer in order for the RTP-MIDI driver to default to using Apple Bonjour instead of lightweight mDNS for RTP session discovery.
+
 ### MIDI Monitoring tools
+
 MIDI monitoring applications are very useful for routing debugging and troubleshooting. We recommend these free tools for your operating system:
 
 Windows: [MIDI-OX](http://www.midiox.com/)
 
 MacOS: [Snoize MIDI monitor and Sysex Librarian](http://www.midiox.com/)
 
-> **Note:** After installing the RTP-MIDI driver and Apple Bonjour Print Services be sure to restart your computer in order for the RTP-MIDI driver to default to using Apple Bonjour instead of lightweight mDNS for RTP session discovery.
-
 ## Installing Auracle X
+
 Before you begin using your mioXM or mioXL we recommend that you upgrade your unit's firmware to the latest version using iConnectivity's Auracle X application.
 
 Download the latest version of the Auracle X software installer at: https://www.iconnectivity.com/software/control-software
 
 ### Mac Users
-## First time Installation
-<img src="../images/ax-dmg.png" alt="macOS Auraacle X installation">
 
-When the Auracle X application has finished downloading open the .dmg file
+#### First Time Installation
+
+<img src="../images/ax-dmg.png" alt="Auracle X installation; macOS.">
+
+When the Auracle X application has finished downloading open the .dmg file.
 
 Drag the Auracle X application to the Applications folder.
 
-### Mac Users: Auracle X update
-<img src="../images/ax-check-updates.png" alt="macOS Auracle X Check for Updates option">
+#### Auracle X update
+
+<img src="../images/ax-check-updates.png">
 
 If you already have the Auracle X application installed, use the Auracle X main menu to check for updates and follow the prompts that follow if a newer version of Auracle X is available.
 
 ### Windows Users
-**First time installation**
+
+#### First time installation
 
 When the package installer download is complete, run the Auracle X installer.
 
-<img src="../images/win-ax-install.png" alt="Windows OS Auracle X installer">
+<img src="../images/win-ax-install.png" alt="Windows Auracle X installation popup.">
 
-Click Yes to allow Auracle X Setup
+Click Yes to allow Auracle X Setup.
 
-<img src="../images/win-ax-install-2.png" atl="Windows OS Auracle X install mode">
+<img src="../images/win-ax-install-2.png" alt="Windows Auracle X installation popup; install mode.">
 
-Install for all users
+Install for all users.
 
 ## Updating mioXM or mioXL Firmware
+
 ### Load Latest From Web
+
+<img src="../auracle-x/images/fw-web.png" width="800px" alt="Auracle X firwmare update; load latest from web.">
+
 To use Auracle X to update your device’s firmware:
 
 1. Ensure your computer is connected to the internet.
@@ -171,6 +184,8 @@ To use Auracle X to update your device’s firmware:
 5. If a newer firmware for your device is available a menu option to update firmware will appear in the Load Latest From Web section. Click Install to update from web
 
 ### Firmware Update: Load from file
+
+<img src="../auracle-x/images/fw-file.png" width="800px" alt="Auracle X firwmare update; from file.">
 
 The latest firmware for your device is also available for manual download at: https://www.iconnectivity.com/firmware
 
@@ -211,12 +226,15 @@ iConnectivity firmware is formatted as a Standard MIDI File with a .MID file ext
 iConnectivity interfaces have three modes of operation:
 
 ### Power Off
+
 The interface is powered off and not operational.
 
 ### Application Mode
+
 This is the normal operational mode that you will use nearly all of the time. In this mode, the device is powered on and operates as a fully functional interface.
 
 ### Bootloader Mode
+
 Bootloader Mode is a special service mode used to perform firmware updates. Normally you will use Auracle X software to update your firmware and Auracle X will automatically switch your interface between Normal and Bootloader modes as necessary. In rare situations users may prefer to manually update their firmware via the bootloader. This manual process is described in detail in the [Updating Firmware](#updating-mioxm-or-mioxl-firmware) section of this guide.
 
 To manually force your mioXM or mioXL into Bootloader mode:
@@ -247,9 +265,9 @@ The mioXL will reboot and enter Bootloader mode ready to accept a manual firmwar
 
 | Function  | Action    |
 | ---       | ---       |
-| Power On  | Short press |
-| Power Off | Long press until all LEDs are turned off then immediately release |
-| Bootloader Mode | From power off state, long press until all LEDs illuminate red then immediately release |
+| **Power On ** | Short press |
+| **Power Off** | Long press until all LEDs are turned off then immediately release |
+| **Bootloader Mode** | From power off state, long press until all LEDs illuminate red then immediately release |
 | | |
 
 ### Using the Touch Panel, Main Parameter/Power Knob and Bottom Row Controls on the mioXL
@@ -260,10 +278,10 @@ interface and displays status on eight LEDs.
 #### Top Row LEDs
 
 The top row LEDs illuminate whenever there is activity on any of the I/O ports:
-- USB-DAW  - USB MIDI between mioX and your computer; double tap to send a MIDI panic message 
-- RTP-MIDI - RTP/Network MIDI
-- DIN-MIDI - MIDI on DIN Ports
-- USB-MIDI - MIDI on USB Host Ports
+- **USB-DAW** - USB MIDI between mioX and your computer; double tap to send a MIDI panic message 
+- **RTP-MIDI** - RTP/Network MIDI
+- **DIN-MIDI** - MIDI on DIN Ports
+- **USB-MIDI** - MIDI on USB Host Ports
 
 You can also touch any of the top row LEDs to call the respective MIDI monitor on the mioXL OLED display.
 
@@ -272,9 +290,9 @@ Touch any bottom row touch cap button once to exit to the main OLED dispaly show
 #### Top Row LED Color Legend
 | Color | Meaning |
 | --- | --- |
-| Red | MIDI / Sysex information received on the flashing port |
-| Green | MIDI / Sysex information sent from the flashing port |
-| Amber | MIDI / Sysex information both sent and received on the flashing port |
+| **Red** | MIDI / Sysex information received on the flashing port |
+| **Green** | MIDI / Sysex information sent from the flashing port |
+| **Amber** | MIDI / Sysex information both sent and received on the flashing port |
 | | |
 
 #### Bottom Row Controls
@@ -282,10 +300,11 @@ Touch any bottom row touch cap button once to exit to the main OLED dispaly show
 The four bottom capacitive touch buttons correspond to onboard memory presets. After saving configuration changes to your mioXM or to your computer using the Auracle X applicaiton, touch a memory preset to instantly recall that preset.
 
 #### Memory Preset Legend
+
 | Color | Meaning |
 | --- | --- |
-| Red | The active memory preset has unsaved preset-level configuration changes |
-| Green |The active memory preset has no unsaved preset-level configuration changes|
+| **Red** | The active memory preset has unsaved preset-level configuration changes |
+| **Green** |The active memory preset has no unsaved preset-level configuration changes|
 | | |
 
 #### MIDI Panic

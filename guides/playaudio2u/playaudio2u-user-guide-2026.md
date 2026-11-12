@@ -28,6 +28,7 @@ Congratulations on the purchase of your new PlayAUDIO2U USB Audio & MIDI interfa
 - 1 Each - US, UK, EU type IEC C14 power cables. (Type I is included in Australia)
 
 ### Minimum System Requirements
+
 - macOS - macOS 12 or later (for Auracle X control software), One free USB port
 
 - PC/Windows - Windows 10 or later (for Auracle X control software), One free USB port
@@ -53,7 +54,6 @@ Congratulations on the purchase of your new PlayAUDIO2U USB Audio & MIDI interfa
 - **¼-inch Headphone Port.** Stereo mix.
 - **Headphone Rotary Encoder.** Multi-function encoder. Turn to increase or decrease the headphone mix output volume; turning also temporarily calls up the headphone volume display. Press once to call the headphone volume display, and press again to return to the previous active menu. Additionally, double press to mute and unmute all analog outputs.
 
-
 ### Rear Panel
 <img src="images/pa2u-panel-rear.png" width="800px" alt="PlayAUDIO2U rear panel detail.">
 
@@ -68,9 +68,11 @@ Congratulations on the purchase of your new PlayAUDIO2U USB Audio & MIDI interfa
 ## Getting Started
 
 ### Mac Users
+
 There are no software drivers to download or install; the PlayAUDIO2U interface uses the USB MIDI class-compliant drivers built into macOS.
 
 ### Windows - Install iConnectivity Audio Drivers
+
 Before connecting the PlayAUDIO2U to a Windows computer please download and install the latest version of our Unified Windows Driver at https://www.iconnectivity.com/windows-drivers.
 
 Connect your computer to your PlayAUDIO2U USB DAW Port A using a USB 2.0 or better data cable.
@@ -78,13 +80,12 @@ Connect your computer to your PlayAUDIO2U USB DAW Port A using a USB 2.0 or bett
 The interface should appear as a standard audio output device in Windows. You can route audio from music or video apps directly to the interface to test.
 
 ### Auracle X configuration software from iConnectivity
+
 Quick and simple configuration of the PlayAUDIO2U is possible via onboard controls but deep customization is available via our Auracle X application.
 
-Read on in the Auracle X section below for more information.
+Please explore the [Auracle X User Guide](https://static1.squarespace.com/static/58976aeee6f2e12da0026d7f/t/6ace6f796c6d5d71a7eb8788/1791913849639/auracle-x-user-guide-260-20261013.pdf) for more information.
 
 <img src="../playaudio2d/images/auracle-x/00-audio.main.png" width="800px" alt="Auracle X audio page for the PlayAUDIO2U">
-
-> **Note:** All analog output volumes including the headphones output are muted by default and need to be raised for monitoring.
 
 ## Recommended Software Installation
 
@@ -110,13 +111,14 @@ Windows: [MIDI-OX](http://www.midiox.com/)
 MacOS: [Snoize MIDI monitor and Sysex Librarian](http://www.midiox.com/)
 
 ## Installing Auracle X
+
 Before you begin using your PlayAUDIO2U we recommend that you upgrade your unit's firmware to the latest version using iConnectivity's Auracle X application.
 
 Download the latest version of the Auracle X software installer at: https://www.iconnectivity.com/software/control-software
 
 ### Mac Users
 
-## First time Installation
+#### First time Installation
 
 <img src="../images/ax-dmg.png" alt="Auracle X installation; macOS.">
 
@@ -124,7 +126,7 @@ When the Auracle X application has finished downloading open the .dmg file
 
 Drag the Auracle X application to the Applications folder.
 
-### Mac Users: Auracle X update
+#### Mac Users: Auracle X update
 
 <img src="../images/ax-check-updates.png">
 
@@ -132,7 +134,7 @@ If you already have the Auracle X application installed, use the Auracle X main 
 
 ### Windows Users
 
-**First time installation**
+#### First time installation
 
 When the package installer download is complete, run the Auracle X installer.
 
@@ -262,7 +264,7 @@ Manual failover allows you to control scene switching at the touch of the Scene 
 
 #### Transport Control Setup
 
-1. Connect a MIDI controller to an available USB host or DIN input port and follow your DAW’s instructions to map incoming MIDI messages to DAW transport commands. Both playback sessions must have identical MIDI mapping for correct operation.
+Connect a MIDI controller to an available USB host or DIN input port and follow your DAW’s instructions to map incoming MIDI messages to DAW transport commands. Both playback sessions must have identical MIDI mapping for correct operation.
 
 > **Note:** When adding the LifeSine plugin to your DAW for the first time it may be necessary to restart your DAW session for the LifeSine plugin to activate.
 
@@ -279,9 +281,6 @@ Failover can be engaged manually by touching the Scene Mode Button on the front 
 - Scene A: The Scene Mode Button is illuminated in green, and the Touch panel display shows the letter “A”.
 
 - Scene B: The Scene Mode Button is illuminated in red, and the Touch panel display shows the letter “B”.
-
-[Comment]: # (NEED LINK to Auracle X manual)
-For information on how to use a footswitch to initiate manual failover, please see the updated Auracle X manual in the Control Ports section.
 
 ### Safe Mode
 
