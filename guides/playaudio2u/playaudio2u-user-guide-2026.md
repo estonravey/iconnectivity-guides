@@ -298,7 +298,7 @@ For more information about Safe Mode including Safe Mode triggers and how to dis
 
 ### OLED Home Page Legend
 
-<img src="images/pa2-oled-legend.png" width="255" alt="PlayAUDIO1U OLED; home display; Scene A armed for automatic failover.">
+<img src="images/pa2-oled-legend.png" width="255" alt="PlayAUDIO2U OLED; home display; Scene A armed for automatic failover.">
 
 Scene Indicator Icon Legend (Top Left next to Scene A or Scene B Indicator):
 
@@ -332,6 +332,7 @@ Fine adjustments are recommended if there is a risk of signal overload. Rotary E
 | **View Failover Tone information**    | From the Home page, turn the encoder clockwise to access audio meter displays showing the current level of the failover tone in both numerical and live metering <br>No tone will produce a blank meter display above the “Tone A” and “Tone B” labels. <br>Note that a failover tone level above -3dBFS will cause the PlayAUDIO2U to enter into **Safe Mode** and all analog outputs to be automatically muted. <br>You will not be able to unmute analog outputs until the failover tone level is adjusted below the threshold displayed on the Tone Meter menu page. |
 
 ### Mode Buttons
+
 <img src="images/pa2-mode-buttons-small.png" alt="PlayAUDIO2U ModeButtons detail.">
 
 The PlayAUDIO2U features Mode Buttons with fixed functionality for the most commonly used functions of the PlayAUDIO2U.
